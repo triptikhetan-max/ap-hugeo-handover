@@ -174,149 +174,139 @@ a:hover{text-decoration:underline}
     </div>
   </div>
 
-  <!-- Stats row -->
-  <div class="grid-4" style="margin-bottom:24px">
-    <div class="stat-card">
-      <div class="stat-num">5</div>
-      <div class="stat-label">Courses Specified</div>
-      <div class="stat-sub">3 built, 1 spec only, 1 deferred</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-num">229</div>
-      <div class="stat-label">Questions Built</div>
-      <div class="stat-sub">104 + 69 + 56 MCQ, 6 FRQ</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-num">10</div>
-      <div class="stat-label">Students Analyzed</div>
-      <div class="stat-sub">4 priority interventions</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-num">8</div>
-      <div class="stat-label">Deep Analysis Reports</div>
-      <div class="stat-sub">Ground reality to build specs</div>
-    </div>
-  </div>
-
   <!-- The Problem -->
-  <div class="card" style="margin-bottom:16px">
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--red)">
     <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">The Problem</h2>
     <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
-      <strong style="color:var(--text)">FRQ determines the AP score</strong> &mdash; every student with AP 5 had FRQ &ge;77%, every 1-3 had FRQ &le;63%. The recognition-retrieval gap is devastating: <strong style="color:var(--yellow)">Branson scored 88% on topic quizzes but only 24% on FRQs &mdash; a 64-point collapse.</strong> Students recognize content in isolation but can't retrieve and apply it when topics mix.
+      <strong style="color:var(--text)">FRQ determines the AP score</strong> &mdash; every student with AP 5 had FRQ &ge;77%, every 1-3 had FRQ &le;63%. The recognition-retrieval gap is devastating: <strong style="color:var(--yellow)">Branson scored 88% on topic quizzes but only 24% on FRQs</strong> &mdash; a 64-point collapse. Students recognize content in isolation but can&rsquo;t retrieve and apply when topics mix.
     </p>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:16px">
-      <strong style="color:var(--text)">3 FRQ failure patterns identified:</strong> definitional imprecision, concept confusion, missing causal reasoning.
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">
+      <strong style="color:var(--text)">3 FRQ failure patterns:</strong> definitional imprecision, concept confusion, missing causal reasoning.
     </p>
-    <div class="card-sm" style="border-left:3px solid var(--yellow);margin-bottom:0">
-      <p style="font-size:14px;font-weight:600;color:var(--yellow);margin-bottom:4px">Key Insight</p>
-      <p style="font-size:14px;color:var(--text)">Population/DTM and Boundaries are the most predictable FRQ topics (tested 5 of 6 years and 4 of 6 years respectively). <strong>1-2 of 3 FRQs will be from Units 2 or 4 = 7-14 of 21 FRQ points.</strong></p>
+  </div>
+
+  <!-- Key Insight -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--yellow)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--yellow)">Key Insight</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
+      <strong style="color:var(--text)">Population/DTM and Boundaries are the two most predictable FRQ topics.</strong> DTM appeared 5 of 6 years (2019&ndash;2024). Boundaries appeared 4 of 6 years. 2024 tested BOTH.
+    </p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">
+      <strong style="color:var(--text)">1&ndash;2 of 3 FRQs come from Units 2 or 4 = 7&ndash;14 of 21 FRQ points.</strong> This is backward design &mdash; target highest-frequency content first.
+    </p>
+  </div>
+
+  <!-- Why MC1, MC2, MC3 -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--green)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--green)">Why MC1, MC2, MC3</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="card-sm">
+        <p style="font-weight:700;color:var(--text);margin-bottom:4px">MC1 (DTM Application)</p>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">DTM is THE most tested model. Gus at 38.5% DTM accuracy. Sydney misapplied DTM to South Africa. 104 MCQ + 3 real CollegeBoard FRQs.</p>
+      </div>
+      <div class="card-sm">
+        <p style="font-weight:700;color:var(--text);margin-bottom:4px">MC2 (Boundary Types)</p>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Boundaries tested 4/6 years. Sydney confused antecedent/subsequent. Branson confused centripetal/centrifugal with push/pull. 69 MCQ + 3 FRQs.</p>
+      </div>
+      <div class="card-sm">
+        <p style="font-weight:700;color:var(--text);margin-bottom:4px">MC3 (Centripetal/Migration)</p>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Directly addresses Branson&rsquo;s centripetal/centrifugal confusion. Zayen&rsquo;s migration gaps.</p>
+      </div>
+      <div class="card-sm">
+        <p style="font-weight:700;color:var(--text);margin-bottom:4px">B1 (Mixed-Topic Practice Tests)</p>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Addresses the recognition-retrieval gap directly. 120 stimulus items, topics shuffled. Spec written, not started.</p>
+      </div>
     </div>
   </div>
 
-  <!-- What We Built -->
-  <div class="card" style="margin-bottom:16px">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--accent)">What We Built</h2>
+  <!-- Question Bank Issues Found -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid rgba(239,68,68,.5)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">Question Bank Issues Found</h2>
     <div class="grid-2" style="gap:12px">
       <div class="card-sm" style="display:flex;align-items:center;gap:12px">
-        <span class="badge badge-yellow">FIXES NEEDED</span>
-        <div><strong>MC1: DTM Application</strong><br><span style="font-size:13px;color:var(--text2)">104 MCQ + 3 FRQ, QC'd, bugs documented</span></div>
+        <div style="font-size:24px;font-weight:800;color:var(--red);min-width:60px">27.3%</div>
+        <div style="font-size:13px;color:var(--text2)">of items are 4-choice (exam is 5-choice only)</div>
       </div>
       <div class="card-sm" style="display:flex;align-items:center;gap:12px">
-        <span class="badge badge-green">READY</span>
-        <div><strong>MC2: Boundary Types</strong><br><span style="font-size:13px;color:var(--text2)">69 MCQ + 3 FRQ</span></div>
+        <div style="font-size:24px;font-weight:800;color:var(--red);min-width:60px">42.5%</div>
+        <div style="font-size:13px;color:var(--text2)">Answer A bias (expected 20%)</div>
       </div>
       <div class="card-sm" style="display:flex;align-items:center;gap:12px">
-        <span class="badge badge-yellow">NEEDS CHANGES</span>
-        <div><strong>MC3: Centripetal/Migration</strong><br><span style="font-size:13px;color:var(--text2)">56 questions, needs adjustments</span></div>
+        <div style="font-size:24px;font-weight:800;color:var(--yellow);min-width:60px">24.4%</div>
+        <div style="font-size:13px;color:var(--text2)">Stimulus coverage (target 30&ndash;40%)</div>
       </div>
       <div class="card-sm" style="display:flex;align-items:center;gap:12px">
-        <span class="badge badge-red">NOT STARTED</span>
-        <div><strong>B1: Mixed-Topic Practice Tests</strong><br><span style="font-size:13px;color:var(--text2)">120 stimulus items, 4 tests &mdash; spec written</span></div>
+        <div style="font-size:24px;font-weight:800;color:var(--yellow);min-width:60px">6.2%</div>
+        <div style="font-size:13px;color:var(--text2)">Skill 4 (Source Analysis) &mdash; target 13&ndash;20%</div>
       </div>
-      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
-        <span class="badge badge-gray">DEFERRED</span>
-        <div><strong>B6: Skill 2 Spatial</strong><br><span style="font-size:13px;color:var(--text2)">Wait for R2 results</span></div>
+      <div class="card-sm" style="grid-column:span 2;display:flex;align-items:center;gap:12px">
+        <div style="font-size:24px;font-weight:800;color:var(--yellow);min-width:80px">522/546</div>
+        <div style="font-size:13px;color:var(--text2)">items lack feedback text</div>
       </div>
     </div>
   </div>
 
-  <!-- 3-Layer Framework -->
-  <div class="card" style="margin-bottom:16px">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--purple)">3-Layer Learning Framework</h2>
-    <div class="grid-3" style="gap:12px">
-      <div class="card-sm" style="border-top:3px solid var(--accent)">
-        <p style="font-weight:700;margin-bottom:6px">Layer 1: Core Knowledge</p>
-        <p style="font-size:13px;color:var(--text2)">Can student define terms precisely and recall models?</p>
-        <p style="font-size:12px;color:var(--text3);margin-top:8px">Gus is stuck here</p>
-      </div>
-      <div class="card-sm" style="border-top:3px solid var(--yellow)">
-        <p style="font-weight:700;margin-bottom:6px">Layer 2: Disciplinary Moves</p>
-        <p style="font-size:13px;color:var(--text2)">Can student apply frameworks to novel scenarios?</p>
-        <p style="font-size:12px;color:var(--text3);margin-top:8px">Branson, Sydney, Zayen are here</p>
-      </div>
-      <div class="card-sm" style="border-top:3px solid var(--green)">
-        <p style="font-weight:700;margin-bottom:6px">Layer 3: Exam Technique</p>
-        <p style="font-size:13px;color:var(--text2)">Can student manage time and allocate points across FRQ parts?</p>
-        <p style="font-size:12px;color:var(--text3);margin-top:8px">Sydney also has Layer 3 issues</p>
-      </div>
-    </div>
+  <!-- The Email to Eric -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--accent)">The Email to Eric</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
+      Deployment email was sent <strong style="color:var(--text)">March 19, 2026</strong> to Eric, Hari, Ilma, and Akshit. MC1 + MC2 ready. Student assignments confirmed.
+    </p>
+    <p style="font-size:14px">
+      <a href="https://docs.google.com/document/d/1lEJXs-Yt1UfTtaGPR_a3_XQrUfs2M0diBAKuo4xj8PE/edit" target="_blank" rel="noopener">View the deployment email Google Doc</a>
+    </p>
   </div>
 
-  <!-- What Was Given -->
-  <div class="card" style="margin-bottom:16px">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px">What Was Given to Akshit/Ilma</h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      <div class="card-sm">Build specs for all 5 courses (ilma_build_specs_s4.md)</div>
-      <div class="card-sm">MC1 fix list with exact item IDs</div>
-      <div class="card-sm">Student intervention plans</div>
-      <div class="card-sm">8 deep analysis reports</div>
-    </div>
+  <!-- NOTE: Update to AP World Structure -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--purple)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--purple)">NOTE: Update to AP World Structure</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">
+      <strong style="color:var(--text)">NOTE FOR WHOEVER PICKS THIS UP:</strong> The AP World History project developed a better content structure after these HuGeo courses were built. Each topic in the World History course has: Heimler video &rarr; article with bold key terms, College Board callout boxes, key terms list, and 5 note-taking prompts &rarr; 6 MCQs &rarr; FRQ. The HuGeo articles are too dense compared to this. If time allows, the HuGeo course content should be updated to match the AP World structure &mdash; shorter articles, more visual scaffolding, explicit College Board tips, note-taking prompts that bridge between topics.
+    </p>
   </div>
 
-  <!-- Question Bank Issues -->
-  <div class="card" style="margin-bottom:16px">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">Question Bank Issues Found</h2>
-    <div class="grid-4" style="gap:12px">
-      <div class="card-sm" style="text-align:center">
-        <div style="font-size:28px;font-weight:800;color:var(--red)">27.3%</div>
-        <div style="font-size:12px;color:var(--text2)">of items are 4-choice<br>(exam is 5-choice only)</div>
-      </div>
-      <div class="card-sm" style="text-align:center">
-        <div style="font-size:28px;font-weight:800;color:var(--red)">42.5%</div>
-        <div style="font-size:12px;color:var(--text2)">Answer A bias<br>(expected 20%)</div>
-      </div>
-      <div class="card-sm" style="text-align:center">
-        <div style="font-size:28px;font-weight:800;color:var(--yellow)">24.4%</div>
-        <div style="font-size:12px;color:var(--text2)">Stimulus coverage<br>(target 30-40%)</div>
-      </div>
-      <div class="card-sm" style="text-align:center">
-        <div style="font-size:28px;font-weight:800;color:var(--yellow)">522/546</div>
-        <div style="font-size:12px;color:var(--text2)">items lack<br>feedback text</div>
-      </div>
-    </div>
+  <!-- Brain Dump Link -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid rgba(59,130,246,.6)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--accent)">Brain Dump</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">
+      The complete Brainlift (brain dump) for this project &mdash; all the thinking, data, spicy POVs, insights, and raw facts &mdash; is documented in the <strong style="color:var(--text)">AP Human Geography Brainlift</strong>. This was the strategic document that informed every decision.
+    </p>
   </div>
 
   <!-- Where We Left Off -->
-  <div class="card">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--green)">Where We Left Off</h2>
+  <div class="card" style="border-left:4px solid var(--yellow)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--yellow)">Where We Left Off</h2>
     <div class="grid-2" style="gap:16px">
       <div>
-        <p style="font-weight:600;margin-bottom:8px;color:var(--green)">Done</p>
+        <p style="font-weight:600;margin-bottom:10px;color:var(--green)">Done</p>
         <ul style="font-size:13px;color:var(--text2);list-style:none;padding:0">
-          <li style="padding:4px 0">S3 review, MC1/MC2/MC3 built</li>
-          <li style="padding:4px 0">QC completed, fix docs written</li>
-          <li style="padding:4px 0">Student plans, 8 analysis reports</li>
-          <li style="padding:4px 0">Build specs, dashboards</li>
+          <li style="padding:4px 0">S3 practice exam analysis (10 students)</li>
+          <li style="padding:4px 0">MC1 DTM course built and QC&rsquo;d (104 MCQ + 3 FRQ)</li>
+          <li style="padding:4px 0">MC2 Boundary Types course built (69 MCQ + 3 FRQ)</li>
+          <li style="padding:4px 0">MC3 Centripetal/Migration course built (56 questions)</li>
+          <li style="padding:4px 0">Fix docs with exact item IDs for Akshit</li>
+          <li style="padding:4px 0">Student intervention plans (Gus, Branson, Sydney, Zayen)</li>
+          <li style="padding:4px 0">8 deep analysis reports</li>
+          <li style="padding:4px 0">S4 build specs for Ilma (7 builds specified)</li>
+          <li style="padding:4px 0">Interactive QC dashboard (mc1_qc_dashboard.html)</li>
+          <li style="padding:4px 0">906 questions extracted from prep books (Barron&rsquo;s + Princeton)</li>
+          <li style="padding:4px 0">S3 review for Eric</li>
+          <li style="padding:4px 0"><strong style="color:var(--text)">MC1 + MC2 deployed March 19, 2026</strong></li>
         </ul>
       </div>
       <div>
-        <p style="font-weight:600;margin-bottom:8px;color:var(--yellow)">Pending</p>
+        <p style="font-weight:600;margin-bottom:10px;color:var(--yellow)">Pending</p>
         <ul style="font-size:13px;color:var(--text2);list-style:none;padding:0">
-          <li style="padding:4px 0">Apply MC1 bug fixes (7 broken answer keys &mdash; 10 min)</li>
-          <li style="padding:4px 0">Deploy MC1/MC2/MC3</li>
-          <li style="padding:4px 0">Build B1 practice tests</li>
-          <li style="padding:4px 0">Monitor student progress</li>
+          <li style="padding:4px 0"><span class="badge badge-red" style="margin-right:6px">Akshit</span> Apply MC1 bug fixes (7 broken answer keys &mdash; 10 min)</li>
+          <li style="padding:4px 0"><span class="badge badge-red" style="margin-right:6px">Akshit</span> Replace Mini MCQ duplicates (15 min)</li>
+          <li style="padding:4px 0"><span class="badge badge-yellow" style="margin-right:6px">Akshit</span> Deploy MC3</li>
+          <li style="padding:4px 0"><span class="badge badge-yellow" style="margin-right:6px">Ilma</span> Build B1 Mixed-Topic Practice Tests (spec written, 5&ndash;7 days)</li>
+          <li style="padding:4px 0"><span class="badge badge-gray" style="margin-right:6px">Akshit</span> Monitor student progress post-deployment</li>
+          <li style="padding:4px 0"><span class="badge badge-gray" style="margin-right:6px">Deferred</span> B6 Skill 2 Spatial &mdash; wait for R2 results</li>
         </ul>
+        <div class="card-sm" style="margin-top:12px;border-left:2px solid var(--red)">
+          <p style="font-size:13px;color:var(--text2)"><strong style="color:var(--text)">Key dates:</strong> MC1 + MC2 deployed March 19. Exam May 5, 2026.</p>
+        </div>
       </div>
     </div>
   </div>
