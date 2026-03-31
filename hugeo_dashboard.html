@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AP Human Geography — Complete Project Handover</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f172a;--surface:#1e293b;--surface2:#334155;--accent:#3b82f6;
+  --green:#22c55e;--red:#ef4444;--yellow:#f59e0b;--purple:#a855f7;--amber:#f59e0b;
+  --text:#f1f5f9;--text2:#94a3b8;--text3:#64748b;--radius:12px;--radius-sm:8px;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
+}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(51,65,85,.5);padding:0 24px}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-tab{padding:14px 20px;font-size:14px;font-weight:500;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;user-select:none}
+.nav-tab:hover{color:var(--text)}
+.nav-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* LAYOUT */
+.container{max-width:1400px;margin:0 auto;padding:24px}
+.tab-content{display:none;opacity:0;transition:opacity .3s}
+.tab-content.active{display:block;opacity:1}
+
+/* CARDS */
+.card{background:var(--surface);border-radius:var(--radius);padding:24px;border:1px solid rgba(51,65,85,.5);margin-bottom:16px}
+.card-sm{background:var(--surface2);border-radius:var(--radius-sm);padding:16px}
+
+/* GRID */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+/* BADGES */
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:600;line-height:1.4}
+.badge-green{background:rgba(34,197,94,.15);color:#4ade80}
+.badge-red{background:rgba(239,68,68,.15);color:#f87171}
+.badge-yellow{background:rgba(245,158,11,.15);color:#fbbf24}
+.badge-blue{background:rgba(59,130,246,.15);color:#60a5fa}
+.badge-purple{background:rgba(168,85,247,.15);color:#c084fc}
+.badge-gray{background:rgba(100,116,139,.15);color:#94a3b8}
+
+/* PROGRESS BAR */
+.prog-bar{height:8px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
+.prog-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* STAT CARD */
+.stat-card{background:var(--surface);border-radius:var(--radius);padding:24px;text-align:center;border:1px solid rgba(51,65,85,.5);transition:transform .2s}
+.stat-card:hover{transform:translateY(-3px)}
+.stat-num{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:13px;color:var(--text2);margin-top:4px}
+.stat-sub{font-size:11px;color:var(--text3);margin-top:2px}
+
+/* COUNTDOWN */
+.countdown{font-size:48px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.countdown-label{font-size:14px;color:var(--text2);margin-top:4px}
+
+/* STUDENT CARD */
+.student-card{background:var(--surface);border-radius:var(--radius);padding:20px;border:1px solid rgba(51,65,85,.5);transition:transform .2s}
+.student-card:hover{transform:translateY(-2px)}
+.student-card.priority{border-left:3px solid var(--red)}
+.student-name{font-size:18px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.bar-label{font-size:11px;color:var(--text3);min-width:70px}
+.bar-row .prog-bar{flex:1}
+.bar-val{font-size:12px;font-weight:600;min-width:36px;text-align:right}
+.insight{font-style:italic;font-size:13px;color:var(--text2);margin:10px 0;padding-left:12px;border-left:2px solid var(--surface2)}
+
+/* COURSE CARD */
+.course-card{background:var(--surface);border-radius:var(--radius);padding:24px;border:1px solid rgba(51,65,85,.5);transition:transform .2s}
+.course-card:hover{transform:translateY(-2px)}
+
+/* DECISIONS */
+.decision-row{padding:14px 0;border-bottom:1px solid rgba(51,65,85,.3);display:flex;gap:12px}
+.decision-num{font-weight:800;color:var(--accent);min-width:28px;font-size:18px}
+.decision-text strong{display:block;margin-bottom:2px}
+.decision-text span{font-size:13px;color:var(--text2)}
+
+/* STATUS */
+.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.status-col h3{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.status-item{padding:10px 0;border-bottom:1px solid rgba(51,65,85,.2);font-size:14px;display:flex;gap:8px;align-items:flex-start}
+.status-icon{font-size:16px;flex-shrink:0;line-height:1.4}
+.owner-badge{font-size:11px;padding:2px 8px;border-radius:999px;font-weight:600}
+.owner-akshit{background:rgba(59,130,246,.15);color:#60a5fa}
+.owner-tripti{background:rgba(168,85,247,.15);color:#c084fc}
+.owner-ilma{background:rgba(34,197,94,.15);color:#4ade80}
+
+/* BUG CARD */
+.bug-card{background:var(--surface);border-radius:var(--radius);padding:20px;border:1px solid rgba(51,65,85,.5);margin-bottom:12px}
+.bug-card.critical{border-left:3px solid var(--red)}
+.bug-card.high{border-left:3px solid var(--yellow)}
+.bug-card.medium{border-left:3px solid var(--accent)}
+.bug-card.low{border-left:3px solid var(--text3)}
+.bug-id{font-family:monospace;font-size:12px;color:var(--text3);background:var(--surface2);padding:2px 8px;border-radius:4px;display:inline-block;margin:2px}
+.bug-header{display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.bug-title{font-weight:700;font-size:16px}
+.bug-time{font-size:12px;color:var(--text3);background:var(--surface2);padding:3px 10px;border-radius:999px}
+
+/* FILE TREE */
+.file-item{padding:8px 0;border-bottom:1px solid rgba(51,65,85,.2);font-size:13px;display:flex;align-items:center;gap:8px}
+.file-icon{color:var(--accent);font-size:14px}
+.file-name{font-family:'SF Mono',SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;color:var(--text)}
+.file-desc{font-size:12px;color:var(--text2);margin-left:auto}
+
+/* SEQUENCE */
+.seq-visual{display:flex;align-items:center;gap:0;justify-content:center;margin:20px 0;flex-wrap:wrap}
+.seq-box{padding:14px 24px;border-radius:var(--radius-sm);font-weight:700;font-size:14px;text-align:center}
+.seq-arrow{font-size:24px;color:var(--text3);margin:0 8px}
+
+/* SECTION */
+.section-title{font-size:22px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.section-sub{font-size:14px;color:var(--text2);margin-bottom:20px}
+
+/* SEARCH */
+.search-input{width:100%;padding:12px 16px 12px 40px;background:var(--surface);border:1px solid var(--surface2);border-radius:var(--radius-sm);color:var(--text);font-size:14px;outline:none;transition:border-color .2s}
+.search-input:focus{border-color:var(--accent)}
+.search-wrap{position:relative;margin-bottom:20px}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text3)}
+
+/* FRQ ERROR LIST */
+.frq-error{font-size:13px;color:var(--text2);padding:6px 0;border-bottom:1px solid rgba(51,65,85,.2);display:flex;gap:8px;align-items:flex-start}
+.frq-error::before{content:'\2717';color:var(--red);font-weight:700;flex-shrink:0}
+
+/* SKILL INDICATOR */
+.skill-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:600}
+.skill-critical{background:rgba(239,68,68,.15);color:#f87171}
+.skill-weak{background:rgba(245,158,11,.15);color:#fbbf24}
+.skill-ok{background:rgba(34,197,94,.15);color:#4ade80}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .grid-3,.status-grid{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .grid-2,.grid-3,.grid-4,.status-grid{grid-template-columns:1fr}
+  .nav-tab{padding:12px 14px;font-size:13px}
+  .container{padding:16px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-tab active" data-tab="overview">Overview</div>
+    <div class="nav-tab" data-tab="courses">Courses</div>
+    <div class="nav-tab" data-tab="students">Students</div>
+    <div class="nav-tab" data-tab="qc">QC Findings</div>
+    <div class="nav-tab" data-tab="decisions">Decisions</div>
+    <div class="nav-tab" data-tab="status">Status</div>
+    <div class="nav-tab" data-tab="files">Files</div>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- ==================== OVERVIEW ==================== -->
+<div class="tab-content active" id="tab-overview">
+  <div style="text-align:center;margin-bottom:32px">
+    <h1 style="font-size:36px;font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AP Human Geography: Complete Project Handover</h1>
+    <p style="font-size:16px;color:var(--text2)">5 Courses &middot; 10 Students &middot; Exam: May 5, 2026 &middot; Handed over by Tripti Khetan</p>
+    <div style="margin-top:20px">
+      <div class="countdown" id="countdown-days">--</div>
+      <div class="countdown-label">days until AP Human Geography Exam (May 5, 2026)</div>
+    </div>
+  </div>
+
+  <!-- Stats row -->
+  <div class="grid-4" style="margin-bottom:24px">
+    <div class="stat-card">
+      <div class="stat-num">5</div>
+      <div class="stat-label">Courses Specified</div>
+      <div class="stat-sub">3 built, 1 spec only, 1 deferred</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">229</div>
+      <div class="stat-label">Questions Built</div>
+      <div class="stat-sub">104 + 69 + 56 MCQ, 6 FRQ</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">10</div>
+      <div class="stat-label">Students Analyzed</div>
+      <div class="stat-sub">4 priority interventions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Deep Analysis Reports</div>
+      <div class="stat-sub">Ground reality to build specs</div>
+    </div>
+  </div>
+
+  <!-- The Problem -->
+  <div class="card" style="margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">The Problem</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
+      <strong style="color:var(--text)">FRQ determines the AP score</strong> &mdash; every student with AP 5 had FRQ &ge;77%, every 1-3 had FRQ &le;63%. The recognition-retrieval gap is devastating: <strong style="color:var(--yellow)">Branson scored 88% on topic quizzes but only 24% on FRQs &mdash; a 64-point collapse.</strong> Students recognize content in isolation but can't retrieve and apply it when topics mix.
+    </p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:16px">
+      <strong style="color:var(--text)">3 FRQ failure patterns identified:</strong> definitional imprecision, concept confusion, missing causal reasoning.
+    </p>
+    <div class="card-sm" style="border-left:3px solid var(--yellow);margin-bottom:0">
+      <p style="font-size:14px;font-weight:600;color:var(--yellow);margin-bottom:4px">Key Insight</p>
+      <p style="font-size:14px;color:var(--text)">Population/DTM and Boundaries are the most predictable FRQ topics (tested 5 of 6 years and 4 of 6 years respectively). <strong>1-2 of 3 FRQs will be from Units 2 or 4 = 7-14 of 21 FRQ points.</strong></p>
+    </div>
+  </div>
+
+  <!-- What We Built -->
+  <div class="card" style="margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--accent)">What We Built</h2>
+    <div class="grid-2" style="gap:12px">
+      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+        <span class="badge badge-yellow">FIXES NEEDED</span>
+        <div><strong>MC1: DTM Application</strong><br><span style="font-size:13px;color:var(--text2)">104 MCQ + 3 FRQ, QC'd, bugs documented</span></div>
+      </div>
+      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+        <span class="badge badge-green">READY</span>
+        <div><strong>MC2: Boundary Types</strong><br><span style="font-size:13px;color:var(--text2)">69 MCQ + 3 FRQ</span></div>
+      </div>
+      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+        <span class="badge badge-yellow">NEEDS CHANGES</span>
+        <div><strong>MC3: Centripetal/Migration</strong><br><span style="font-size:13px;color:var(--text2)">56 questions, needs adjustments</span></div>
+      </div>
+      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+        <span class="badge badge-red">NOT STARTED</span>
+        <div><strong>B1: Mixed-Topic Practice Tests</strong><br><span style="font-size:13px;color:var(--text2)">120 stimulus items, 4 tests &mdash; spec written</span></div>
+      </div>
+      <div class="card-sm" style="display:flex;align-items:center;gap:12px">
+        <span class="badge badge-gray">DEFERRED</span>
+        <div><strong>B6: Skill 2 Spatial</strong><br><span style="font-size:13px;color:var(--text2)">Wait for R2 results</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3-Layer Framework -->
+  <div class="card" style="margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;color:var(--purple)">3-Layer Learning Framework</h2>
+    <div class="grid-3" style="gap:12px">
+      <div class="card-sm" style="border-top:3px solid var(--accent)">
+        <p style="font-weight:700;margin-bottom:6px">Layer 1: Core Knowledge</p>
+        <p style="font-size:13px;color:var(--text2)">Can student define terms precisely and recall models?</p>
+        <p style="font-size:12px;color:var(--text3);margin-top:8px">Gus is stuck here</p>
+      </div>
+      <div class="card-sm" style="border-top:3px solid var(--yellow)">
+        <p style="font-weight:700;margin-bottom:6px">Layer 2: Disciplinary Moves</p>
+        <p style="font-size:13px;color:var(--text2)">Can student apply frameworks to novel scenarios?</p>
+        <p style="font-size:12px;color:var(--text3);margin-top:8px">Branson, Sydney, Zayen are here</p>
+      </div>
+      <div class="card-sm" style="border-top:3px solid var(--green)">
+        <p style="font-weight:700;margin-bottom:6px">Layer 3: Exam Technique</p>
+        <p style="font-size:13px;color:var(--text2)">Can student manage time and allocate points across FRQ parts?</p>
+        <p style="font-size:12px;color:var(--text3);margin-top:8px">Sydney also has Layer 3 issues</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- What Was Given -->
+  <div class="card" style="margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px">What Was Given to Akshit/Ilma</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="card-sm">Build specs for all 5 courses (ilma_build_specs_s4.md)</div>
+      <div class="card-sm">MC1 fix list with exact item IDs</div>
+      <div class="card-sm">Student intervention plans</div>
+      <div class="card-sm">8 deep analysis reports</div>
+    </div>
+  </div>
+
+  <!-- Question Bank Issues -->
+  <div class="card" style="margin-bottom:16px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">Question Bank Issues Found</h2>
+    <div class="grid-4" style="gap:12px">
+      <div class="card-sm" style="text-align:center">
+        <div style="font-size:28px;font-weight:800;color:var(--red)">27.3%</div>
+        <div style="font-size:12px;color:var(--text2)">of items are 4-choice<br>(exam is 5-choice only)</div>
+      </div>
+      <div class="card-sm" style="text-align:center">
+        <div style="font-size:28px;font-weight:800;color:var(--red)">42.5%</div>
+        <div style="font-size:12px;color:var(--text2)">Answer A bias<br>(expected 20%)</div>
+      </div>
+      <div class="card-sm" style="text-align:center">
+        <div style="font-size:28px;font-weight:800;color:var(--yellow)">24.4%</div>
+        <div style="font-size:12px;color:var(--text2)">Stimulus coverage<br>(target 30-40%)</div>
+      </div>
+      <div class="card-sm" style="text-align:center">
+        <div style="font-size:28px;font-weight:800;color:var(--yellow)">522/546</div>
+        <div style="font-size:12px;color:var(--text2)">items lack<br>feedback text</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Where We Left Off -->
+  <div class="card">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--green)">Where We Left Off</h2>
+    <div class="grid-2" style="gap:16px">
+      <div>
+        <p style="font-weight:600;margin-bottom:8px;color:var(--green)">Done</p>
+        <ul style="font-size:13px;color:var(--text2);list-style:none;padding:0">
+          <li style="padding:4px 0">S3 review, MC1/MC2/MC3 built</li>
+          <li style="padding:4px 0">QC completed, fix docs written</li>
+          <li style="padding:4px 0">Student plans, 8 analysis reports</li>
+          <li style="padding:4px 0">Build specs, dashboards</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-weight:600;margin-bottom:8px;color:var(--yellow)">Pending</p>
+        <ul style="font-size:13px;color:var(--text2);list-style:none;padding:0">
+          <li style="padding:4px 0">Apply MC1 bug fixes (7 broken answer keys &mdash; 10 min)</li>
+          <li style="padding:4px 0">Deploy MC1/MC2/MC3</li>
+          <li style="padding:4px 0">Build B1 practice tests</li>
+          <li style="padding:4px 0">Monitor student progress</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== COURSES ==================== -->
+<div class="tab-content" id="tab-courses">
+  <h2 class="section-title">Courses</h2>
+  <p class="section-sub">5 courses specified for AP Human Geography Sprint 4. 3 built, 1 spec only, 1 deferred.</p>
+  <div id="courses-container"></div>
+</div>
+
+<!-- ==================== STUDENTS ==================== -->
+<div class="tab-content" id="tab-students">
+  <h2 class="section-title">Students</h2>
+  <p class="section-sub">10 students analyzed. 4 priority interventions highlighted in red.</p>
+
+  <div class="search-wrap">
+    <span class="search-icon">&#128269;</span>
+    <input class="search-input" id="student-search" placeholder="Search students..." oninput="filterStudents()">
+  </div>
+
+  <div id="students-container" class="grid-2"></div>
+</div>
+
+<!-- ==================== QC FINDINGS ==================== -->
+<div class="tab-content" id="tab-qc">
+  <h2 class="section-title" style="color:var(--red)">QC Findings &mdash; MC1 DTM Application</h2>
+  <p class="section-sub">Critical bugs that must be fixed before deploying MC1 to students.</p>
+
+  <div id="qc-bugs"></div>
+
+  <div class="card" style="margin-top:24px">
+    <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;color:var(--yellow)">Question Bank Systemic Issues</h3>
+    <div class="grid-2" style="gap:12px">
+      <div class="card-sm">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-weight:600">4-Choice Items</span>
+          <span class="badge badge-red">27.3%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:27.3%;background:var(--red)"></div></div>
+        <p style="font-size:12px;color:var(--text3);margin-top:6px">149 of 546 items. AP exam uses 5 choices only.</p>
+      </div>
+      <div class="card-sm">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-weight:600">Answer A Bias</span>
+          <span class="badge badge-red">42.5%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:42.5%;background:var(--red)"></div></div>
+        <p style="font-size:12px;color:var(--text3);margin-top:6px">Expected 20%. Over 2x bias toward answer A.</p>
+      </div>
+      <div class="card-sm">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-weight:600">Stimulus Coverage</span>
+          <span class="badge badge-yellow">24.4%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:24.4%;background:var(--yellow)"></div></div>
+        <p style="font-size:12px;color:var(--text3);margin-top:6px">Target 30-40%. Many stand-alone items.</p>
+      </div>
+      <div class="card-sm">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-weight:600">Skill 4 (Source Analysis)</span>
+          <span class="badge badge-red">6.2%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:6.2%;background:var(--red)"></div></div>
+        <p style="font-size:12px;color:var(--text3);margin-top:6px">Target 13-20%. Critically underrepresented.</p>
+      </div>
+      <div class="card-sm" style="grid-column:span 2">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+          <span style="font-weight:600">Items Missing Feedback Text</span>
+          <span class="badge badge-yellow">522 / 546</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:95.6%;background:var(--yellow)"></div></div>
+        <p style="font-size:12px;color:var(--text3);margin-top:6px">95.6% of items have no feedback text for students.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== DECISIONS ==================== -->
+<div class="tab-content" id="tab-decisions">
+  <h2 class="section-title">Key Decisions</h2>
+  <p class="section-sub">10 strategic decisions guiding the AP HuGeo intervention plan.</p>
+  <div class="card" id="decisions-container"></div>
+</div>
+
+<!-- ==================== STATUS ==================== -->
+<div class="tab-content" id="tab-status">
+  <h2 class="section-title">Project Status</h2>
+  <div style="text-align:center;margin-bottom:24px">
+    <div class="countdown" id="countdown-days-2">--</div>
+    <div class="countdown-label">days until AP Human Geography Exam (May 5, 2026)</div>
+  </div>
+
+  <div class="status-grid" id="status-container"></div>
+</div>
+
+<!-- ==================== FILES ==================== -->
+<div class="tab-content" id="tab-files">
+  <h2 class="section-title">File Inventory</h2>
+  <p class="section-sub">Complete listing of deliverables and analysis documents.</p>
+  <div id="files-container"></div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+// ==================== DATA ====================
+
+const COURSES = [
+  {
+    name: "MC1: DTM Application",
+    id: "s4-r2-mc1-5ff6309d",
+    status: "QC'd \u2014 BUGS NEED FIXING",
+    statusColor: "yellow",
+    mcq: 104, frq: 3, xp: 330, hours: 5.5,
+    stimulus: "39%",
+    students: "Gus, Branson, Sydney + 4 others (7 total)",
+    topics: ["2.1 Population Distribution", "2.3 Demographic Measures", "2.4 DTM Stages", "2.5 DTM Outcomes", "2.8 Population Policies", "2.9 Women & Demographic Change"],
+    bugs: "7 questions with NO correct answer, Mini MCQ has zero unique questions (all duplicates), FRQ title typo, Topics 2.8/2.9 need 6 more questions each"
+  },
+  {
+    name: "MC2: Boundary Types",
+    id: "s4-r2-mc2-bf633a64",
+    status: "READY",
+    statusColor: "green",
+    mcq: 69, frq: 3, xp: 224, hours: 3.7,
+    stimulus: "32%",
+    students: "Branson, Gus, Sydney + 3 others (6+ total)",
+    topics: ["4.4 Types of Boundaries", "4.5 International Boundary Disputes", "4.6 Internal Boundaries"],
+    bugs: "None critical"
+  },
+  {
+    name: "MC3: Centripetal/Migration",
+    id: "s4-r2-mc3-a673e09c",
+    status: "NEEDS CHANGES",
+    statusColor: "yellow",
+    mcq: 56, frq: 0, xp: 0, hours: 0,
+    stimulus: "\u2014",
+    students: "Branson, Zayen",
+    topics: ["2.10 Causes of Migration", "2.11 Effects of Migration", "4.10 Centripetal & Centrifugal Forces"],
+    bugs: "Built but needs content adjustments"
+  },
+  {
+    name: "B1: Mixed-Topic Practice Tests",
+    id: "not-built",
+    status: "SPEC ONLY \u2014 NOT STARTED",
+    statusColor: "red",
+    mcq: 120, frq: 0, xp: 0, hours: 0,
+    stimulus: "High (target)",
+    students: "Branson, Zayen, Grady, Luca",
+    topics: ["4 practice tests of 30 items each", "Mixed topics, all stimulus-based", "Targets the recognition-retrieval gap"],
+    bugs: "Not built yet. Spec: build_specs/hugeo_b1_mixed_topic_practice_tests.md"
+  },
+  {
+    name: "B6: Skill 2 Spatial",
+    id: "deferred",
+    status: "DEFERRED",
+    statusColor: "gray",
+    mcq: "15-20", frq: 0, xp: 0, hours: 0,
+    stimulus: "Map/chart focused",
+    students: "Zayen, Gus",
+    topics: ["Spatial reasoning practice", "Map and chart interpretation"],
+    bugs: "Deferred until after R2 results"
+  }
+];
+
+const STUDENTS = [
+  {
+    name: "Gus Castillo", score: 1, mcq: 48, frq: 43.8, priority: true,
+    tbMcq: 51, tbFrq: 37.5, completion: 54,
+    weakSkills: [{skill:"Skill 2 (Spatial)",val:"25%",status:"CRITICAL"}],
+    insight: "Foundational gaps across all layers. DTM accuracy 38.5%. Hasn't started Units 5-7. Needs Layer 1 content remediation.",
+    diagnosis: "Layer 1 problem \u2014 doesn't KNOW the content.",
+    target: "Score 3. MCQ to 65%+, FRQ to 50%+.",
+    path: "MC1 DTM \u2192 MC2 Boundaries \u2192 B1 Practice Tests",
+    frqErrors: ["Cannot define DTM stages precisely", "Applies wrong models to scenarios", "Only 54% course completion \u2014 hasn't seen half the content"]
+  },
+  {
+    name: "Branson Pfiester", score: 2, mcq: 63, frq: 24, priority: true,
+    tbMcq: 76, tbFrq: 24, completion: 100,
+    weakSkills: [{skill:"Skill 3 (Data)",val:"43%",status:"WEAK"},{skill:"Recognition-Retrieval",val:"64pt gap",status:"CRITICAL"}],
+    insight: "32-point recognition-retrieval gap. 88% topic quizzes \u2192 24% FRQ. Confused centripetal/centrifugal with push/pull migration. Has double time SSD.",
+    diagnosis: "Layer 2 problem \u2014 RECOGNIZES content but can't RETRIEVE when topics mix.",
+    target: "Score 4+. MCQ to 75%+, FRQ to 50%+.",
+    path: "MC1 DTM \u2192 MC2 Boundaries \u2192 MC3 Centripetal \u2192 B1 Practice Tests",
+    frqErrors: ["Zero-score topics: DTM, Women & Demographic Change, Aging Populations, Von Th\u00fcnen", "Confused centripetal/centrifugal with push/pull migration (different frameworks)", "100% completion but only 24% FRQ \u2014 did the work but didn't learn it"]
+  },
+  {
+    name: "Sydney Barba", score: 3, mcq: 65, frq: 46.7, priority: true,
+    tbMcq: 65, tbFrq: 53, completion: 46,
+    weakSkills: [{skill:"Model Application",val:"Weak",status:"WEAK"}],
+    insight: "Misapplied DTM to South Africa (Stage 2 with 'low birth rates' \u2014 wrong). Only 46% completion. FRQ dropped from 53% TB to 17% under timed conditions (46.7% after regrade).",
+    diagnosis: "Layer 2 \u2014 knows vocabulary but applies to wrong scenarios. Layer 3 \u2014 collapses under timed conditions.",
+    target: "Score 4+. FRQ from 46.7% to 60%+.",
+    path: "MC1 DTM \u2192 MC2 Boundaries",
+    frqErrors: ["Misapplied DTM to South Africa", "Confused antecedent with subsequent boundaries", "Listed DTM indicators instead of explaining transitions"]
+  },
+  {
+    name: "Zayen Szpitalak", score: 3, mcq: 68, frq: 56.3, priority: true,
+    tbMcq: 71, tbFrq: 56.3, completion: 57,
+    weakSkills: [{skill:"Skill 2 (Spatial)",val:"42%",status:"WEAK"},{skill:"Mixed-context",val:"29pt gap",status:"WEAK"}],
+    insight: "Strong topic knowledge (81%) but 29-point gap on mixed-context assessments. Most achievable jump to 4-5. Hasn't covered Agriculture, Cities, or Economic Development.",
+    diagnosis: "Mixed Layer 1 + Layer 2 \u2014 topics strong but mixed-context retrieval weak.",
+    target: "Score 4-5. Most achievable jump in cohort.",
+    path: "MC3 Centripetal \u2192 B1 Practice Tests",
+    frqErrors: ["Spatial reasoning (Skill 2) at 42%", "52% on end-of-unit assessments vs 81% on topic quizzes"]
+  },
+  { name: "Ali Romman", score: 5, mcq: 68, frq: 81.3, priority: false, insight: "Strong. FRQ 81.3%.", weakSkills:[] },
+  { name: "Benny Valles", score: 5, mcq: 67, frq: 100, priority: false, insight: "Strong. Perfect FRQ.", weakSkills:[] },
+  { name: "Adrienne Laswell", score: 4, mcq: 77, frq: 81.3, priority: false, insight: "Strong across all areas.", weakSkills:[] },
+  { name: "Austin Lin", score: 4, mcq: 75, frq: 67, priority: false, insight: "Solid performer.", weakSkills:[] },
+  { name: "Luca Sanchez", score: 4, mcq: 57, frq: 82, priority: false, insight: "Surprise improvement. Low MCQ but strong FRQ.", weakSkills:[] },
+  { name: "Grady Swanson", score: 4, mcq: 70, frq: 68.8, priority: false, insight: "Moderate. Could improve FRQ.", weakSkills:[] }
+];
+
+const BUGS = [
+  {
+    id: "BUG-2", severity: "critical", time: "10 min fix", title: "7 Questions with NO Correct Answer",
+    desc: "All choices set to isCorrect: false. Confirmed broken on live course.",
+    items: ["pcb-item-ea384068","pcb-item-e618c9f1","pcb-item-26999226","pcb-item-b893c849","pcb-item-fe1dfdee","pcb-item-666e9578","pcb-item-10e8ce26"]
+  },
+  {
+    id: "BUG-5", severity: "critical", time: "15 min", title: "Mini MCQ Quiz Has Zero Unique Questions",
+    desc: "All 18 items are duplicates of topic quiz questions. Zero new mixed-topic practice.",
+    items: []
+  },
+  {
+    id: "BUG-1", severity: "high", time: "20 min", title: "4 Questions with Possibly Missing Stimuli",
+    desc: "Some may be false positives \u2014 check live course first.",
+    items: []
+  },
+  {
+    id: "BUG-3", severity: "medium", time: "1 min", title: "FRQ Title Typo",
+    desc: '"Practice Excercise" \u2192 "Practice Exercise"',
+    items: []
+  },
+  {
+    id: "FIX-2", severity: "medium", time: "5 min", title: '"Carrying Capacity" Choice Has Typo + Will Break if Randomized',
+    desc: "Choice text formatting issue that will malfunction with answer randomization.",
+    items: []
+  },
+  {
+    id: "FIX-6/7", severity: "high", time: "30 min", title: "Topics 2.8 & 2.9 Need 6 More Questions Each",
+    desc: "Currently underrepresented. Need 12 additional questions total for adequate coverage.",
+    items: []
+  }
+];
+
+const DECISIONS = [
+  {num:1, decision:"Population/DTM and Boundaries courses first", rationale:"Most predictable FRQ topics (5/6 and 4/6 years). 7-14 of 21 FRQ points."},
+  {num:2, decision:"LEARN \u2192 CHECK \u2192 PP100 \u2192 APPLY structure for all courses", rationale:"Proven from HuGeo MC1/MC2. Same universal structure."},
+  {num:3, decision:"All questions must be 5-choice (A-E)", rationale:"149 legacy 4-choice items found. AP HuGeo exam uses 5 choices."},
+  {num:4, decision:"AP Classroom as primary question source", rationale:"Currently 56% AP Classroom (target 70%+). Most aligned with exam."},
+  {num:5, decision:"B6 Skill 2 Spatial deferred", rationale:"Wait for R2 results to see if MC1/MC2/MC3 address spatial reasoning gaps."},
+  {num:6, decision:"B1 Mixed-Topic Practice Tests after MC courses", rationale:"Addresses recognition-retrieval gap directly. Branson: 88% topic \u2192 24% FRQ."},
+  {num:7, decision:"FRQ grading regrade for Sydney and Zayen", rationale:"Original grading used wrong denominator (/21 instead of /16). Regrades show higher actual scores."},
+  {num:8, decision:"3-Layer Framework for diagnosis", rationale:"Layer 1 (Content) \u2192 Layer 2 (Disciplinary Moves) \u2192 Layer 3 (Exam Technique). Different students at different layers."},
+  {num:9, decision:"Branson gets double time SSD", rationale:"His weakness is content retrieval, not time. But accommodation must be honored."},
+  {num:10, decision:"Content decisions are Tripti's. Akshit/Ilma execute.", rationale:"Same as AP World. Don't improvise on content."}
+];
+
+const STATUS_DONE = [
+  "S3 practice exam analysis (10 students)",
+  "MC1 DTM course built and QC'd (104 MCQ + 3 FRQ)",
+  "MC2 Boundary Types course built (69 MCQ + 3 FRQ)",
+  "MC3 Centripetal/Migration course built (56 questions)",
+  "Fix docs with exact item IDs for Akshit",
+  "Student intervention plans (Gus, Branson, Sydney, Zayen)",
+  "8 deep analysis reports",
+  "S4 build specs for Ilma (7 builds specified)",
+  "Interactive QC dashboard (mc1_qc_dashboard.html)",
+  "906 questions extracted from prep books (Barron's + Princeton)",
+  "S3 review for Eric"
+];
+
+const STATUS_PENDING = [
+  {task:"Apply MC1 bug fixes (7 broken answers)", owner:"Akshit", time:"10 min", priority:"HIGH"},
+  {task:"Replace Mini MCQ duplicates", owner:"Akshit", time:"15 min", priority:"HIGH"},
+  {task:"Deploy MC1 to students", owner:"Akshit", time:"after fixes", priority:"HIGH"},
+  {task:"Deploy MC2 and MC3", owner:"Akshit", time:"\u2014", priority:"MEDIUM"},
+  {task:"Build B1 Mixed-Topic Practice Tests (spec written)", owner:"Ilma", time:"5-7 days", priority:"MEDIUM"},
+  {task:"Monitor student progress post-deployment", owner:"Akshit", time:"ongoing", priority:"LOW"},
+  {task:"B6 Skill 2 Spatial", owner:"deferred", time:"\u2014", priority:"LOW"}
+];
+
+const FILES = [
+  {cat:"Analysis Reports", items:[
+    {name:"hugeo_ground_reality.md", desc:"Baseline student performance analysis"},
+    {name:"hugeo_comprehensive_review.md", desc:"Full course and content review"},
+    {name:"hugeo_frq_structure_analysis.md", desc:"FRQ scoring patterns and failure modes"},
+    {name:"hugeo_mcq_analysis.md", desc:"MCQ item quality and distribution analysis"},
+    {name:"hugeo_gap_analysis.md", desc:"Student knowledge gap mapping"},
+    {name:"hugeo_prep_book_review_barrons.md", desc:"Barron's prep book item extraction (571 items)"},
+    {name:"hugeo_prep_book_review_princeton.md", desc:"Princeton Review item extraction (335 items)"},
+    {name:"hugeo_new_layers_proposal.md", desc:"3-Layer learning framework proposal"}
+  ]},
+  {cat:"Build Specs", items:[
+    {name:"ilma_build_specs_s4.md", desc:"Master build specs for all 5 courses"},
+    {name:"hugeo_b1_mixed_topic_practice_tests.md", desc:"B1 practice test spec (120 items, 4 tests)"},
+    {name:"hugeo_mc1_fix_list.md", desc:"MC1 bug fixes with exact item IDs"},
+    {name:"hugeo_mc3_changes.md", desc:"MC3 content adjustment requirements"}
+  ]},
+  {cat:"Student Plans", items:[
+    {name:"student_plan_gus.md", desc:"Gus Castillo intervention plan"},
+    {name:"student_plan_branson.md", desc:"Branson Pfiester intervention plan"},
+    {name:"student_plan_sydney.md", desc:"Sydney Barba intervention plan"},
+    {name:"student_plan_zayen.md", desc:"Zayen Szpitalak intervention plan"}
+  ]},
+  {cat:"Dashboards", items:[
+    {name:"mc1_qc_dashboard.html", desc:"Interactive MC1 QC review dashboard"},
+    {name:"hugeo_dashboard.html", desc:"This handover dashboard"}
+  ]},
+  {cat:"Course Exports", items:[
+    {name:"s4-r2-mc1-5ff6309d/", desc:"MC1 DTM Application course files"},
+    {name:"s4-r2-mc2-bf633a64/", desc:"MC2 Boundary Types course files"},
+    {name:"s4-r2-mc3-a673e09c/", desc:"MC3 Centripetal/Migration course files"}
+  ]}
+];
+
+// ==================== RENDER ====================
+
+function getScoreColor(s) {
+  if(s>=5) return 'var(--green)';
+  if(s>=4) return 'var(--accent)';
+  if(s>=3) return 'var(--yellow)';
+  return 'var(--red)';
+}
+
+function getScoreBadge(s) {
+  const cls = s>=5?'badge-green':s>=4?'badge-blue':s>=3?'badge-yellow':'badge-red';
+  return `<span class="badge ${cls}">AP ${s}</span>`;
+}
+
+function getStatusBadge(color, text) {
+  return `<span class="badge badge-${color}">${text}</span>`;
+}
+
+function renderCourses() {
+  const c = document.getElementById('courses-container');
+  c.innerHTML = COURSES.map(course => `
+    <div class="course-card" style="margin-bottom:16px;${course.statusColor==='red'?'border-left:3px solid var(--red)':course.statusColor==='yellow'?'border-left:3px solid var(--yellow)':course.statusColor==='green'?'border-left:3px solid var(--green)':'border-left:3px solid var(--text3)'}">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+        <div>
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:4px">${course.name}</h3>
+          <span style="font-size:12px;color:var(--text3);font-family:monospace">${course.id}</span>
+        </div>
+        ${getStatusBadge(course.statusColor, course.status)}
+      </div>
+
+      <div class="grid-4" style="gap:12px;margin-bottom:16px">
+        <div class="card-sm" style="text-align:center">
+          <div style="font-size:24px;font-weight:800;color:var(--accent)">${course.mcq}</div>
+          <div style="font-size:11px;color:var(--text3)">MCQ</div>
+        </div>
+        <div class="card-sm" style="text-align:center">
+          <div style="font-size:24px;font-weight:800;color:var(--purple)">${course.frq}</div>
+          <div style="font-size:11px;color:var(--text3)">FRQ</div>
+        </div>
+        <div class="card-sm" style="text-align:center">
+          <div style="font-size:24px;font-weight:800;color:var(--green)">${course.xp}</div>
+          <div style="font-size:11px;color:var(--text3)">XP</div>
+        </div>
+        <div class="card-sm" style="text-align:center">
+          <div style="font-size:24px;font-weight:800;color:var(--yellow)">${course.stimulus}</div>
+          <div style="font-size:11px;color:var(--text3)">Stimulus</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:12px">
+        <p style="font-size:12px;color:var(--text3);margin-bottom:6px">TOPICS</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          ${course.topics.map(t => `<span class="badge badge-blue">${t}</span>`).join('')}
+        </div>
+      </div>
+
+      <div style="margin-bottom:12px">
+        <p style="font-size:12px;color:var(--text3);margin-bottom:4px">ASSIGNED TO</p>
+        <p style="font-size:13px;color:var(--text2)">${course.students}</p>
+      </div>
+
+      ${course.hours ? `<p style="font-size:12px;color:var(--text3)">Estimated time: ${course.hours} hours</p>` : ''}
+
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(51,65,85,.3)">
+        <p style="font-size:12px;color:var(--text3);margin-bottom:4px">ISSUES / NOTES</p>
+        <p style="font-size:13px;color:${course.statusColor==='green'?'var(--text3)':'var(--yellow)'}">${course.bugs}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderStudents() {
+  const c = document.getElementById('students-container');
+  c.innerHTML = STUDENTS.map(s => {
+    const isPriority = s.priority;
+    const hasDetail = !!s.diagnosis;
+
+    let html = `<div class="student-card ${isPriority?'priority':''}" data-name="${s.name.toLowerCase()}">`;
+    html += `<div class="student-name">${s.name} ${getScoreBadge(s.score)} ${isPriority?'<span class="badge badge-red">PRIORITY</span>':''}</div>`;
+
+    // Score bars
+    html += `
+      <div class="bar-row">
+        <span class="bar-label">MCQ</span>
+        <div class="prog-bar"><div class="prog-fill" style="width:${s.mcq}%;background:${s.mcq>=70?'var(--green)':s.mcq>=55?'var(--yellow)':'var(--red)'}"></div></div>
+        <span class="bar-val">${s.mcq}%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">FRQ</span>
+        <div class="prog-bar"><div class="prog-fill" style="width:${s.frq}%;background:${s.frq>=70?'var(--green)':s.frq>=50?'var(--yellow)':'var(--red)'}"></div></div>
+        <span class="bar-val">${s.frq}%</span>
+      </div>`;
+
+    if(s.completion !== undefined) {
+      html += `
+      <div class="bar-row">
+        <span class="bar-label">Completion</span>
+        <div class="prog-bar"><div class="prog-fill" style="width:${s.completion}%;background:${s.completion>=80?'var(--green)':s.completion>=50?'var(--yellow)':'var(--red)'}"></div></div>
+        <span class="bar-val">${s.completion}%</span>
+      </div>`;
+    }
+
+    // TB scores if available
+    if(s.tbMcq !== undefined) {
+      html += `<div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap">
+        <span class="badge badge-blue">TB MCQ: ${s.tbMcq}%</span>
+        <span class="badge badge-purple">TB FRQ: ${s.tbFrq}%</span>
+      </div>`;
+    }
+
+    // Weak skills
+    if(s.weakSkills && s.weakSkills.length) {
+      html += `<div style="display:flex;gap:6px;flex-wrap:wrap;margin:8px 0">`;
+      s.weakSkills.forEach(sk => {
+        const cls = sk.status==='CRITICAL'?'skill-critical':'skill-weak';
+        html += `<span class="skill-tag ${cls}">${sk.skill}: ${sk.val}</span>`;
+      });
+      html += `</div>`;
+    }
+
+    html += `<div class="insight">${s.insight}</div>`;
+
+    if(hasDetail) {
+      html += `
+        <div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(51,65,85,.3)">
+          <p style="font-size:12px;color:var(--text3);margin-bottom:4px">DIAGNOSIS</p>
+          <p style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:8px">${s.diagnosis}</p>
+
+          <p style="font-size:12px;color:var(--text3);margin-bottom:4px">TARGET</p>
+          <p style="font-size:13px;color:var(--green);margin-bottom:8px">${s.target}</p>
+
+          <p style="font-size:12px;color:var(--text3);margin-bottom:4px">LEARNING PATH</p>
+          <p style="font-size:13px;color:var(--accent);margin-bottom:12px">${s.path}</p>
+        </div>`;
+
+      if(s.frqErrors && s.frqErrors.length) {
+        html += `<div style="margin-top:8px">
+          <p style="font-size:12px;color:var(--text3);margin-bottom:6px">FRQ ERROR PATTERNS</p>`;
+        s.frqErrors.forEach(e => {
+          html += `<div class="frq-error">${e}</div>`;
+        });
+        html += `</div>`;
+      }
+    }
+
+    html += `</div>`;
+    return html;
+  }).join('');
+}
+
+function filterStudents() {
+  const q = document.getElementById('student-search').value.toLowerCase();
+  document.querySelectorAll('.student-card').forEach(card => {
+    card.style.display = card.dataset.name.includes(q) ? '' : 'none';
+  });
+}
+
+function renderBugs() {
+  const c = document.getElementById('qc-bugs');
+  c.innerHTML = BUGS.map(b => {
+    let sevClass = b.severity;
+    let sevBadge = b.severity==='critical'?'badge-red':b.severity==='high'?'badge-yellow':'badge-blue';
+    let html = `<div class="bug-card ${sevClass}">
+      <div class="bug-header">
+        <span class="badge ${sevBadge}">${b.severity.toUpperCase()}</span>
+        <span class="bug-title">${b.id}: ${b.title}</span>
+        <span class="bug-time">${b.time}</span>
+      </div>
+      <p style="font-size:13px;color:var(--text2);margin-bottom:8px">${b.desc}</p>`;
+    if(b.items.length) {
+      html += `<div style="display:flex;flex-wrap:wrap;gap:4px">`;
+      b.items.forEach(item => { html += `<span class="bug-id">${item}</span>`; });
+      html += `</div>`;
+    }
+    html += `</div>`;
+    return html;
+  }).join('');
+}
+
+function renderDecisions() {
+  const c = document.getElementById('decisions-container');
+  c.innerHTML = DECISIONS.map(d => `
+    <div class="decision-row">
+      <div class="decision-num">${d.num}</div>
+      <div class="decision-text">
+        <strong>${d.decision}</strong>
+        <span>${d.rationale}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderStatus() {
+  const c = document.getElementById('status-container');
+  let doneHtml = STATUS_DONE.map(d => `
+    <div class="status-item">
+      <span class="status-icon" style="color:var(--green)">\u2713</span>
+      <span>${d}</span>
+    </div>
+  `).join('');
+
+  let pendingHtml = STATUS_PENDING.map(p => {
+    const priBadge = p.priority==='HIGH'?'badge-red':p.priority==='MEDIUM'?'badge-yellow':'badge-gray';
+    const ownerCls = p.owner==='Akshit'?'owner-akshit':p.owner==='Ilma'?'owner-ilma':'owner-tripti';
+    return `<div class="status-item">
+      <span class="status-icon" style="color:var(--yellow)">\u25CB</span>
+      <div style="flex:1">
+        <div>${p.task}</div>
+        <div style="display:flex;gap:6px;margin-top:4px;flex-wrap:wrap">
+          <span class="owner-badge ${ownerCls}">${p.owner}</span>
+          <span class="badge ${priBadge}">${p.priority}</span>
+          ${p.time!=='\u2014'?`<span style="font-size:11px;color:var(--text3)">${p.time}</span>`:''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  c.innerHTML = `
+    <div class="card" style="grid-column:span 2">
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:var(--green)">\u2713 Done (${STATUS_DONE.length} items)</h3>
+      ${doneHtml}
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:var(--yellow)">\u25CB Pending (${STATUS_PENDING.length} items)</h3>
+      ${pendingHtml}
+    </div>
+  `;
+}
+
+function renderFiles() {
+  const c = document.getElementById('files-container');
+  c.innerHTML = FILES.map(cat => {
+    let itemsHtml = cat.items.map(f => `
+      <div class="file-item">
+        <span class="file-icon">\u{1F4C4}</span>
+        <span class="file-name">${f.name}</span>
+        <span class="file-desc">${f.desc}</span>
+      </div>
+    `).join('');
+    return `
+      <div class="card" style="margin-bottom:16px">
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:12px">${cat.cat}</h3>
+        ${itemsHtml}
+      </div>
+    `;
+  }).join('');
+}
+
+// ==================== COUNTDOWN ====================
+function updateCountdown() {
+  const exam = new Date('2026-05-05T00:00:00');
+  const now = new Date();
+  const diff = Math.ceil((exam - now) / (1000*60*60*24));
+  const text = diff > 0 ? diff : (diff === 0 ? 'TODAY' : 'PASSED');
+  document.getElementById('countdown-days').textContent = text;
+  const el2 = document.getElementById('countdown-days-2');
+  if(el2) el2.textContent = text;
+}
+
+// ==================== TAB SWITCHING ====================
+document.querySelectorAll('.nav-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// ==================== INIT ====================
+renderCourses();
+renderStudents();
+renderBugs();
+renderDecisions();
+renderStatus();
+renderFiles();
+updateCountdown();
+setInterval(updateCountdown, 60000);
+</script>
+</body>
+</html>
