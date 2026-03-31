@@ -166,75 +166,167 @@ a:hover{text-decoration:underline}
 <!-- ==================== OVERVIEW ==================== -->
 <div class="tab-content active" id="tab-overview">
   <div style="text-align:center;margin-bottom:32px">
-    <h1 style="font-size:36px;font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">AP Human Geography: Complete Project Handover</h1>
-    <p style="font-size:16px;color:var(--text2)">5 Courses &middot; 10 Students &middot; Exam: May 5, 2026 &middot; Handed over by Tripti Khetan</p>
+    <h1 style="font-size:32px;font-weight:800;margin-bottom:8px">AP Human Geography: Complete Project Handover</h1>
+    <p style="font-size:15px;color:var(--text2)">Tripti Khetan &rarr; Exam: May 5, 2026</p>
     <div style="margin-top:20px">
       <div class="countdown" id="countdown-days">--</div>
-      <div class="countdown-label">days until AP Human Geography Exam (May 5, 2026)</div>
+      <div class="countdown-label">days until exam</div>
     </div>
   </div>
 
-  <!-- The Problem -->
+  <!-- WHAT IS THIS PROJECT -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--accent)">What This Project Is</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">Targeted intervention for AP Human Geography students at Alpha Schools. We ran S3 practice exams on 10 students in February 2026, diagnosed exactly where each student was failing, and built mini-courses to fix those specific gaps before the May 5 exam. The goal: every assigned student scores 4 or 5.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-top:8px">All content decisions, student analysis, build specs, fix docs, and student plans were done by Tripti. Engineering builds on the Timeback/PowerPath LMS platform. <strong style="color:var(--text)">Tripti's part is done.</strong> What remains is engineering execution and student monitoring.</p>
+  </div>
+
+  <!-- WHAT WE FOUND: THE PROBLEM -->
   <div class="card" style="margin-bottom:16px;border-left:4px solid var(--red)">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--red)">The Problem</h2>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
-      <strong style="color:var(--text)">FRQ determines the AP score</strong> &mdash; every student with AP 5 had FRQ &ge;77%, every 1-3 had FRQ &le;63%. The recognition-retrieval gap is devastating: <strong style="color:var(--yellow)">Branson scored 88% on topic quizzes but only 24% on FRQs</strong> &mdash; a 64-point collapse. Students recognize content in isolation but can&rsquo;t retrieve and apply when topics mix.
-    </p>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8">
-      <strong style="color:var(--text)">3 FRQ failure patterns:</strong> definitional imprecision, concept confusion, missing causal reasoning.
-    </p>
-  </div>
-
-  <!-- Spiky POVs -->
-  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--purple)">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:6px;color:var(--purple)">High-Level Insights &mdash; What Will Move Student Scores Fastest</h2>
-    <p style="font-size:13px;color:var(--text3);margin-bottom:14px">These insights drove every course design decision. They explain WHY we built what we built.</p>
-    <div style="display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--text2);line-height:1.7">
-      <div style="padding:10px 14px;background:rgba(168,85,247,.06);border-radius:8px"><strong style="color:var(--text)">1. The course was structurally misaligned with the exam &mdash; fix the format, not just the content.</strong> 27.3% of questions were 4-choice in a 5-choice exam. Answer A was correct 42.5% of the time. Stimulus coverage was 24.4% vs 30-40% target. Students practiced on a format that doesn't match the exam. The mini-courses correct all three. This is the fastest lever.</div>
-      <div style="padding:10px 14px;background:rgba(168,85,247,.06);border-radius:8px"><strong style="color:var(--text)">2. The recognition-retrieval gap is the diagnosis &mdash; not "students don't study enough."</strong> Branson did 100% of the course. Topic quizzes 88%. FRQ 24%. That's not a motivation problem &mdash; it's an encoding problem. The course produced recognition without retrieval. The fix is changing the format of practice (mixed-context, production-based), not adding more content. This is why B1 (mixed-topic practice tests) is critical.</div>
-      <div style="padding:10px 14px;background:rgba(168,85,247,.06);border-radius:8px"><strong style="color:var(--text)">3. Three FRQ failure patterns are systematic and each has a specific course that fixes it.</strong> (1) Definitional imprecision &rarr; MC1 teaches DTM with real country data, not just definitions. (2) Concept confusion (centripetal vs push/pull) &rarr; MC3 compares them side-by-side. (3) Missing causal reasoning &rarr; all courses end with real CollegeBoard FRQs that require "explain WHY." Target these three patterns and scores jump.</div>
-      <div style="padding:10px 14px;background:rgba(168,85,247,.06);border-radius:8px"><strong style="color:var(--text)">4. Topic quiz scores above 80% provide false confidence.</strong> End-of-unit assessments, not topic quizzes, are the valid readiness signal. When topics shuffle together, scores collapse 25-32 points. Early units (U1-U4) are the least consolidated. Don't be fooled by high topic quiz numbers.</div>
-      <div style="padding:10px 14px;background:rgba(168,85,247,.06);border-radius:8px"><strong style="color:var(--text)">5. MCQ practice alone cannot produce a 5 &mdash; the 3-Layer Framework.</strong> Layer 1 (Content) = MCQs. Layer 2 (Apply to novel scenarios) = FRQs. Layer 3 (Time management, exam technique) = timed practice. A student strong on Layer 1 but untrained on Layers 2-3 will score 2-3. The S3 cohort avg: 66% MCQ, 56% FRQ, 3.6 AP score. That's Layer 1 without Layers 2-3.</div>
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--red)">What We Found &mdash; The S3 Diagnosis</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px"><strong style="color:var(--text)">FRQ performance determines the AP score, not MCQ.</strong> Every student who scored 5 had FRQ at or above 77%. Every student who scored 1-3 had FRQ at or below 63%. MCQ scores between 65-78% were spread across AP scores 1 through 4 &mdash; MCQ does not discriminate at the top.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px"><strong style="color:var(--text)">The recognition-retrieval gap is the central diagnosis.</strong> Students look strong on topic quizzes but collapse when topics mix. Branson: 88% topic quizzes &rarr; 56% unit assessments &rarr; 24% FRQ. That's a <strong style="color:var(--red)">64-point collapse</strong> from recognition to production. Zayen: 81% &rarr; 52% (29-point gap). This isn't a motivation problem. Branson completed 100% of the course. It's an encoding problem &mdash; the course produced recognition without retrieval.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8"><strong style="color:var(--text)">Three specific FRQ failure patterns:</strong></p>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px">
+      <div class="card-sm" style="border-left:2px solid var(--red)"><strong style="font-size:13px">1. Definitional Imprecision</strong><p style="font-size:12px;color:var(--text3);margin-top:4px">Branson: "top city in a hierarchy" for primate city &mdash; missed the 2x population criterion. Students recognize terms but can't produce precise AP-level definitions.</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--red)"><strong style="font-size:13px">2. Concept Confusion</strong><p style="font-size:12px;color:var(--text3);margin-top:4px">Branson confused centripetal/centrifugal with push/pull migration &mdash; completely different frameworks. Sydney confused antecedent with subsequent boundaries.</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--red)"><strong style="font-size:13px">3. Missing Causal Reasoning</strong><p style="font-size:12px;color:var(--text3);margin-top:4px">Gus: "high fertility rate" without explaining WHY (economic incentives, contraception access, cultural norms). Students state facts but don't explain mechanisms.</p></div>
     </div>
-    <p style="margin-top:12px"><a href="https://workflowy.com/#/78eef4d45f68" target="_blank" style="font-size:13px;color:var(--accent);font-weight:600">&#128279; Full Workflowy Brain Dump &rarr;</a></p>
   </div>
 
-  <!-- Key Insight -->
+  <!-- WHY THE BASE COURSE WASN'T ENOUGH -->
   <div class="card" style="margin-bottom:16px;border-left:4px solid var(--yellow)">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:12px;color:var(--yellow)">Key Insight</h2>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">
-      <strong style="color:var(--text)">Population/DTM and Boundaries are the two most predictable FRQ topics.</strong> DTM appeared 5 of 6 years (2019&ndash;2024). Boundaries appeared 4 of 6 years. 2024 tested BOTH.
-    </p>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8">
-      <strong style="color:var(--text)">1&ndash;2 of 3 FRQs come from Units 2 or 4 = 7&ndash;14 of 21 FRQ points.</strong> This is backward design &mdash; target highest-frequency content first.
-    </p>
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--yellow)">Why the Base Course Wasn't Enough</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">The PowerPath AP HuGeo course students were using had three structural problems that explain the S3 results. These aren't nitpicks &mdash; they're measurable gaps between what students practiced and what the exam actually tests. The mini-courses exist to close these gaps.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:8px">
+      <div class="card-sm" style="border-left:2px solid var(--yellow)"><strong style="color:var(--yellow);font-size:24px">27.3%</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">of questions were 4-choice. AP HuGeo is exclusively 5-choice (A-E). Answer A was correct 42.5% of the time (expected 20%). Students trained on the wrong format.</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--yellow)"><strong style="color:var(--yellow);font-size:24px">24.4%</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">stimulus coverage vs 30-40% on the real exam. The exam groups 18-24 MCQs behind maps, charts, data tables. Students who haven't practiced reading stimuli are underprepared.</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--yellow)"><strong style="color:var(--yellow);font-size:24px">6.2%</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">Skill 4 (Source Analysis) &mdash; target is 13-20%. The course overindexed on concept recall (Skill 1 at 42.5%) and underindexed on the analytical skills FRQs actually test.</p></div>
+    </div>
+    <p style="font-size:13px;color:var(--text3)">The mini-courses correct all three: 5-choice only, 32-39% stimulus coverage, CED-aligned skill distribution. This is the fastest lever for score improvement.</p>
   </div>
 
-  <!-- Why MC1, MC2, MC3 -->
+  <!-- THE PLAN: WHAT WE BUILT AND WHY -->
   <div class="card" style="margin-bottom:16px;border-left:4px solid var(--green)">
-    <h2 style="font-size:20px;font-weight:700;margin-bottom:8px;color:var(--green)">Why These Courses &mdash; What Makes Them Relevant</h2>
-    <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:14px">Units 2 (Population/DTM) and 4 (Boundaries) together make up <strong style="color:var(--text)">24-34% of the AP exam</strong>. At least 1 of 3 FRQs every year tests content from these units &mdash; that's 7 points, a third of the entire FRQ section. 62% of our students are below 80% on Unit 4. 50% are below 80% on Unit 2. These courses give students targeted practice on the exact topics most likely to appear.</p>
-    <div style="display:flex;flex-direction:column;gap:12px">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--green)">The Plan &mdash; What We Built and Why</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px"><strong style="color:var(--text)">Population/DTM and Boundaries are the two most predictable FRQ topics on the AP HuGeo exam.</strong> DTM appeared 5 of 6 years (2019-2024). Boundaries appeared 4 of 6 years. 2024 tested BOTH. Units 2+4 = 24-34% of the exam. At least 1 of 3 FRQs every year comes from these units &mdash; that's 7 points, a third of the entire FRQ section. 62% of our students are below 80% on Unit 4. 50% are below 80% on Unit 2. This is backward design &mdash; target the highest-frequency, highest-weight content first.</p>
+
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:12px">
       <div class="card-sm" style="border-left:3px solid var(--green)">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><p style="font-weight:700;color:var(--text)">MC1: DTM Application</p><span class="badge badge-green">DELIVERED Mar 19</span></div>
-        <p style="font-size:13px;color:var(--text2);line-height:1.7">DTM is THE most tested model (5/6 years). Gus at 38.5% DTM accuracy. Sydney misapplied DTM to South Africa (placed it in Stage 2 with "low birth rates" &mdash; wrong). 104 MCQ + 3 real CollegeBoard released FRQs with official scoring rubrics. All AP Classroom questions, 5-choice, 39% stimulus coverage. Assigned to 7 students. Email sent March 19.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><strong>MC1: DTM Application</strong><span class="badge badge-green">DELIVERED Mar 19</span></div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">DTM is THE most tested model. Gus at 38.5% DTM accuracy. Sydney misapplied DTM to South Africa. 104 MCQ + 3 real CollegeBoard released FRQs. All 5-choice, 39% stimulus coverage. Assigned to 7 students.</p>
       </div>
       <div class="card-sm" style="border-left:3px solid var(--green)">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><p style="font-weight:700;color:var(--text)">MC2: Boundary Types</p><span class="badge badge-green">DELIVERED Mar 19</span></div>
-        <p style="font-size:13px;color:var(--text2);line-height:1.7">Boundaries tested 4/6 years (2024 tested BOTH DTM and boundaries). Sydney confused antecedent with subsequent boundaries. Branson confused centripetal/centrifugal with push/pull. 69 MCQ + 3 FRQs, 32% stimulus coverage. Assigned to 6+ students including Austin Lin and Ali Romman (added after Phase 3 data).</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><strong>MC2: Boundary Types</strong><span class="badge badge-green">DELIVERED Mar 19</span></div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Boundaries tested 4/6 years. Sydney confused antecedent/subsequent. Branson confused centripetal/centrifugal with push/pull. 69 MCQ + 3 FRQs, 32% stimulus coverage. Assigned to 6+ students.</p>
       </div>
       <div class="card-sm" style="border-left:3px solid var(--yellow)">
-        <p style="font-weight:700;color:var(--text);margin-bottom:4px">MC3: Centripetal/Migration</p>
-        <p style="font-size:13px;color:var(--text2);line-height:1.7">Directly addresses Branson&rsquo;s centripetal/centrifugal vs push/pull confusion (completely different frameworks mixed up). Zayen&rsquo;s migration gaps. 56 questions. Built, needs changes before deployment.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><strong>MC3: Centripetal/Migration</strong><span class="badge badge-yellow">BUILT &mdash; NEEDS CHANGES</span></div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">Directly addresses Branson's centripetal/centrifugal confusion and Zayen's migration gaps. 56 questions. Built, needs content adjustments before deployment.</p>
       </div>
       <div class="card-sm" style="border-left:3px solid var(--red)">
-        <p style="font-weight:700;color:var(--text);margin-bottom:4px">B1: Mixed-Topic Practice Tests</p>
-        <p style="font-size:13px;color:var(--text2);line-height:1.7">The most critical remaining build. Addresses the recognition-retrieval gap directly &mdash; 120 stimulus items with topics shuffled together. When topics mix, scores collapse 25-32 points. This is the practice that closes that gap. Spec written, not started. 5-7 days to build.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><strong>B1: Mixed-Topic Practice Tests</strong><span class="badge badge-red">SPEC ONLY</span></div>
+        <p style="font-size:13px;color:var(--text2);line-height:1.7">The most critical remaining build. 120 stimulus items, topics shuffled. Directly targets the recognition-retrieval gap &mdash; when topics mix, scores collapse 25-32 points. Spec written, 5-7 days to build.</p>
       </div>
+    </div>
+    <p style="font-size:13px;color:var(--text3)">All courses follow LEARN &rarr; CHECK &rarr; PP100 &rarr; APPLY structure. All 5-choice, CED-tagged, AP Classroom primary source.</p>
+  </div>
+
+  <!-- S3 SCORES: THE STUDENT OUTCOMES -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--accent)">S3 Student Outcomes &mdash; Where Each Student Stands</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:12px">10 students tested. Avg MCQ: 66.3%, Avg FRQ: 56.2%, Avg AP Score: 3.6. Four students need targeted intervention:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div class="card-sm" style="border-left:2px solid var(--red)"><strong>Gus Castillo &mdash; AP: 1</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">MCQ 48%, FRQ 43.8%. DTM accuracy 38.5%. Only 54% course completion. Foundational gaps &mdash; doesn't know the content. Needs Layer 1 remediation. &rarr; MC1 + MC2</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--red)"><strong>Branson Pfiester &mdash; AP: 2</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">MCQ 63%, FRQ 24%. 64-point recognition-retrieval collapse (88% topic &rarr; 24% FRQ). Confused centripetal with push/pull. SSD double time. &rarr; MC1 + MC2 + MC3 + B1</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--yellow)"><strong>Sydney Barba &mdash; AP: 3</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">MCQ 65%, FRQ 46.7% (regraded). Misapplied DTM to South Africa. Only 46% completion. Collapses under timed conditions. &rarr; MC1 + MC2</p></div>
+      <div class="card-sm" style="border-left:2px solid var(--yellow)"><strong>Zayen Szpitalak &mdash; AP: 3</strong><p style="font-size:12px;color:var(--text2);margin-top:4px">MCQ 68%, FRQ 56.3%. Strong topic knowledge (81%) but 29-point mixed-context gap. Hasn't covered Agriculture, Cities, or Economic Dev. Most achievable 4-5. &rarr; MC3 + B1</p></div>
+    </div>
+    <p style="font-size:13px;color:var(--text3)">6 other students scored 3-5: Ali (5), Benny (5), Adrienne (4), Austin (4), Luca (4), Grady (4). See the Students tab for full data.</p>
+  </div>
+
+  <!-- KEY INSIGHT: 3-LAYER FRAMEWORK -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--purple)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--purple)">Why MCQ Practice Alone Can't Produce a 5 &mdash; The 3-Layer Framework</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px">
+      <div class="card-sm" style="text-align:center"><strong style="color:var(--green)">Layer 1</strong><br><span style="font-size:13px;color:var(--text2)">Core Knowledge</span><p style="font-size:12px;color:var(--text3);margin-top:4px">Can they define terms precisely? MCQs test this. Topic quizzes build this. Necessary but insufficient.</p></div>
+      <div class="card-sm" style="text-align:center"><strong style="color:var(--accent)">Layer 2</strong><br><span style="font-size:13px;color:var(--text2)">Disciplinary Moves</span><p style="font-size:12px;color:var(--text3);margin-top:4px">Can they apply frameworks to novel data? FRQs test this. The base course had almost no Layer 2 practice.</p></div>
+      <div class="card-sm" style="text-align:center"><strong style="color:var(--purple)">Layer 3</strong><br><span style="font-size:13px;color:var(--text2)">Exam Technique</span><p style="font-size:12px;color:var(--text3);margin-top:4px">Can they manage time and allocate points? Untested until B1 (mixed-topic practice tests) ships.</p></div>
+    </div>
+    <p style="font-size:13px;color:var(--text2)">S3 cohort: avg MCQ 66%, avg FRQ 56%, avg AP score 3.6. That's Layer 1 without Layers 2-3. A student strong on Layer 1 but untrained on Layers 2-3 will score 2-3.</p>
+  </div>
+
+  <!-- WHAT IS DONE -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--green)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--green)">What Is Done (Tripti's Part)</h2>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      &#10003; S3 practice exam analysis for all 10 students<br>
+      &#10003; Per-student CED skill breakdowns, FRQ grading, error coding<br>
+      &#10003; Individual student intervention plans (Gus, Branson, Sydney, Zayen)<br>
+      &#10003; MC1 DTM course built, QC'd, and delivered (104 MCQ + 3 FRQ) &mdash; March 19<br>
+      &#10003; MC2 Boundary Types built and delivered (69 MCQ + 3 FRQ) &mdash; March 19<br>
+      &#10003; MC3 Centripetal/Migration built (56 questions) &mdash; needs changes<br>
+      &#10003; MC1 bug fix doc with exact item IDs written and delivered<br>
+      &#10003; S4 build specs written for all 7 builds (3 HIGH, 3 MEDIUM, 1 DEFERRED)<br>
+      &#10003; 8 deep analysis reports (ground reality, gap analysis, prep book comparison, FRQ structure, etc.)<br>
+      &#10003; Student assignment brief emailed to leadership &mdash; March 19<br>
+      &#10003; Interactive QC dashboard built<br>
+      &#10003; S3 review written and shared<br>
+      &#10003; Assignment rules defined: below 70% U2 &rarr; MC1, below 70% U4 &rarr; MC2, FRQ below 50% &rarr; both
     </div>
   </div>
 
-  <!-- Base Course Issues -->
+  <!-- EMAIL TO ERIC -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--accent)">Email Sent &mdash; March 19, 2026</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:8px">Deployment email sent to leadership confirming MC1 + MC2 ready to assign. Student assignments included. The email explained why these topics specifically (Units 2+4 = 24-34% of exam, at least 1 FRQ every year), what's ready (MC1: 104 MCQ + 3 FRQ, MC2: 69 MCQ + 3 FRQ, combined ~9.2 hours), and who gets what (7 students on MC1, 6+ on MC2, individual notes per student).</p>
+    <p><a href="https://docs.google.com/document/d/1lEJXs-Yt1UfTtaGPR_a3_XQrUfs2M0diBAKuo4xj8PE/edit" target="_blank" style="font-size:14px;font-weight:600">&#128279; Student Assignment Brief (Google Doc) &rarr;</a></p>
+  </div>
+
+  <!-- WHAT'S LEFT -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--yellow)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--yellow)">What's Left &mdash; Remaining Work</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:12px">All content decisions, specs, fix docs, and student plans are done. The remaining work is engineering execution:</p>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <span class="badge badge-red" style="margin-right:4px">HIGH</span> Apply MC1 bug fixes &mdash; 7 questions with no correct answer marked (10 min)<br>
+      <span class="badge badge-red" style="margin-right:4px">HIGH</span> Replace Mini MCQ quiz &mdash; all 18 items are duplicates, zero unique questions (15 min)<br>
+      <span class="badge badge-yellow" style="margin-right:4px">MEDIUM</span> Deploy MC3 after content adjustments<br>
+      <span class="badge badge-yellow" style="margin-right:4px">MEDIUM</span> Build B1 Mixed-Topic Practice Tests &mdash; spec is written, 5-7 days to build<br>
+      <span class="badge badge-gray" style="margin-right:4px">ONGOING</span> Monitor student progress post-deployment
+    </div>
+  </div>
+
+  <!-- NOTE FOR NEXT PERSON -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--purple)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--purple)">Note: Consider Updating to AP World Structure</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">The AP World History project developed a better content structure after these HuGeo courses were built. In World History, each topic has: Heimler video &rarr; article with bold key terms, College Board callout boxes, key terms list, and 5 note-taking prompts &rarr; 6 MCQs &rarr; FRQ. The HuGeo course articles are dense compared to this. If time allows before exam day, updating HuGeo content to match the World History structure would improve student engagement &mdash; shorter articles, more visual scaffolding, explicit College Board tips, note-taking prompts that bridge between topics.</p>
+  </div>
+
+  <!-- BRAIN DUMP LINK -->
+  <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--accent)">Full Brain Dump &mdash; All the Thinking Behind This</h2>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">The complete Brainlift for this project documents all the thinking, data analysis, spicy takes, and raw facts that informed every decision. It covers exam architecture, S3 diagnostics, question bank audit, prep book comparison, released FRQ analysis (2019-2024), 10 must-know models, student assignment rules, and the 3-Layer Framework.</p>
+    <p style="margin-top:8px"><a href="https://workflowy.com/#/78eef4d45f68" target="_blank" style="font-size:14px;font-weight:600">&#128279; Open Workflowy Brain Dump &rarr;</a></p>
+  </div>
+
+  <!-- KEY DATES -->
+  <div class="card" style="border-left:4px solid var(--text3)">
+    <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--text2)">Key Dates</h2>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <strong>S3 Practice Exam:</strong> February 2026 (10 students tested)<br>
+      <strong>MC1 + MC2 delivered:</strong> March 19, 2026<br>
+      <strong>Email to leadership:</strong> March 19, 2026<br>
+      <strong>S4 Build Review Report:</strong> March 7, 2026<br>
+      <strong style="color:var(--yellow)">AP Human Geography Exam: May 5, 2026</strong>
+    </div>
+  </div>
+</div>
+
+<!-- Spacer before courses -->
+<div style="height:1px"></div>
+
+<!-- Base Course Issues (kept for QC tab reference) -->
+<div style="display:none">
   <div class="card" style="margin-bottom:16px;border-left:4px solid rgba(239,68,68,.5)">
     <h2 style="font-size:20px;font-weight:700;margin-bottom:8px;color:var(--red)">Why Students Need More Practice &mdash; The Base Course Issues</h2>
     <p style="font-size:13px;color:var(--text3);margin-bottom:12px">The AP HuGeo base course on PowerPath had structural problems that explain the S3 results. These aren't quality complaints &mdash; they're measurable alignment gaps between the practice environment and the exam. The mini-courses exist because the base course wasn't enough.</p>
