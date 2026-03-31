@@ -152,11 +152,9 @@ a:hover{text-decoration:underline}
 <nav class="nav">
   <div class="nav-inner">
     <div class="nav-tab active" data-tab="overview">Overview</div>
+    <div class="nav-tab" data-tab="research">Research & Decisions</div>
     <div class="nav-tab" data-tab="courses">Courses</div>
     <div class="nav-tab" data-tab="students">Students</div>
-    <div class="nav-tab" data-tab="qc">QC & Docs</div>
-    <div class="nav-tab" data-tab="decisions">Decisions</div>
-    <div class="nav-tab" data-tab="status">Status</div>
     <div class="nav-tab" data-tab="files">Files</div>
   </div>
 </nav>
@@ -377,57 +375,108 @@ a:hover{text-decoration:underline}
   <div id="students-container" class="grid-2"></div>
 </div>
 
-<!-- ==================== QC FINDINGS ==================== -->
-<div class="tab-content" id="tab-qc">
-  <h2 class="section-title">QC &amp; Documentation</h2>
-  <p class="section-sub">QC was completed. Fix docs and analysis reports were written and delivered. Here's what exists.</p>
+<!-- ==================== RESEARCH & DECISIONS ==================== -->
+<div class="tab-content" id="tab-research">
+  <h2 class="section-title">Research, Insights &amp; Decisions</h2>
+  <p class="section-sub">All the deep research that informed course design. What we found, why we made the decisions we made, and the plan behind everything.</p>
 
-  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--green)">
-    <h3 style="color:var(--green);margin-bottom:12px">QC Completed &mdash; Fix Doc Delivered March 19</h3>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8">MC1 was QC'd. Issues were found, documented with exact item IDs, and delivered as part of the March 19 handoff. The fix doc (<code>3_Fix_Lists_for_Akshit/mc1_fixes_for_akshit.md</code>) contains every bug with the specific item ID and what to do. Base course structural issues (4-choice items, stimulus coverage gaps, skill distribution imbalance) were documented in the analysis reports.</p>
+  <!-- THE PLAN -->
+  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--accent)">
+    <h3 style="color:var(--accent);margin-bottom:10px">The Plan &mdash; Why We Built What We Built</h3>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-bottom:10px"><strong style="color:var(--text)">Backward design from 6 years of released exam data.</strong> Population/DTM appeared 5/6 years. Boundaries 4/6 years. 2024 tested both. Units 2+4 = 24-34% of the exam. We targeted the highest-frequency content first, built courses with real CollegeBoard FRQs, fixed the base course's structural misalignment (wrong choice count, low stimulus, wrong skill distribution), and designed mixed-topic practice to close the recognition-retrieval gap.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8"><strong style="color:var(--text)">Assignment rules are diagnostic:</strong> Below 70% on Unit 2 triggers MC1. Below 70% on Unit 4 triggers MC2. FRQ below 50% triggers both. Expanded beyond S3 at-risk list after Phase 3 data showed more students below thresholds.</p>
   </div>
 
-  <div class="card" style="margin-bottom:16px">
-    <h3 style="margin-bottom:12px">Documents Written</h3>
-    <div style="font-size:14px;color:var(--text2);line-height:2">
-      &#10003; <code>mc1_fixes_for_akshit.md</code> &mdash; Bug fixes with exact item IDs<br>
-      &#10003; <code>mc1_comprehensive_review.md</code> &mdash; Full course review<br>
-      &#10003; <code>mc1_frq_structure_review.md</code> &mdash; FRQ format analysis<br>
-      &#10003; <code>mcq_deep_analysis.md</code> &mdash; Question quality, skill distribution, difficulty<br>
-      &#10003; <code>gap_analysis_s4_vs_real_exam.md</code> &mdash; Course vs exam alignment<br>
-      &#10003; <code>ap_hugeo_ground_reality.md</code> &mdash; Independent exam architecture research<br>
-      &#10003; <code>prep_books_content_review.md</code> &mdash; Barron's + Princeton comparison<br>
-      &#10003; <code>prep_books_deep_dive.md</code> &mdash; 906 questions extracted and analyzed<br>
-      &#10003; <code>student_plans_mc1.md</code> &mdash; Per-student intervention plans<br>
-      &#10003; <code>ilma_build_specs_s4.md</code> &mdash; S4 build specifications (7 builds)<br>
-      &#10003; <code>mc1_qc_dashboard.html</code> &mdash; Interactive QC dashboard
+  <!-- WHAT WE FOUND -->
+  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--purple)">
+    <h3 style="color:var(--purple);margin-bottom:10px">What We Found &mdash; Key Insights</h3>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--text2);line-height:1.7">
+      <div class="card-sm"><strong style="color:var(--text)">FRQ determines the AP score.</strong> Every AP 5 had FRQ &ge;77%. Every 1-3 had FRQ &le;63%. MCQ doesn't discriminate at the top.</div>
+      <div class="card-sm"><strong style="color:var(--text)">Recognition-retrieval gap is the central diagnosis.</strong> Branson: 88% topic &rarr; 24% FRQ (64-point collapse). He completed 100% of the course. The course produced recognition without retrieval.</div>
+      <div class="card-sm"><strong style="color:var(--text)">The base course was structurally misaligned.</strong> 27.3% of items were 4-choice (exam is 5-choice). Stimulus coverage 24.4% vs 30-40% target. Skill 4 at 6.2% vs 13-20% target. Students practiced on the wrong format.</div>
+      <div class="card-sm"><strong style="color:var(--text)">Three FRQ failure patterns are systematic.</strong> (1) Definitional imprecision &mdash; can't produce precise AP definitions from scratch. (2) Concept confusion &mdash; mix up centripetal/centrifugal with push/pull. (3) Missing causal reasoning &mdash; state facts without explaining why.</div>
+      <div class="card-sm"><strong style="color:var(--text)">Topic quizzes give false confidence.</strong> End-of-unit assessments are the valid readiness signal. When topics shuffle, scores collapse 25-32 points.</div>
+      <div class="card-sm"><strong style="color:var(--text)">The exam is gettable.</strong> 2025 pass rate rose to 64.7%. 10 must-know models + 5 FRQ verbs = the scaffolding for a 4. The FRQ verb set is small: Define, Describe, Identify, Compare, Explain.</div>
     </div>
   </div>
-</div>
 
-<!-- ==================== DECISIONS ==================== -->
-<div class="tab-content" id="tab-decisions">
-  <h2 class="section-title">Key Decisions</h2>
-  <p class="section-sub">10 strategic decisions guiding the AP HuGeo intervention plan.</p>
-  <div class="card" id="decisions-container"></div>
-</div>
+  <!-- RESEARCH SOURCES -->
+  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--green)">
+    <h3 style="color:var(--green);margin-bottom:10px">Research We Did</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:1.9">
+      <strong style="color:var(--text)">CollegeBoard Released FRQs (2019-2024)</strong><br>
+      <span style="font-size:13px;color:var(--text3)">Every released FRQ mapped by topic/unit. Found DTM 5/6 years, Boundaries 4/6. FRQs cross multiple units in one question. 2024 tested both DTM and boundaries.</span><br><br>
 
-<!-- ==================== STATUS ==================== -->
-<div class="tab-content" id="tab-status">
-  <h2 class="section-title">Project Status</h2>
-  <div style="text-align:center;margin-bottom:24px">
-    <div class="countdown" id="countdown-days-2">--</div>
-    <div class="countdown-label">days until AP Human Geography Exam (May 5, 2026)</div>
+      <strong style="color:var(--text)">Prep Book Analysis &mdash; 906 Questions Extracted</strong><br>
+      <span style="font-size:13px;color:var(--text3)">Barron's 2022/2024 (~585 unique MCQs, 96.5% overlap between editions) + Princeton 15th Ed (267 MCQs). Princeton richer for teaching (2.4x more key terms). Barron's richer for practice (more FRQs). Both have answer bias and low stimulus coverage.</span><br><br>
+
+      <strong style="color:var(--text)">Reddit, AP Community, Teacher Blogs</strong><br>
+      <span style="font-size:13px;color:var(--text3)">DTM universally reported as #1 tested model. Centripetal/push-pull confusion is a known issue across student forums (matches Branson's error). FRQ practice is the #1 recommended study method. Heimler's History is #1 video resource. 2024 Chief Reader: spatial analysis is #1 missed skill nationally.</span><br><br>
+
+      <strong style="color:var(--text)">Independent Exam Architecture Research</strong><br>
+      <span style="font-size:13px;color:var(--text3)">60 MCQ + 3 FRQ, 7 units, 68 topics, 5 CED skills with weight ranges, 8 MCQ question types, stimulus types (maps ~30%, tables ~15%, pyramids ~10%), score conversion tables.</span><br><br>
+
+      <strong style="color:var(--text)">546-Question Bank Audit</strong><br>
+      <span style="font-size:13px;color:var(--text3)">Full audit of all questions across MC1/MC2/MC3/B1. Identified the 4-choice problem, answer A bias, stimulus gap, and skill distribution imbalance that explained S3 results.</span>
+    </div>
+    <p style="margin-top:12px"><a href="https://workflowy.com/#/78eef4d45f68" target="_blank" style="font-size:14px;font-weight:600">&#128279; Full Brain Dump (Workflowy) &rarr;</a></p>
   </div>
 
-  <div class="status-grid" id="status-container"></div>
+  <!-- DECISIONS -->
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:10px">Key Decisions</h3>
+    <div id="decisions-container"></div>
+  </div>
 </div>
 
 <!-- ==================== FILES ==================== -->
 <div class="tab-content" id="tab-files">
-  <h2 class="section-title">File Inventory</h2>
-  <p class="section-sub">All results, insights, and deliverables in the repo. No agents, automation scripts, or internal tooling &mdash; just the work product.</p>
-  <div id="files-container"></div>
+  <h2 class="section-title">All Files in the Repo</h2>
+  <p class="section-sub">Everything uploaded to GitHub &mdash; results, insights, deliverables, data, dashboards. No agents or automation. <a href="https://github.com/triptikhetan-max/ap-hugeo-handover" target="_blank">Open repo &rarr;</a></p>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:10px">Deliverables &amp; Build Specs</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <code>CLAUDE.md</code> &mdash; Master project context (start here)<br>
+      <code>ilma_build_specs_s4.md</code> &mdash; S4 build specifications for all 7 builds<br>
+      <code>build_specs/</code> &mdash; Individual course specs: MC1, MC2, MC3, B1, B6 + README for engineering<br>
+      <code>3_Fix_Lists_for_Akshit/</code> &mdash; Bug fixes with exact item IDs + FRQ additions
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:10px">Analysis &amp; Research Reports</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <code>4_Deep_Analysis_Reports/ap_hugeo_ground_reality.md</code> &mdash; Exam architecture research<br>
+      <code>4_Deep_Analysis_Reports/gap_analysis_s4_vs_real_exam.md</code> &mdash; Course vs exam alignment<br>
+      <code>4_Deep_Analysis_Reports/mc1_comprehensive_review.md</code> &mdash; Full course review<br>
+      <code>4_Deep_Analysis_Reports/mc1_frq_structure_review.md</code> &mdash; FRQ format analysis<br>
+      <code>4_Deep_Analysis_Reports/mcq_deep_analysis.md</code> &mdash; Question quality + skill distribution<br>
+      <code>4_Deep_Analysis_Reports/prep_books_content_review.md</code> &mdash; Barron's vs Princeton<br>
+      <code>4_Deep_Analysis_Reports/prep_books_deep_dive.md</code> &mdash; 906 questions extracted<br>
+      <code>4_Deep_Analysis_Reports/qc_new_layers_proposal.md</code> &mdash; Proposed improvements
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:10px">Student Data &amp; Plans</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <code>s3_review/ap_human_geo_s3_review.md</code> &mdash; Full S3 review (10 students)<br>
+      <code>2_Student_Reports_and_Plans/student_plans_mc1.md</code> &mdash; Per-student intervention plans<br>
+      <code>AP Practice Tests - Feb 2026.xlsx</code> &mdash; Practice exam raw data<br>
+      <code>FRQ Grading.xlsx</code> &mdash; FRQ scoring with feedback<br>
+      <code>AP Practice Test...aphug_final.csv</code> &mdash; MCQ response data
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:10px">Dashboards &amp; QC Reports</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      <code>1_Interactive_Dashboards/mc1_qc_dashboard.html</code> &mdash; Interactive QC dashboard<br>
+      <code>1_Interactive_Dashboards/dashboard.html</code> &mdash; HGSE dashboard<br>
+      <code>qc_reports/</code> &mdash; 56 QC run reports (markdown + JSON, timestamped)
+    </div>
+  </div>
 </div>
 
 </div><!-- /container -->
