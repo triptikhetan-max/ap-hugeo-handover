@@ -930,9 +930,9 @@ document.querySelectorAll('.nav-tab').forEach(tab => {
 // ==================== INIT ====================
 renderCourses();
 renderStudents();
-renderBugs();
+try { renderBugs(); } catch(e) {}
 renderDecisions();
-renderStatus();
+try { renderStatus(); } catch(e) {}
 renderFiles();
 updateCountdown();
 setInterval(updateCountdown, 60000);
