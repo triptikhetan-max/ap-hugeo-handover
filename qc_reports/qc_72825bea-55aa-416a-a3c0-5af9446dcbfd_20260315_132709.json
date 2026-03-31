@@ -1,0 +1,2906 @@
+{
+  "course_id": "72825bea-55aa-416a-a3c0-5af9446dcbfd",
+  "course_title": "AP HuGeo Mini Practice tests",
+  "run_at": "2026-03-15T13:27:09.350355",
+  "summary": {
+    "total_findings": 158,
+    "errors": 10,
+    "warnings": 13,
+    "info": 135,
+    "by_layer": {
+      "L1": 102,
+      "L2": 26,
+      "L4": 7,
+      "L3": 23
+    },
+    "by_check": {
+      "missing_feedback": 102,
+      "uniform_choice_length": 26,
+      "topic_distribution": 1,
+      "skill_distribution": 1,
+      "stimulus_coverage": 1,
+      "source_distribution": 1,
+      "difficulty_distribution": 1,
+      "frq_count": 1,
+      "course_summary": 1,
+      "debatable_answer": 13,
+      "wrong_answer": 6,
+      "misleading_distractor": 4
+    }
+  },
+  "findings": [
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-356cd192-80c9-4308-a966-d9eefef33019",
+        "stem_preview": "If the map was reproduced at the subnational state or provincial scale, as Hawai...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "5.1: Introduction to Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a2f8f6f5-abac-4373-9e90-2134c75cd3eb",
+        "stem_preview": "Which of the following best explains a potential outcome of growing interdepende...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "7.6: Trade and the World Economy",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-579e2c67-02a3-43d6-9ba1-d8743286e822",
+        "stem_preview": "The data on median household income in Table 1 is presented in different",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "1.6: Scales of Analysis",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-dd7deedf-88d2-4a43-afdd-c6861557905b",
+        "stem_preview": "Which of the following countries is experiencing population decline based on the...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a9d092d9-2b80-4e96-b100-5ef5bcbd8803",
+        "stem_preview": "Using the data in Table 2, which of the following terms best describes the media...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "7.1: The Industrial Revolution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2d0b79c7-d92d-4b75-bd62-16a86174926d",
+        "stem_preview": "The map best illustrates which of the following concepts?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.7: Forms of Governance",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3f060cd8-da6c-4651-8537-dcc0375c30ab",
+        "stem_preview": "Using the data in the table, which two countries have HDI scores similar to Cana...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "7.3: Measures of Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-27807749-bee9-4f6a-8ca5-232ea8cf6e1c",
+        "stem_preview": "Which of the following conclusions is best supported by the data shown in the ta...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-48981c24-0196-4da6-9acc-5217b452ebb3",
+        "stem_preview": "The temples shown in the images, combined with the surrounding scenic physical l...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "3.3: Cultural Patterns",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-02a841a5-c4a8-4f5c-9fa6-cab3304b47ed",
+        "stem_preview": "Which of the following best describes the pattern of coffee bean production at t...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "5.1: Introduction to Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3981e6e3-c549-45b6-bb9d-25b0e2493190",
+        "stem_preview": "Which of the following best describes the global distribution of a religion show...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "1.1: Introduction to Maps",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-0c382bbe-78c0-4cd1-b7ce-caada9b52372",
+        "stem_preview": "Which of the following patterns is best illustrated by the Latin American city m...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "6.5: The Internal Structure of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-052565cb-3686-4782-acf5-a9cbcf755584",
+        "stem_preview": "Which of the following types of geographic information is presented in the map?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "5.3: Agricultural Origins and Diffusions",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-65f871e1-fe7c-4973-a950-a9e606975113",
+        "stem_preview": "Which factor is most responsible for the increase in Japan’s dependency ratio?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-c94799ad-7a6b-4267-8b4b-7270ef805ef4",
+        "stem_preview": "Which of the following types of urban land use is most common on the periphery o...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "6.5: The Internal Structure of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-85b4e095-2efd-48c0-b116-e359f78f758d",
+        "stem_preview": "Which of the following principles best describes the quantity of interactions be...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "6.4: The Size and Distribution of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8e0d8e7a-ee8e-4269-ab8f-38eeac2ff2c2",
+        "stem_preview": "According to Christaller’s central place model, which of the following would mos...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "6.4: The Size and Distribution of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-50a70bf9-3a2f-406e-af8e-cef769514a1c",
+        "stem_preview": "The measure of the average number of children who are born to women of childbear...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ee98df2e-dd47-4226-8faa-87c6d25a1683",
+        "stem_preview": "Which of the following best describes an example of expansion diffusion?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "3.4: Types of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-0f46027f-bbca-4db0-82de-c792133fa7a0",
+        "stem_preview": "Which of the following is the best example of creolization?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "3.5: Historical Causes of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-10eb0c9f-0326-40d6-b4f8-6c0c7dd7eff4",
+        "stem_preview": "The Malthusian view of the world argues that",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.6: Malthusian Theory",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ddada372-be9f-48c3-8e6a-cf256acb10bc",
+        "stem_preview": "Which of the following defines the concept of a nation-state?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.1: Introduction to Political Geography",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-29a7be72-b319-4652-86a8-6f3d77d5d778",
+        "stem_preview": "Which of the following is an example of a shatterbelt region?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.3: Political Power and Territoriality",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-67b5b39a-9f2c-446f-8a82-9d69bec84201",
+        "stem_preview": "The boundaries of congressional districts of the United States are",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.6: Internal Boundaries",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-24b8dcc0-879f-479c-9fcc-e7a159865e92",
+        "stem_preview": "Which of the following is the best example of time-space compression?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "1.4: Spatial Concepts",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-03de47e4-7e1b-4b75-9f75-5a994548143d",
+        "stem_preview": "Which of the following best describes a similarity among world cities such as Lo...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "6.3: Cities and Globalization",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2c6f0036-f836-4529-a192-c84771d7fae0",
+        "stem_preview": "Examining the countries shown in white on the map of the former Yugoslavia, whic...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "4.3: Political Power and Territoriality",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3fc4c8ac-0857-4441-bfc2-036850a778b3",
+        "stem_preview": "Which of the following best compares the impacts of global communication technol...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "3.6: Contemporary Causes of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-927b3738-21c5-48ac-b9b4-64d6af23981e",
+        "stem_preview": "Which of the following best describes the information shown on the map?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "4.7: Forms of Governance",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-159d0e14-ae0c-4eeb-b2b7-7f7daa748eae",
+        "stem_preview": "In the model shown, the lines for birth rate, death rate, and total population a...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-644a3419-9267-4108-b94c-b91a9552ae70",
+        "stem_preview": "Which of the following is indicated on the graph?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.11: Challenges of Contemporary Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-29241f3d-b6e4-46ef-87b8-27ff51cda073",
+        "stem_preview": "Based on the information shown in the table, in Canada received the most immigra...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-663b1ec2-e68b-45fe-9805-630cd50f47cc",
+        "stem_preview": "What kind of agriculture is primarily practiced in the dark-shaded areas on the ...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.1: Introduction to Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d96e713f-7d37-4dcd-ad5f-fb0183c251e6",
+        "stem_preview": "What do the states represented above have in common?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "4.7: Forms of Governance",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e1ad4a45-2582-492a-933f-5208a05f83ee",
+        "stem_preview": "This practice is an example of",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "4.3: Political Power and Territoriality",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e9ba5dca-1f3f-440f-9da5-154005189f8d",
+        "stem_preview": "Which of the following explains the limitations of the map shown for identifying...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.1: Introduction to Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ee5cbaba-7da6-4bb0-bcfb-b21d823ca932",
+        "stem_preview": "Source 1 shows transportation-oriented development, an urban design initiative. ...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "6.8: Urban Sustainability",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-731f1b94-7810-49ba-b63c-9517966e0b35",
+        "stem_preview": "Which of the following is the primary reason for the rapid population growth in ...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "6.2: Cities Across the World",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-505ff5c0-a13d-4c07-86de-fba0a9a1df95",
+        "stem_preview": "All of the following were colonized by France EXCEPT",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "3.5: Historical Causes of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d51cc747-b190-4927-a508-8ab2f2ff75df",
+        "stem_preview": "Which of the following is the most often cited environmental benefit of the eat-...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.11: Challenges of Contemporary Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-f289481e-d4bc-441b-97fe-3c16e8c1a749",
+        "stem_preview": "Toponyms in southern California reflect which of the following?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "3.7: Diffusion of Religion and Language",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6eef145d-7389-4810-87c3-076e2db97435",
+        "stem_preview": "Which statement best describes population growth patterns in the world today?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5e0fd409-ab81-4f0d-85e4-c765d94b6b7b",
+        "stem_preview": "Which of the following best explains an impact of the second agricultural revolu...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.4: The Second Agricultural Revolution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-f96b9cca-15b3-47f2-beef-fa4f8cb36f2e",
+        "stem_preview": "In the first decade of the twenty-first century, which of the following countrie...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-cb2161a6-3783-444f-a692-6bda5829bb77",
+        "stem_preview": "The growth associated with the Industrial Revolution is best explained by which ...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "7.1: The Industrial Revolution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4e4c91c2-fd54-424e-95af-e677dff3eedf",
+        "stem_preview": "Which of the following variables has an inverse or negative relationship with th...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "7.3: Measures of Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-75d517cf-a465-4e24-a42d-03d6dba0f5a5",
+        "stem_preview": "In descriptions of interaction between people and the environment, the term “env...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "1.5: Human-Environmental Interaction",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5523b117-93f5-4af5-87a0-0672d924a237",
+        "stem_preview": "Which of the following identifies a composite measure of development?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "7.3: Measures of Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-50d1d709-8bf3-49ba-83b8-079326335534",
+        "stem_preview": "Which of the following measures best indicates the volume or size of a country’s...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "7.3: Measures of Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-73766e6e-a215-405d-afa2-3ca178225c5b",
+        "stem_preview": "Which of the following best describes the spatial concept of absolute location?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "1.4: Spatial Concepts",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e60b9bf4-884c-49c4-9349-2dd0159d6004",
+        "stem_preview": "All of the terms listed could be used to illustrate what concept?",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "1.5: Human-Environmental Interaction",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-03245bd5-8b84-429b-82d8-40ac2f26b173",
+        "stem_preview": "What changes could local governments, businesses, and corporations make to rever...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "2.7: Population Policies",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-080f1974-2de9-4f5e-b692-a17fff98a944",
+        "stem_preview": "Which of the following best compares intensive and extensive agricultural land u...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "5.6: Agricultural Production Regions",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3fde3298-83db-48ff-b6b0-341c56ec817a",
+        "stem_preview": "Table 1 shows that the United States and New York City have similar median house...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "1.6: Scales of Analysis",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-bdf80918-deb9-4541-9fbf-c13b394ed6f3",
+        "stem_preview": "Which of the following best explains a possible limitation of the trends assumed...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-56696b89-bb87-4a0c-8790-46ab0a1b5174",
+        "stem_preview": "Which of the following statements best describes how the epidemiologic transitio...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d491fa22-1f1d-42dc-8b28-5d656a50dac9",
+        "stem_preview": "The GII scores shown in the table are based on which of the following types of d...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "7.3: Measures of Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6b770ddb-a8f7-4ca8-8646-6e523df4297b",
+        "stem_preview": "Staple crops are now globally distributed. Which of the following types of infor...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "5.3: Agricultural Origins and Diffusions",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8f4fca74-95e3-4fe4-8a50-b757783bf742",
+        "stem_preview": "What do the maps indicate regarding the political geography of the Aegean Sea?",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.5: The Function of Political Boundaries",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-772ee300-cb9f-4ca5-85a0-4b329908976c",
+        "stem_preview": "Which of the following best describes the locations where staple crops, such as ...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "5.3: Agricultural Origins and Diffusions",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-cf21fa01-e516-403a-b4ae-db37ceb3702e",
+        "stem_preview": "The map shown best fits which of the following map types?",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "1.1: Introduction to Maps",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6a87136e-90be-4e57-8a64-874a0f5bef71",
+        "stem_preview": "An ethnic neighborhood is best described as which of the following?",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.2: Cultural Landscapes",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-feb9cf5a-6df7-43b3-8a08-246570678aa5",
+        "stem_preview": "Which of the following best explains how colonialism influenced current cultural...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.5: Historical Causes of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-daf7bcfc-3578-4e92-9bc3-4eef963a7bd2",
+        "stem_preview": "The export of fossil fuel energy, such as oil and natural gas, accounts for over...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "5.9: The Global System of Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fc52a023-8014-4470-8442-92870700ecfc",
+        "stem_preview": "Which of the following was a consequence of blockbusting in North American citie...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "6.10: Challenges of Urban Changes",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e1ac0a88-5557-42a6-911b-c7a4c507f852",
+        "stem_preview": "Transnational migrants often send money back to their home countries to support ...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-42bb6c20-8698-42b6-9da4-b7a3491d8715",
+        "stem_preview": "As a result, Iceland is regarded as a good example of which of the following con...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.1: Introduction to Political Geography",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-81db849f-1ffc-4c5f-b53f-4986b2e3a322",
+        "stem_preview": "Mixed-use development, pedestrian-friendly design, and the incorporation of fron...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "6.8: Urban Sustainability",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3e74c0f9-dad1-44ea-992d-2b189d908402",
+        "stem_preview": "Which of the following principles is most useful for explaining the relative siz...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "6.4: The Size and Distribution of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-65d2bd5b-6976-467a-9cbb-6e69d8672b33",
+        "stem_preview": "Which of the following groups would most likely engage in the gentrification of ...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "6.10: Challenges of Urban Changes",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8732c083-859e-4f03-a38c-2b7519f3c116",
+        "stem_preview": "Crossing which of the following borders requires few, if any, formalities and th...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.5: The Function of Political Boundaries",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4653ff26-8a54-4fd0-adac-1845d3d77ab7",
+        "stem_preview": "The Berlin Wall fell in 1989, but people in the former East and West Germany sti...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.4: Defining Political Boundaries",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ae2ee861-54b7-48f5-bf1f-c6eb3ff44ae3",
+        "stem_preview": "In which of the following countries has the diffusion of Christianity met the mo...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.7: Diffusion of Religion and Language",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e51ff406-4340-4702-9bb1-14bc9b2c43ed",
+        "stem_preview": "Sometimes a diffusion process encounters barriers that slow or stop the spread o...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.4: Types of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fbceda12-c57e-4d8e-9205-97ec9b4b405f",
+        "stem_preview": "Which of the following concepts most directly relates to a local population that...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.1: Introduction to Culture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-45098aa5-6f3d-4c99-977c-8752122f4029",
+        "stem_preview": "Which of the following is the scale of analysis of the map data?",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "1.6: Scales of Analysis",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-95eee503-b353-4ff3-b92f-0aed1861c92b",
+        "stem_preview": "Which of the following best illustrates how geographical data can be used at the...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "1.3: The Power of Geographic Data",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-57e53a23-a9a3-4dcd-9c6c-e0b8f12efd01",
+        "stem_preview": "Which of the following best identifies the scale of analysis for each of the map...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "1.6: Scales of Analysis",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-c70a9618-c78a-4b4f-907b-a9114bf06737",
+        "stem_preview": "Which of the following economic measures, if added to the map, would best compar...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "7.2: Economic Sectors and Patterns",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ab0b2797-45a5-4173-bc97-593be0b54349",
+        "stem_preview": "The demographic transition is a general model that seeks to explain",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-50efa338-1dd2-488e-a2b7-d3bcd96adac2",
+        "stem_preview": "What is the likely impact of the numerical change by 2050 of the total populatio...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-543a50c9-dffe-4e6c-a39c-616bf5d61ba0",
+        "stem_preview": "Which of the following statements best compares the development indicators for t...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-bb03da3c-ce0d-4b22-a2ee-ee4647792612",
+        "stem_preview": "Using the diagram, at what distance from the central business district will recr...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "6.5: The Internal Structure of Cities",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d6d8edf2-5a96-4f69-8223-509162ebf1a6",
+        "stem_preview": "If Greece and Turkey adopted the UNCLOS system and expanded their territorial se...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.5: The Function of Political Boundaries",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-bcda13d8-71c2-4d73-bf48-0d717cb94548",
+        "stem_preview": "Which of the following best compares the global diffusion patterns of two religi...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "3.7: Diffusion of Religion and Language",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b9f946c9-ea31-4d12-b7e0-62e6973f15e9",
+        "stem_preview": "Which of the following realities would be accounted for by the theoretical predi...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "5.8: Von Thünen Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3fedefbd-2a6c-449a-9ded-92794bf6bb69",
+        "stem_preview": "The urban linguistic landscape shown in the photograph is most likely found in a...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "3.3: Cultural Patterns",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-89118e72-2f90-4f11-9cc1-875ecfcec837",
+        "stem_preview": "Many companies moved their operations from New England and the Midwest to locati...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "7.2: Economic Sectors and Patterns",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d4e8a7fd-d170-4d83-b7a6-2396c1c9954c",
+        "stem_preview": "The township and range land survey system in the United States contributed to wh...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "5.2: Settlement Patterns and Survey Methods",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-bb0bb811-6a18-4f95-a792-ac68f4c87cfd",
+        "stem_preview": "Subsistence agriculture is most common in which of the following regions?",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "5.6: Agricultural Production Regions",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-55ffaef8-eba7-4fff-8c65-d7fd5a85da56",
+        "stem_preview": "Which of the following best explains how ecotourism can have positive impacts on...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "7.8: Sustainable Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a75a2ab3-0dc3-4c9b-8cbd-16ed190bdc0e",
+        "stem_preview": "Which of the following best explains a possible consequence of centrifugal force...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8fae41e1-144d-4abf-91bc-a0278e916bc4",
+        "stem_preview": "One can describe Gullah as a",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "3.5: Historical Causes of Diffusion",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-62591e40-8169-4027-8c55-6d21a3f547ff",
+        "stem_preview": "The United Nations (UN) and the North Atlantic Treaty Organization (NATO) are su...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.9: Challenges to Sovereignty",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-f54348fc-806c-4fc1-9a1f-1ff1bc563dd0",
+        "stem_preview": "Which of the following best defines Carl Sauer’s concept of cultural landscape?",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "3.2: Cultural Landscapes",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fb7e2acf-08c7-4b73-a366-fa40a19b7420",
+        "stem_preview": "Which of the following best compares intervening obstacles and intervening oppor...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-46935f5c-5c9d-4272-81ce-0bdcea0a640c",
+        "stem_preview": "Which of the following statements best compares how site and situation factors i...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "6.1: The Origin and Influences of Urbanization",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-62f7d5c1-94cd-4a1b-a02d-6e455bc71f0a",
+        "stem_preview": "Which of the following contemporary food production practices is subject to deba...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "5.11: Challenges of Contemporary Agriculture",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ad0d3275-cdd9-4026-8411-06b8852eebef",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-7827cec8-b016-41d8-bec3-32d639a8cb92",
+        "stem_preview": "Which of the following is part of the definition of a state? NOT",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.1: Introduction to Political Geography",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4cf22dc0-af76-4a49-bac7-8f94685e7045",
+        "stem_preview": "Which of the following has brought significant numbers of foreign visitors and c...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "7.8: Sustainable Development",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-c5f66d4b-5e26-4412-a0b6-40c9fa0029e5",
+        "stem_preview": "Often a manufacturing company will attempt to merge with another company that po...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "7.7: Changes as a Result of the World Economy",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-dd7deedf-88d2-4a43-afdd-c6861557905b",
+        "stem_preview": "Which of the following countries is experiencing population decline based on the...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          6,
+          4,
+          10,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-a9d092d9-2b80-4e96-b100-5ef5bcbd8803",
+        "stem_preview": "Using the data in Table 2, which of the following terms best describes the media...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "7.1: The Industrial Revolution",
+        "choice_lengths": [
+          18,
+          17,
+          18,
+          21,
+          18
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-27807749-bee9-4f6a-8ca5-232ea8cf6e1c",
+        "stem_preview": "Which of the following conclusions is best supported by the data shown in the ta...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.10: Causes of Migration",
+        "choice_lengths": [
+          77,
+          73,
+          76,
+          68,
+          71
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-48981c24-0196-4da6-9acc-5217b452ebb3",
+        "stem_preview": "The temples shown in the images, combined with the surrounding scenic physical l...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "3.3: Cultural Patterns",
+        "choice_lengths": [
+          11,
+          16,
+          15,
+          20,
+          16
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-02a841a5-c4a8-4f5c-9fa6-cab3304b47ed",
+        "stem_preview": "Which of the following best describes the pattern of coffee bean production at t...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "5.1: Introduction to Agriculture",
+        "choice_lengths": [
+          20,
+          24,
+          25,
+          27,
+          27
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-052565cb-3686-4782-acf5-a9cbcf755584",
+        "stem_preview": "Which of the following types of geographic information is presented in the map?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "5.3: Agricultural Origins and Diffusions",
+        "choice_lengths": [
+          62,
+          67,
+          64,
+          71,
+          69
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-50a70bf9-3a2f-406e-af8e-cef769514a1c",
+        "stem_preview": "The measure of the average number of children who are born to women of childbear...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          17,
+          16,
+          20,
+          19,
+          22
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-ee98df2e-dd47-4226-8faa-87c6d25a1683",
+        "stem_preview": "Which of the following best describes an example of expansion diffusion?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "3.4: Types of Diffusion",
+        "choice_lengths": [
+          58,
+          60,
+          60,
+          61,
+          58
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-ddada372-be9f-48c3-8e6a-cf256acb10bc",
+        "stem_preview": "Which of the following defines the concept of a nation-state?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.1: Introduction to Political Geography",
+        "choice_lengths": [
+          68,
+          60,
+          68,
+          65,
+          64
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-e23c7d21-af90-4e13-9070-7289681740f3",
+        "stem_preview": "Which of the following terms best describes the political entity of the Republic...",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "4.1: Introduction to Political Geography",
+        "choice_lengths": [
+          16,
+          19,
+          12,
+          17,
+          19
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-24b8dcc0-879f-479c-9fcc-e7a159865e92",
+        "stem_preview": "Which of the following is the best example of time-space compression?",
+        "test_id": "pcb-test-43ac390da89c4e02b9808d10414712af",
+        "topic": "1.4: Spatial Concepts",
+        "choice_lengths": [
+          91,
+          86,
+          90,
+          88,
+          90
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-663b1ec2-e68b-45fe-9805-630cd50f47cc",
+        "stem_preview": "What kind of agriculture is primarily practiced in the dark-shaded areas on the ...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "5.1: Introduction to Agriculture",
+        "choice_lengths": [
+          20,
+          17,
+          15,
+          13,
+          10
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-e1ad4a45-2582-492a-933f-5208a05f83ee",
+        "stem_preview": "This practice is an example of",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "4.3: Political Power and Territoriality",
+        "choice_lengths": [
+          14,
+          14,
+          14,
+          11,
+          11
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-9e0d87f1-cec7-45ec-8737-a63b557e1ded",
+        "stem_preview": "Cultural differences within a country’s population, such as different religions,...",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "3.3: Cultural Patterns",
+        "choice_lengths": [
+          33,
+          33,
+          37,
+          39,
+          33
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-505ff5c0-a13d-4c07-86de-fba0a9a1df95",
+        "stem_preview": "All of the following were colonized by France EXCEPT",
+        "test_id": "pcb-test-183522ab3e5f4722bd34356b659b5892",
+        "topic": "3.5: Historical Causes of Diffusion",
+        "choice_lengths": [
+          4,
+          7,
+          7,
+          9,
+          6
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-56696b89-bb87-4a0c-8790-46ab0a1b5174",
+        "stem_preview": "Which of the following statements best describes how the epidemiologic transitio...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          125,
+          122,
+          122,
+          128,
+          130
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-6ab0ab85-3b1e-44d5-82ad-0c7f016491fc",
+        "stem_preview": "Which of the following correctly classifies the countries in the table by their ...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "7.3: Measures of Development",
+        "choice_lengths": [
+          71,
+          72,
+          70,
+          73,
+          72
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-772ee300-cb9f-4ca5-85a0-4b329908976c",
+        "stem_preview": "Which of the following best describes the locations where staple crops, such as ...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "5.3: Agricultural Origins and Diffusions",
+        "choice_lengths": [
+          12,
+          14,
+          12,
+          17,
+          20
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-8732c083-859e-4f03-a38c-2b7519f3c116",
+        "stem_preview": "Crossing which of the following borders requires few, if any, formalities and th...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.5: The Function of Political Boundaries",
+        "choice_lengths": [
+          19,
+          14,
+          20,
+          15,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-4653ff26-8a54-4fd0-adac-1845d3d77ab7",
+        "stem_preview": "The Berlin Wall fell in 1989, but people in the former East and West Germany sti...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "4.4: Defining Political Boundaries",
+        "choice_lengths": [
+          21,
+          15,
+          18,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-fbceda12-c57e-4d8e-9205-97ec9b4b405f",
+        "stem_preview": "Which of the following concepts most directly relates to a local population that...",
+        "test_id": "pcb-test-f0e272c4784b4dc9882e9f75e3fd4ddb",
+        "topic": "3.1: Introduction to Culture",
+        "choice_lengths": [
+          10,
+          13,
+          16,
+          19,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-45098aa5-6f3d-4c99-977c-8752122f4029",
+        "stem_preview": "Which of the following is the scale of analysis of the map data?",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "1.6: Scales of Analysis",
+        "choice_lengths": [
+          6,
+          11,
+          8,
+          5,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-57e53a23-a9a3-4dcd-9c6c-e0b8f12efd01",
+        "stem_preview": "Which of the following best identifies the scale of analysis for each of the map...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "1.6: Scales of Analysis",
+        "choice_lengths": [
+          19,
+          18,
+          23,
+          16,
+          17
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-bb03da3c-ce0d-4b22-a2ee-ee4647792612",
+        "stem_preview": "Using the diagram, at what distance from the central business district will recr...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "6.5: The Internal Structure of Cities",
+        "choice_lengths": [
+          13,
+          13,
+          14,
+          14,
+          14
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-2167d200-b466-49d3-89b3-eeb13102e318",
+        "stem_preview": "According to the von Thünen model, which of the following economic factors deter...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "5.8: Von Thünen Model",
+        "choice_lengths": [
+          39,
+          40,
+          42,
+          34,
+          36
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-ad0d3275-cdd9-4026-8411-06b8852eebef",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-1a85b4b3586e4733a3c15392aa4a29b7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          5,
+          7,
+          7,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "topic_distribution",
+      "message": "Topic distribution across 120 MCQs",
+      "context": {
+        "distribution": {
+          "7.3: Measures of Development": 8,
+          "5.1: Introduction to Agriculture": 5,
+          "1.6: Scales of Analysis": 4,
+          "2.4: Population Dynamics": 4,
+          "6.5: The Internal Structure of Cities": 4,
+          "6.4: The Size and Distribution of Cities": 4,
+          "3.5: Historical Causes of Diffusion": 4,
+          "4.1: Introduction to Political Geography": 4,
+          "3.7: Diffusion of Religion and Language": 4,
+          "4.7: Forms of Governance": 3,
+          "2.10: Causes of Migration": 3,
+          "3.3: Cultural Patterns": 3,
+          "5.3: Agricultural Origins and Diffusions": 3,
+          "7.8: Sustainable Development": 3,
+          "4.3: Political Power and Territoriality": 3,
+          "2.5: The Demographic Transition Model": 3,
+          "5.11: Challenges of Contemporary Agriculture": 3,
+          "4.5: The Function of Political Boundaries": 3,
+          "7.1: The Industrial Revolution": 2,
+          "1.1: Introduction to Maps": 2,
+          "3.6: Contemporary Causes of Diffusion": 2,
+          "6.6: Density and Land Use": 2,
+          "3.4: Types of Diffusion": 2,
+          "1.4: Spatial Concepts": 2,
+          "6.8: Urban Sustainability": 2,
+          "2.8: Women and Demographic Change": 2,
+          "1.5: Human-Environmental Interaction": 2,
+          "5.6: Agricultural Production Regions": 2,
+          "2.3: Population Composition": 2,
+          "3.2: Cultural Landscapes": 2,
+          "6.10: Challenges of Urban Changes": 2,
+          "7.2: Economic Sectors and Patterns": 2,
+          "5.8: Von Thünen Model": 2,
+          "4.10: Consequences of Centrifugal and Centripetal Forces": 2,
+          "7.6: Trade and the World Economy": 1,
+          "2.9: Aging Populations": 1,
+          "2.6: Malthusian Theory": 1,
+          "4.6: Internal Boundaries": 1,
+          "6.3: Cities and Globalization": 1,
+          "6.2: Cities Across the World": 1,
+          "5.4: The Second Agricultural Revolution": 1,
+          "7.5: Theories of Development": 1,
+          "2.7: Population Policies": 1,
+          "1.2: Geographic Data": 1,
+          "5.9: The Global System of Agriculture": 1,
+          "2.11: Forced and Voluntary Migration": 1,
+          "4.4: Defining Political Boundaries": 1,
+          "3.1: Introduction to Culture": 1,
+          "1.3: The Power of Geographic Data": 1,
+          "5.2: Settlement Patterns and Survey Methods": 1,
+          "4.9: Challenges to Sovereignty": 1,
+          "6.1: The Origin and Influences of Urbanization": 1,
+          "6.11: Challenges of Urban Sustainability": 1,
+          "7.7: Changes as a Result of the World Economy": 1
+        },
+        "unique_topics": 54
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "skill_distribution",
+      "message": "Skill distribution across 120 MCQs",
+      "context": {
+        "distribution": {
+          "Skill 1.A: Describe geographic concepts, processes, models, and theories.": 17,
+          "Skill 1.D: Describe a relevant geographic concept, process, model, or theory in a specified context.": 16,
+          "Skill 2.A: Describe spatial patterns, networks, and relationships.": 10,
+          "Skill 2.C: Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.": 8,
+          "Skill 4.A: Identify the different types of information presented in visual sources.": 7,
+          "Skill 2.B: Explain spatial relationships in a specified context or region of the world, using geographic concepts, processes, models, or theories.": 6,
+          "Skill 5.B: Explain spatial relationships across various geographic scales using geographic concepts, processes, models, or theories.": 5,
+          "Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.": 5,
+          "Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.": 4,
+          "Skill 3.D: Compare patterns and trends in maps and in quantitative and geospatial data to draw conclusions.": 4,
+          "Skill 4.B: Describe the spatial patterns presented in visual sources.": 4,
+          "Skill 5.C: Compare geographic characteristics and processes at various scales.": 4,
+          "Skill 5.A: Identify the scales of analysis presented by maps, quantitative and geospatial data, images, and landscapes.": 3,
+          "Skill 4.E: Explain how maps, images, and landscapes illustrate, or relate to geographic principles, processes, and outcomes.": 3,
+          "Skill 2.D: Explain the significance of geographic similarities and differences among different locations and/or at different times.": 3,
+          "Skill 3.F: Explain possible limitations of the data provided.": 3,
+          "Skill 4.C: Explain patterns and trends in visual sources to draw conclusions.": 3,
+          "Skill 1.C: Compare geographic concepts, processes, models, and theories.": 3,
+          "Skill 4.F: Explain possible limitations of visual sources provided.": 2,
+          "Skill 1.B: Explain geographic concepts, processes, models, and theories.": 2,
+          "Skill 3.E: Explain what maps or data imply or illustrate about geographic principles, processes, and outcomes.": 2,
+          "Skill 3.C: Explain patterns and trends in maps and in quantitative and geospatial data to draw conclusions.": 2,
+          "Skill 1.E: Explain the strengths, weaknesses, and limitations of different geographic models and theories in a specified context.": 2,
+          "Skill 2.E: Explain the degree to which a geographic concept, process, model, or theory effectively explains geographic effects in different contexts and regions of the world.": 1,
+          "Skill 4.D: Compare patterns and trends in sources to draw conclusions.": 1
+        },
+        "unique_skills": 25
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "stimulus_coverage",
+      "message": "51/120 MCQs (42%) have stimuli",
+      "context": {
+        "with_stimulus": 51,
+        "total": 120,
+        "ratio": 0.42
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "source_distribution",
+      "message": "Source distribution across 120 MCQs",
+      "context": {
+        "distribution": {
+          "AP Classroom 2016": 43,
+          "AP Classroom Supplementary": 42,
+          "AP Classroom 2020": 35
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "difficulty_distribution",
+      "message": "Difficulty distribution across 120 MCQs",
+      "context": {
+        "distribution": {
+          "medium": 120
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "frq_count",
+      "message": "Course has 0 FRQ(s) and 120 MCQ(s)",
+      "context": {
+        "frq_count": 0,
+        "mcq_count": 120
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "course_summary",
+      "message": "Course 'AP HuGeo Mini Practice tests': 120 total Qs, 52 stimuli, 0 videos, 4 quizzes",
+      "context": {
+        "course_id": "72825bea-55aa-416a-a3c0-5af9446dcbfd",
+        "course_title": "AP HuGeo Mini Practice tests",
+        "total_questions": 120,
+        "total_stimuli": 52,
+        "total_videos": 0,
+        "total_quizzes": 4,
+        "articles": 35,
+        "topic_groups": 0
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-356cd192-80c9-4308-a966-d9eefef33019",
+        "stem_preview": "If the map was reproduced at the subnational state or provincial scale, as Hawai",
+        "issue": "The question lacks context about what is being produced on the map, making it impossible to properly evaluate the correct answer or assess the geographic reasoning."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-2d0b79c7-d92d-4b75-bd62-16a86174926d",
+        "stem_preview": "The map best illustrates which of the following concepts?",
+        "issue": "Without seeing the referenced map, it's impossible to determine what governance system is being illustrated."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-927b3738-21c5-48ac-b9b4-64d6af23981e",
+        "stem_preview": "Which of the following best describes the information shown on the map?",
+        "issue": "Answer requires seeing the map to determine if B accurately describes what is shown versus what is omitted."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-165fee1d-5a34-4ce6-a589-ce495857e114",
+        "stem_preview": "Which of the following accurately describes the city population data in the tabl",
+        "issue": "Cannot verify answer without seeing the population data table referenced in the question."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-644a3419-9267-4108-b94c-b91a9552ae70",
+        "stem_preview": "Which of the following is indicated on the graph?",
+        "issue": "Cannot verify answer without seeing the graph referenced in the question."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-29241f3d-b6e4-46ef-87b8-27ff51cda073",
+        "stem_preview": "Based on the information shown in the table, in Canada received the most immigra",
+        "issue": "Cannot verify answer without seeing the immigration data table referenced in the question."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-663b1ec2-e68b-45fe-9805-630cd50f47cc",
+        "stem_preview": "What kind of agriculture is primarily practiced in the dark-shaded areas on the ",
+        "issue": "Cannot verify answer without seeing the agricultural map referenced in the question."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-d96e713f-7d37-4dcd-ad5f-fb0183c251e6",
+        "stem_preview": "What do the states represented above have in common?",
+        "issue": "Cannot verify answer without seeing the states shown in the referenced image."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-e1ad4a45-2582-492a-933f-5208a05f83ee",
+        "stem_preview": "This practice is an example of",
+        "issue": "Question lacks context about what practice is being referenced, making evaluation impossible."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-50d4a6ec-8a2b-41ca-b43e-a316ffdf290d",
+        "stem_preview": "The global pattern of gender inequality index scores is similar to the expected ",
+        "issue": "Without seeing the referenced data, cannot verify which countries are exceptions to the expected pattern"
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-42bb6c20-8698-42b6-9da4-b7a3491d8715",
+        "stem_preview": "As a result, Iceland is regarded as a good example of which of the following con",
+        "correct_answer": "D",
+        "issue": "The stem is incomplete - it starts with 'As a result' but provides no context about what makes Iceland a good example of anything."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-3e74c0f9-dad1-44ea-992d-2b189d908402",
+        "stem_preview": "Which of the following principles is most useful for explaining the relative siz",
+        "correct_answer": "B",
+        "issue": "The rank-size rule (not primate city) best explains relative sizes of cities within a country - primate city describes a specific pattern where one city dominates."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-3e74c0f9-dad1-44ea-992d-2b189d908402",
+        "stem_preview": "Which of the following principles is most useful for explaining the relative siz",
+        "issue": "The rank-size rule (not primate city) best explains relative sizes of cities within a country - primate city describes a specific pattern where one city dominates."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-45098aa5-6f3d-4c99-977c-8752122f4029",
+        "stem_preview": "Which of the following is the scale of analysis of the map data?",
+        "correct_answer": "D",
+        "issue": "Cannot evaluate without seeing the referenced map, but the question lacks necessary context to determine scale."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-57e53a23-a9a3-4dcd-9c6c-e0b8f12efd01",
+        "stem_preview": "Which of the following best identifies the scale of analysis for each of the map",
+        "correct_answer": "C",
+        "issue": "Cannot evaluate without seeing the referenced maps that show European Union and former Yugoslavia."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-bb03da3c-ce0d-4b22-a2ee-ee4647792612",
+        "stem_preview": "Using the diagram, at what distance from the central business district will recr",
+        "correct_answer": "C",
+        "issue": "Cannot evaluate without seeing the referenced diagram showing land use bid-rent curves."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-bcda13d8-71c2-4d73-bf48-0d717cb94548",
+        "stem_preview": "Which of the following best compares the global diffusion patterns of two religi",
+        "issue": "Without seeing the referenced map, it's impossible to verify if Christianity's presence in Canada represents relocation diffusion, and several distractors could potentially be correct depending on the map's content."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-bcda13d8-71c2-4d73-bf48-0d717cb94548",
+        "stem_preview": "Which of the following best compares the global diffusion patterns of two religi",
+        "issue": "Without seeing the referenced map, it's impossible to verify if Christianity's presence in Canada represents relocation diffusion, and several distractors could potentially be correct depending on the map's content."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-3fedefbd-2a6c-449a-9ded-92794bf6bb69",
+        "stem_preview": "The urban linguistic landscape shown in the photograph is most likely found in a",
+        "issue": "Cannot evaluate without the image showing the linguistic landscape."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-ff2a77e9-9e58-4e3e-bff7-70342dcbe8c8",
+        "stem_preview": "Which of the following best explains the strength of the diagram shown as a theo",
+        "issue": "Cannot evaluate without seeing the diagram, and the question asks about model applicability which requires visual context."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-ff2a77e9-9e58-4e3e-bff7-70342dcbe8c8",
+        "stem_preview": "Which of the following best explains the strength of the diagram shown as a theo",
+        "issue": "Cannot evaluate without seeing the diagram, and the question asks about model applicability which requires visual context."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "wrong_answer",
+      "message": "Marked correct answer may be wrong",
+      "context": {
+        "question_id": "pcb-item-46935f5c-5c9d-4272-81ce-0bdcea0a640c",
+        "stem_preview": "Which of the following statements best compares how site and situation factors i",
+        "correct_answer": "E",
+        "issue": "The correct answer confuses site and situation factors - water access is a site factor but connectivity is also primarily about situation, making the comparison unclear."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-46935f5c-5c9d-4272-81ce-0bdcea0a640c",
+        "stem_preview": "Which of the following statements best compares how site and situation factors i",
+        "issue": "The correct answer confuses site and situation factors - water access is a site factor but connectivity is also primarily about situation, making the comparison unclear."
+      }
+    }
+  ],
+  "api_cost": {
+    "total_calls": 5,
+    "total_input_tokens": 22781,
+    "total_output_tokens": 10252,
+    "estimated_cost_usd": 0.2221,
+    "cache_stats": {
+      "hits": 0,
+      "misses": 5,
+      "cached_files": 5
+    }
+  },
+  "layer3_summary": {
+    "not_answerable": 0,
+    "partially_answerable": 0,
+    "wrong_answer": 6,
+    "debatable_answer": 13,
+    "misleading_distractor": 4,
+    "weak_distractors": 0,
+    "needs_manual_review": 0
+  }
+}

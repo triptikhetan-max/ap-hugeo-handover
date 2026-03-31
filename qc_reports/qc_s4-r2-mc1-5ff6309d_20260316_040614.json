@@ -1,0 +1,122 @@
+{
+  "course_id": "s4-r2-mc1-5ff6309d",
+  "course_title": "AP HuGeo: DTM Application",
+  "run_at": "2026-03-16T04:06:14.171355",
+  "summary": {
+    "total_findings": 7,
+    "errors": 0,
+    "warnings": 4,
+    "info": 3,
+    "by_layer": {
+      "L5": 7
+    },
+    "by_check": {
+      "frq_count_low": 1,
+      "frq_stimulus_image_only": 1,
+      "frq_parts_missing": 1,
+      "frq_type_coverage": 1,
+      "frq_title_typo": 1,
+      "frq_no_rubric": 2
+    }
+  },
+  "findings": [
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_count_low",
+      "message": "Course has 2 FRQs (AP exam has 3; recommend at least 3 for practice)",
+      "context": {
+        "course_id": "s4-r2-mc1-5ff6309d",
+        "frq_count": 2,
+        "frq_ids": [
+          "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+          "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1"
+        ]
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_stimulus_image_only",
+      "message": "FRQ stimulus is image-only — verify image loads in Timeback",
+      "context": {
+        "question_id": "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+        "stimulus_id": "pcb-stimulus-e8cc90b7-8c8d-4d85-8033-2a2118b9ad29",
+        "stimulus_title": "A population pyramid shows changes in population over time. A population pyramid"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_parts_missing",
+      "message": "FRQ has 4 parts (AP standard: 7 parts A-G, 1pt each)",
+      "context": {
+        "question_id": "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1",
+        "frq_type": "Type 2 (One Stimulus)",
+        "parts_found": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "expected_parts": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ],
+        "stem_preview": "A. Describe what information the demographic transition model provides about a country. B. Identify "
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_type_coverage",
+      "message": "Missing FRQ types: Type 1 (No Stimulus, 7 pts), Type 3 (Two Stimuli, 7 pts). AP exam tests all 3 types.",
+      "context": {
+        "types_present": [
+          2
+        ],
+        "types_missing": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_title_typo",
+      "message": "Quiz title has typo: \"excercise\" should be \"exercise\" in \"Practice Excercise\"",
+      "context": {
+        "test_id": "s4-r2-mc1-5ff6309d-frq-test",
+        "current_title": "Practice Excercise",
+        "typo": "excercise",
+        "correction": "exercise"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_no_rubric",
+      "message": "No rubric/scoring criteria found — FRQs need manual scoring by coach",
+      "context": {
+        "question_id": "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+        "stem_preview": "A population pyramid shows changes in population over time. A population pyramid breaks down the pop"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_no_rubric",
+      "message": "No rubric/scoring criteria found — FRQs need manual scoring by coach",
+      "context": {
+        "question_id": "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1",
+        "stem_preview": "A. Describe what information the demographic transition model provides about a country. B. Identify "
+      }
+    }
+  ]
+}

@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QC Pipeline HQ - Agent Office</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d1117;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 2px solid #e94560;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #e94560;
+    text-shadow: 2px 2px 0 #21262d;
+  }
+
+  .header .clock {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #8b949e;
+  }
+
+  .header .live-dot {
+    width: 8px; height: 8px;
+    background: #3fb950;
+    border-radius: 50%;
+    display: inline-block;
+    animation: livePulse 1.5s infinite;
+    margin-right: 6px;
+  }
+
+  @keyframes livePulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(63,185,80,0.4); }
+    50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(63,185,80,0); }
+  }
+
+  .logo { font-size: 32px; animation: bounce 2s infinite; }
+  @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+  /* MAIN LAYOUT */
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 0;
+    height: calc(100vh - 56px);
+  }
+
+  /* LEFT: AGENT DESKS */
+  .desks-area {
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* STATS ROW */
+  .stats-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .stat-card {
+    flex: 1;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .stat-card .num {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #e94560;
+  }
+
+  .stat-card .label {
+    font-size: 10px;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+
+  /* AGENT DESK */
+  .desk {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s;
+  }
+
+  .desk:hover { border-color: #58a6ff; }
+
+  .desk-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .avatar .dot {
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    border: 2px solid #161b22;
+  }
+
+  .dot-active { background: #3fb950; animation: livePulse 1.5s infinite; }
+  .dot-done { background: #58a6ff; }
+
+  .agent-name {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+  }
+
+  .agent-role {
+    font-size: 11px;
+    color: #8b949e;
+    margin-top: 2px;
+  }
+
+  .desk-items {
+    margin-left: auto;
+    font-size: 16px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .steam { animation: steam 2.5s infinite; display: inline-block; }
+  @keyframes steam { 0%,100%{transform:translateY(0) rotate(0);opacity:.7} 50%{transform:translateY(-5px) rotate(8deg);opacity:1} }
+
+  /* DESK BODY: SPLIT VIEW */
+  .desk-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 160px;
+  }
+
+  .desk-chat {
+    padding: 12px 16px;
+    border-right: 1px solid #21262d;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow-y: auto;
+    max-height: 180px;
+  }
+
+  .bubble {
+    font-size: 12px;
+    padding: 8px 12px;
+    background: #21262d;
+    border-radius: 10px 10px 10px 2px;
+    color: #c9d1d9;
+    line-height: 1.4;
+    animation: bubbleIn 0.3s ease-out;
+  }
+
+  @keyframes bubbleIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+
+  .bubble.system {
+    background: #1c2128;
+    border-left: 3px solid #e94560;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #8b949e;
+  }
+
+  /* CODE PANEL */
+  .desk-code {
+    padding: 10px 14px;
+    background: #0d1117;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #8b949e;
+    overflow-y: auto;
+    max-height: 180px;
+    position: relative;
+  }
+
+  .desk-code .filename {
+    font-size: 10px;
+    color: #58a6ff;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .desk-code .filename::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: #3fb950;
+    border-radius: 50%;
+    animation: livePulse 1.5s infinite;
+  }
+
+  .code-line {
+    display: flex;
+    gap: 12px;
+    white-space: pre;
+  }
+
+  .line-num {
+    color: #484f58;
+    min-width: 24px;
+    text-align: right;
+    user-select: none;
+  }
+
+  .code-text { color: #c9d1d9; }
+
+  /* Syntax highlighting */
+  .kw { color: #ff7b72; }
+  .fn { color: #d2a8ff; }
+  .str { color: #a5d6ff; }
+  .cmt { color: #8b949e; font-style: italic; }
+  .num { color: #79c0ff; }
+  .cls { color: #ffa657; }
+  .op { color: #ff7b72; }
+
+  .cursor-blink {
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    background: #58a6ff;
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+  }
+
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* FILES BAR */
+  .desk-files {
+    grid-column: 1 / -1;
+    padding: 8px 16px;
+    border-top: 1px solid #21262d;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .file-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    background: #21262d;
+    border-radius: 10px;
+    color: #58a6ff;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .file-tag.active {
+    background: #1f6feb33;
+    border: 1px solid #1f6feb;
+  }
+
+  /* RIGHT SIDEBAR */
+  .sidebar {
+    background: #161b22;
+    border-left: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .sidebar-section {
+    padding: 16px 18px;
+    border-bottom: 1px solid #21262d;
+  }
+
+  .sidebar-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    color: #e94560;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* TIMELINE */
+  .tl-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .tl-dot {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .tl-done { background: #238636; color: white; }
+  .tl-active { background: #e94560; animation: livePulse 1.5s infinite; }
+  .tl-pending { background: #30363d; color: #8b949e; }
+
+  .tl-text { color: #c9d1d9; line-height: 1.4; }
+  .tl-text small { color: #8b949e; display: block; font-size: 10px; }
+
+  /* STUDENTS */
+  .student-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: #0d1117;
+    border-radius: 8px;
+    margin-bottom: 6px;
+  }
+
+  .student-emoji { font-size: 24px; }
+
+  .student-info .name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #c9d1d9;
+  }
+
+  .student-info .detail {
+    font-size: 10px;
+    color: #8b949e;
+  }
+
+  .student-score {
+    margin-left: auto;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  .score-1 { background: #da363433; color: #f85149; }
+  .score-2 { background: #e3b34133; color: #e3b341; }
+  .score-3 { background: #1f6feb33; color: #58a6ff; }
+  .score-4 { background: #23863633; color: #3fb950; }
+
+  /* LIVE TERMINAL */
+  .terminal {
+    background: #0d1117;
+    border-radius: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+
+  .terminal-bar {
+    background: #21262d;
+    padding: 6px 10px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .term-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .term-red { background: #f85149; }
+  .term-yellow { background: #e3b341; }
+  .term-green { background: #3fb950; }
+
+  .terminal-body {
+    padding: 10px 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #8b949e;
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 1.6;
+  }
+
+  .term-line { margin-bottom: 2px; }
+  .term-prompt { color: #3fb950; }
+  .term-cmd { color: #c9d1d9; }
+  .term-output { color: #8b949e; }
+  .term-success { color: #3fb950; }
+  .term-warn { color: #e3b341; }
+  .term-error { color: #f85149; }
+
+  /* ========== FLOATING GAME WINDOW ========== */
+  #game-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #e94560, #c23152);
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 20px rgba(233,69,96,0.4);
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #game-fab:hover { transform: scale(1.1); }
+  #game-fab.hidden { display: none; }
+
+  #game-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    z-index: 998;
+    background: #161b22;
+    border: 2px solid #e94560;
+    border-radius: 14px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 30px rgba(233,69,96,0.15);
+    display: none;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+
+  #game-window.open { display: block; }
+  #game-window:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 40px rgba(233,69,96,0.25); }
+
+  .game-titlebar {
+    background: linear-gradient(135deg, #e94560, #c23152);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: grab;
+    user-select: none;
+  }
+  .game-titlebar:active { cursor: grabbing; }
+
+  .game-titlebar h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    color: white;
+    flex: 1;
+  }
+
+  .game-titlebar .win-btns {
+    display: flex;
+    gap: 6px;
+  }
+
+  .game-titlebar .win-btn {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+  }
+
+  .win-btn-minimize { background: #e3b341; }
+  .win-btn-close { background: #f85149; }
+
+  .game-content {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .game-sub {
+    font-size: 11px;
+    color: #8b949e;
+    margin-bottom: 10px;
+  }
+
+  .game-score-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+
+  .game-score-bar .gs-label {
+    color: #8b949e;
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+
+  .game-score-bar .gs-num {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+  }
+
+  .gs-you .gs-num { color: #e94560; }
+  .gs-draw .gs-num { color: #8b949e; }
+  .gs-fox .gs-num { color: #58a6ff; }
+
+  .game-status {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: #c9d1d9;
+    margin-bottom: 10px;
+    min-height: 18px;
+  }
+
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 0 auto 12px;
+    max-width: 210px;
+  }
+
+  .cell {
+    width: 66px;
+    height: 66px;
+    background: #0d1117;
+    border: 2px solid #30363d;
+    border-radius: 8px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+  }
+
+  .cell:hover:not(.taken) { border-color: #e94560; background: #1c1c2e; }
+  .cell.taken { cursor: default; }
+  .cell .x { color: #e94560; font-family: 'Press Start 2P', cursive; font-size: 24px; }
+  .cell .o { color: #58a6ff; font-family: 'Press Start 2P', cursive; font-size: 24px; }
+  .win-line { background: #e9456033 !important; border-color: #e94560 !important; }
+
+  .game-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .game-btn {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+  }
+  .game-btn:hover { background: #c23152; }
+  .game-btn.secondary { background: #30363d; }
+  .game-btn.secondary:hover { background: #484f58; }
+
+  .game-fox-says {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #0d1117;
+    border-radius: 10px;
+    font-size: 11px;
+    color: #8b949e;
+    border-left: 3px solid #34d399;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">🏢</div>
+  <div>
+    <h1>QC PIPELINE HQ</h1>
+  </div>
+  <div class="clock">
+    <span class="live-dot"></span>
+    <span id="clock">LIVE</span>
+  </div>
+</div>
+
+<div class="main">
+  <!-- LEFT: AGENT DESKS -->
+  <div class="desks-area">
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="num">4</div>
+        <div class="label">Agents</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">546</div>
+        <div class="label">Questions</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">202</div>
+        <div class="label">MC1 Items</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">6</div>
+        <div class="label">Students</div>
+      </div>
+      <div class="stat-card">
+        <div class="num" id="findings-count">364</div>
+        <div class="label">Findings</div>
+      </div>
+    </div>
+
+    <!-- DESK 1: SHERLOCK -->
+    <div class="desk" id="desk-sherlock">
+      <div class="desk-top">
+        <div class="avatar" style="background:linear-gradient(135deg,#e94560,#c23152)">
+          🕵️
+          <div class="dot dot-active"></div>
+        </div>
+        <div>
+          <div class="agent-name" style="color:#e94560">Sherlock</div>
+          <div class="agent-role">FRQ Structure Inspector</div>
+        </div>
+        <div class="desk-items"><span class="steam">☕</span> 🔍</div>
+      </div>
+      <div class="desk-body">
+        <div class="desk-chat" id="sherlock-chat">
+          <div class="bubble system">TASK: Inspect FRQ structure, rubrics, scoring</div>
+          <div class="bubble">Reading 05_all_questions.json... found 2 FRQ items (type: extended-text)</div>
+          <div class="bubble">Japan population pyramid FRQ: checking 7-part A-G structure...</div>
+        </div>
+        <div class="desk-code" id="sherlock-code">
+          <div class="filename">05_all_questions.json</div>
+          <div class="code-line"><span class="line-num">1</span><span class="code-text">{</span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="code-text">  <span class="str">"type"</span>: <span class="str">"extended-text"</span>,</span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="code-text">  <span class="str">"stem"</span>: <span class="str">"Japan population..."</span>,</span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="code-text">  <span class="str">"stimulus_id"</span>: <span class="str">"stim_042"</span>,</span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="code-text">  <span class="str">"choices"</span>: [],</span></div>
+          <div class="code-line"><span class="line-num">6</span><span class="code-text">  <span class="str">"raw_metadata"</span>: {</span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="code-text">    <span class="str">"cedTopic"</span>: <span class="str">"2.9"</span></span></div>
+          <div class="code-line"><span class="line-num">8</span><span class="code-text">  }<span class="cursor-blink"></span></span></div>
+        </div>
+      </div>
+      <div class="desk-files">
+        <span class="file-tag active">05_all_questions.json</span>
+        <span class="file-tag">06_all_stimuli.json</span>
+        <span class="file-tag">03_quizzes.json</span>
+      </div>
+    </div>
+
+    <!-- DESK 2: HERMIONE -->
+    <div class="desk" id="desk-hermione">
+      <div class="desk-top">
+        <div class="avatar" style="background:linear-gradient(135deg,#7c3aed,#a855f7)">
+          📖
+          <div class="dot dot-active"></div>
+        </div>
+        <div>
+          <div class="agent-name" style="color:#a855f7">Hermione</div>
+          <div class="agent-role">Student Plan Architect</div>
+        </div>
+        <div class="desk-items">📚 <span class="steam">🍵</span></div>
+      </div>
+      <div class="desk-body">
+        <div class="desk-chat" id="hermione-chat">
+          <div class="bubble system">TASK: Build personalized student plans</div>
+          <div class="bubble">Reading student profiles... Gus: AP 1, DTM 38.5%</div>
+          <div class="bubble">Branson has a 32-pt recognition-retrieval gap. The PP100 cycle targets exactly this.</div>
+        </div>
+        <div class="desk-code" id="hermione-code">
+          <div class="filename">ap_human_geography.md</div>
+          <div class="code-line"><span class="line-num">1</span><span class="code-text"><span class="cmt">## Student: Gus</span></span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="code-text"><span class="kw">AP Score:</span> 1 | <span class="kw">Target:</span> 3</span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="code-text"><span class="kw">DTM:</span> <span class="num">38.5%</span></span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="code-text"><span class="kw">Skill 2:</span> <span class="num">25%</span></span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="code-text"></span></div>
+          <div class="code-line"><span class="line-num">6</span><span class="code-text"><span class="cmt">## Student: Branson</span></span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="code-text"><span class="kw">AP Score:</span> 2 | <span class="kw">Target:</span> 3+</span></div>
+          <div class="code-line"><span class="line-num">8</span><span class="code-text"><span class="kw">Gap:</span> <span class="num">32-pt</span> recognition-retrieval<span class="cursor-blink"></span></span></div>
+        </div>
+      </div>
+      <div class="desk-files">
+        <span class="file-tag active">ap_human_geography.md</span>
+        <span class="file-tag">01_R2_hugeo_3_mini_courses.md</span>
+        <span class="file-tag">S4_overview_for_hari.md</span>
+      </div>
+    </div>
+
+    <!-- DESK 3: PROFESSOR -->
+    <div class="desk" id="desk-professor">
+      <div class="desk-top">
+        <div class="avatar" style="background:linear-gradient(135deg,#1f6feb,#58a6ff)">
+          🧠
+          <div class="dot dot-active"></div>
+        </div>
+        <div>
+          <div class="agent-name" style="color:#58a6ff">Professor</div>
+          <div class="agent-role">QC Pipeline Engineer</div>
+        </div>
+        <div class="desk-items">🧪 📐</div>
+      </div>
+      <div class="desk-body">
+        <div class="desk-chat" id="professor-chat">
+          <div class="bubble system">TASK: Audit pipeline, propose new layers</div>
+          <div class="bubble">Current: L1 Structural, L2 Quality, L3 Alignment, L4 Course-level</div>
+          <div class="bubble">Missing: FRQ validation, article depth scoring, student plan checks</div>
+        </div>
+        <div class="desk-code" id="professor-code">
+          <div class="filename">layer1_structural.py</div>
+          <div class="code-line"><span class="line-num">1</span><span class="code-text"><span class="kw">def</span> <span class="fn">check_choice_count</span>(q):</span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="code-text">    <span class="str">"""AP MCQ must have 5 choices"""</span></span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="code-text">    <span class="kw">if</span> q.num_choices != <span class="num">5</span>:</span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="code-text">        <span class="kw">return</span> Finding(</span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="code-text">            layer=<span class="str">"L1"</span>,</span></div>
+          <div class="code-line"><span class="line-num">6</span><span class="code-text">            severity=<span class="str">"error"</span>,</span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="code-text">            check=<span class="str">"wrong_choice_count"</span>,</span></div>
+          <div class="code-line"><span class="line-num">8</span><span class="code-text">            message=<span class="str">f"has {q.num_choices}"</span><span class="cursor-blink"></span></span></div>
+        </div>
+      </div>
+      <div class="desk-files">
+        <span class="file-tag active">layer1_structural.py</span>
+        <span class="file-tag">layer2_quality.py</span>
+        <span class="file-tag">layer3_alignment.py</span>
+        <span class="file-tag">layer4_course.py</span>
+        <span class="file-tag">models.py</span>
+      </div>
+    </div>
+
+    <!-- DESK 4: FOX (COORDINATOR) -->
+    <div class="desk" id="desk-fox">
+      <div class="desk-top">
+        <div class="avatar" style="background:linear-gradient(135deg,#059669,#34d399)">
+          🦊
+          <div class="dot dot-active"></div>
+        </div>
+        <div>
+          <div class="agent-name" style="color:#34d399">Fox (Lead)</div>
+          <div class="agent-role">Mission Coordinator</div>
+        </div>
+        <div class="desk-items">🗺️ <span class="steam">☕</span></div>
+      </div>
+      <div class="desk-body">
+        <div class="desk-chat" id="fox-chat">
+          <div class="bubble system">COORDINATING: 3 agents deployed, assembling results</div>
+          <div class="bubble">Sherlock's on the FRQs, Hermione's got student data, Professor's auditing the pipeline.</div>
+          <div class="bubble">Building this office while we wait. We got this. 🦊</div>
+        </div>
+        <div class="desk-code" id="fox-code">
+          <div class="filename">agent_office.html (this file!)</div>
+          <div class="code-line"><span class="line-num">1</span><span class="code-text"><span class="kw">&lt;div</span> <span class="cls">class</span>=<span class="str">"desk"</span><span class="kw">&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">2</span><span class="code-text">  <span class="kw">&lt;div</span> <span class="cls">class</span>=<span class="str">"desk-top"</span><span class="kw">&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">3</span><span class="code-text">    <span class="cmt">&lt;!-- Agent avatar --&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">4</span><span class="code-text">    <span class="kw">&lt;div</span> <span class="cls">class</span>=<span class="str">"avatar"</span><span class="kw">&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">5</span><span class="code-text">      🦊</span></div>
+          <div class="code-line"><span class="line-num">6</span><span class="code-text">    <span class="kw">&lt;/div&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">7</span><span class="code-text">  <span class="kw">&lt;/div&gt;</span></span></div>
+          <div class="code-line"><span class="line-num">8</span><span class="code-text"><span class="kw">&lt;/div&gt;</span><span class="cursor-blink"></span></span></div>
+        </div>
+      </div>
+      <div class="desk-files">
+        <span class="file-tag active">agent_office.html</span>
+        <span class="file-tag">mc1_fixes_for_akshit.md</span>
+        <span class="file-tag">mc1_comprehensive_review.md</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="sidebar">
+
+    <!-- Timeline -->
+    <div class="sidebar-section">
+      <div class="sidebar-title">MISSION TIMELINE</div>
+
+      <div class="tl-item">
+        <div class="tl-dot tl-done">&#10003;</div>
+        <div class="tl-text">Built QC pipeline (11 files, 4 layers)<small>Mar 15</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done">&#10003;</div>
+        <div class="tl-text">Ran QC on 4 courses (546 Qs)<small>Mar 15</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done">&#10003;</div>
+        <div class="tl-text">Interactive QC dashboard<small>Mar 15</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done">&#10003;</div>
+        <div class="tl-text">Fix list for Akshit (15 items)<small>Mar 16</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done">&#10003;</div>
+        <div class="tl-text">Comprehensive review + walkthrough<small>Mar 16</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-active"></div>
+        <div class="tl-text" style="color:#e94560;font-weight:600">FRQ structure & rubric check<small>Now</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-active"></div>
+        <div class="tl-text" style="color:#e94560;font-weight:600">Student-facing plans<small>Now</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-active"></div>
+        <div class="tl-text" style="color:#e94560;font-weight:600">New QC layers proposal<small>Now</small></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-pending">&#9744;</div>
+        <div class="tl-text" style="color:#8b949e">QC remaining courses (MC2, MC3, B1)<small>Next</small></div>
+      </div>
+    </div>
+
+    <!-- Students -->
+    <div class="sidebar-section">
+      <div class="sidebar-title">THE KIDS</div>
+
+      <div class="student-card">
+        <div class="student-emoji">🎮</div>
+        <div class="student-info">
+          <div class="name">Gus</div>
+          <div class="detail">DTM: 38.5% | Skill 2: 25%</div>
+        </div>
+        <div class="student-score score-1">AP 1</div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-emoji">🎯</div>
+        <div class="student-info">
+          <div class="name">Branson</div>
+          <div class="detail">32-pt gap | SSD double-time</div>
+        </div>
+        <div class="student-score score-2">AP 2</div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-emoji">⭐</div>
+        <div class="student-info">
+          <div class="name">Sydney</div>
+          <div class="detail">Misapplied DTM to South Africa</div>
+        </div>
+        <div class="student-score score-3">AP 3</div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-emoji">🚀</div>
+        <div class="student-info">
+          <div class="name">Zayen</div>
+          <div class="detail">Population dynamics weak</div>
+        </div>
+        <div class="student-score score-3">AP 3</div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-emoji">🏆</div>
+        <div class="student-info">
+          <div class="name">Grady</div>
+          <div class="detail">Needs FRQ polish</div>
+        </div>
+        <div class="student-score score-4">AP 4</div>
+      </div>
+
+      <div class="student-card">
+        <div class="student-emoji">💎</div>
+        <div class="student-info">
+          <div class="name">Luca</div>
+          <div class="detail">Needs application depth</div>
+        </div>
+        <div class="student-score score-4">AP 4</div>
+      </div>
+    </div>
+
+    <!-- Live Terminal -->
+    <div class="sidebar-section" style="flex:1">
+      <div class="sidebar-title">LIVE TERMINAL</div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="term-dot term-red"></div>
+          <div class="term-dot term-yellow"></div>
+          <div class="term-dot term-green"></div>
+          <span style="font-size:10px;color:#8b949e;margin-left:8px;font-family:'JetBrains Mono',monospace">qc-pipeline</span>
+        </div>
+        <div class="terminal-body" id="terminal">
+          <div class="term-line"><span class="term-prompt">$ </span><span class="term-cmd">python -m qc_pipeline ./s4-r2-mc1-5ff6309d/</span></div>
+          <div class="term-line"><span class="term-success">[L1]</span> <span class="term-output">Structural checks... 88 errors found</span></div>
+          <div class="term-line"><span class="term-success">[L2]</span> <span class="term-output">Quality checks... 87 warnings</span></div>
+          <div class="term-line"><span class="term-warn">[L3]</span> <span class="term-output">Content alignment... 7 wrong answers</span></div>
+          <div class="term-line"><span class="term-success">[L4]</span> <span class="term-output">Course-level... 9 findings</span></div>
+          <div class="term-line"><span class="term-prompt">$ </span><span class="term-cmd">Starting agent office...</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FAB BUTTON -->
+<button id="game-fab" onclick="openGame()">🎮</button>
+
+<!-- FLOATING GAME WINDOW -->
+<div id="game-window">
+  <div class="game-titlebar" id="game-titlebar">
+    <span style="font-size:16px">🦊</span>
+    <h3>TIC-TAC-TOE vs FOX</h3>
+    <div class="win-btns">
+      <button class="win-btn win-btn-minimize" onclick="minimizeGame()" title="Minimize">_</button>
+      <button class="win-btn win-btn-close" onclick="closeGame()" title="Close">x</button>
+    </div>
+  </div>
+  <div class="game-content" id="game-content">
+    <div class="game-sub">You (X) vs Fox Agent (O)</div>
+    <div class="game-score-bar">
+      <div class="gs-you"><div class="gs-label">You</div><div class="gs-num" id="score-you">0</div></div>
+      <div class="gs-draw"><div class="gs-label">Draws</div><div class="gs-num" id="score-draw">0</div></div>
+      <div class="gs-fox"><div class="gs-label">Fox 🦊</div><div class="gs-num" id="score-fox">0</div></div>
+    </div>
+    <div class="game-status" id="game-status">Your turn!</div>
+    <div class="game-board" id="game-board"></div>
+    <div class="game-actions">
+      <button class="game-btn" onclick="resetGame()">New Game</button>
+    </div>
+    <div class="game-fox-says" id="fox-says">🦊 Think you can beat me while I coordinate agents? Bring it!</div>
+  </div>
+</div>
+
+<script>
+  // Clock
+  setInterval(() => {
+    document.getElementById('clock').textContent = 'LIVE ' + new Date().toLocaleTimeString();
+  }, 1000);
+
+  // Agent chat simulations with REAL content
+  const agentData = {
+    sherlock: {
+      chat: [
+        'Reading 05_all_questions.json... filtering type: "extended-text"',
+        'Found 2 FRQs in test s4-r2-mc1-5ff6309d-frq-test',
+        'FRQ 1: Japan population pyramid - checking parts...',
+        'Stem references "the population pyramid above" - has stimulus_id',
+        'FRQ 2: Africa data table - only 5 points, not 7!',
+        'AP standard: 3 FRQs x 7 parts (A-G) x 1pt = 21 pts total',
+        'This course only has 2 FRQs... need at least 1 more',
+        'Checking rubric structure: task verbs (define, describe, explain)',
+        'Japan FRQ has proper multi-part structure with task verbs',
+        'Africa FRQ missing "Explain" parts - mostly identify/describe',
+        'Stimulus check: pyramid image exists but table may be broken',
+        'FRQ quiz title has TYPO: "Practice Excercise" (should be Exercise)',
+      ],
+      code: [
+        { file: '05_all_questions.json', lines: [
+          '{', '  "id": "frq-japan-pyramid",', '  "type": "extended-text",',
+          '  "stem": "Analyze the population",', '  "stimulus_id": "stim_042",',
+          '  "prompt_html": "<p>A. Identify...',  '  "test_id": "s4-r2-mc1-...-frq",',
+          '  "raw_metadata": {'
+        ]},
+        { file: '06_all_stimuli.json', lines: [
+          '{', '  "id": "stim_042",', '  "title": "Japan Pop Pyramid",',
+          '  "body_text": "",', '  "raw_xml": "<img src=\\"...\\"',
+          '  // Image-only stimulus',  '  // Needs manual verification',
+          '  "lesson_type": "assessment"'
+        ]},
+        { file: '03_quizzes.json', lines: [
+          '{', '  "test_id": "s4-r2-mc1-frq",', '  "title": "Practice Excercise",',
+          '  "item_count": 2,', '  "assessment_type": "practice",',
+          '  // TYPO in title!',  '  // Only 2 FRQs (AP needs 3)',
+          '  "lesson_type": "assessment"'
+        ]}
+      ]
+    },
+    hermione: {
+      chat: [
+        'Reading ap_human_geography.md for all 6 student profiles...',
+        'Gus: AP Score 1, DTM 38.5%, Skill 2 only 25%. Needs content fundamentals.',
+        'Branson: AP Score 2, SSD double-time accommodation. 32-pt retrieval gap!',
+        'His FRQ 1 score: 0 on DTM question. He literally cannot apply DTM.',
+        'Sydney: AP Score 3, misapplied DTM to South Africa. Analysis is weak.',
+        'All 3 students share one problem: they KNOW terms but cannot APPLY them.',
+        'MC1 design: Video > Article > PP100 cycle addresses this perfectly.',
+        'Building plan template: Who You Are > Why This Course > What You\'ll Do',
+        'Gus plan: "You scored 38.5% on DTM. This course will get you to 70%+"',
+        'Branson plan: needs double-time note + SSD flag for Akshit to configure',
+        'Sydney plan: "You confused DTM stages when analyzing South Africa data"',
+        'Adding success criteria: Mastery = SmartScore 80+ on all 6 PP100 quizzes',
+      ],
+      code: [
+        { file: 'ap_human_geography.md', lines: [
+          '## Student Profiles', '', '### Gus',
+          'AP Score: 1 | Target: 3', 'DTM: 38.5% | Skill 2: 25%',
+          'FRQ weakest: Q2 (stimulus)', '', '### Branson'
+        ]},
+        { file: 'S4_overview_for_hari.md', lines: [
+          '## MC1: DTM Application', '',
+          'Assigned to: Gus, Branson, Sydney', 'Purpose: Close DTM application gap',
+          'Structure: Per-topic Video>Article>PP100', 'Timeline: Week 2-3 of S4',
+          'Success: SmartScore 80+ on all quizzes', ''
+        ]},
+        { file: 'student_plan_draft.md', lines: [
+          '# Your AP HuGeo Review Plan', '',
+          '## Who This Is For', 'Hey [Student]! This course is built',
+          'specifically for YOUR AP weaknesses.', '',
+          '## What You\'ll Do', '6 topic cycles: Watch > Read > Practice'
+        ]}
+      ]
+    },
+    professor: {
+      chat: [
+        'Reading all 11 pipeline files... starting with __main__.py',
+        'Current architecture: loader.py > L1 > L2 > L3 (API) > L4 > report.py',
+        'L1 has 11 checks: choice_count, correct_answer, duplicates, stimuli, etc.',
+        'L2 has 8 checks: all_of_above, stem_length, answer_bias, feedback, etc.',
+        'L3 uses Claude API for content alignment (answerability, correctness)',
+        'L4 does course-level: topic coverage, skill balance, stimulus %',
+        'GAP FOUND: No FRQ-specific validation anywhere in the pipeline!',
+        'GAP FOUND: No article quality/depth scoring',
+        'GAP FOUND: No student plan generation or verification',
+        'Proposing Layer 5: FRQ Validation (structure, rubric, task verbs)',
+        'Proposing Layer 6: Content Depth (article word count, key term coverage)',
+        'Proposing Layer 7: Student Plan QC (plan exists, matches spec, personalized)',
+      ],
+      code: [
+        { file: 'layer1_structural.py', lines: [
+          'def check_choice_count(q):', '    """AP MCQ must have 5 choices"""',
+          '    if q.num_choices != 5:', '        return Finding(',
+          '            layer="L1",', '            severity="error",',
+          '            check="wrong_choice_count",', '        )'
+        ]},
+        { file: 'layer5_frq.py (proposed)', lines: [
+          'def check_frq_structure(q):', '    """FRQ must have 7 parts A-G"""',
+          '    parts = extract_parts(q.stem)', '    if len(parts) < 7:',
+          '        return Finding(', '            layer="L5",',
+          '            severity="error",', '            check="frq_parts_missing")'
+        ]},
+        { file: 'layer6_content.py (proposed)', lines: [
+          'def check_article_depth(stim):', '    """Article should be 1000+ words"""',
+          '    wc = len(stim.body_text.split())', '    if wc < 800:',
+          '        return Finding(', '            severity="warning",',
+          '            check="thin_article",', '            message=f"{wc} words")'
+        ]}
+      ]
+    },
+    fox: {
+      chat: [
+        'All 3 agents deployed and working. Monitoring progress...',
+        'Sherlock found 2 FRQs, checking structure now.',
+        'Hermione has all 6 student profiles loaded. Building plans.',
+        'Professor found 3 gaps in the pipeline. Proposing new layers.',
+        'I\'m building this cute office so Tripti can watch us work!',
+        'ETA: FRQ report ~2 min, Student plans ~3 min, Pipeline update ~5 min',
+        'Also playing tic-tac-toe with Tripti. She\'s tough!',
+        'The Ruby server at /tmp/hgse-dashboard/server.rb is ready now.',
+        'When agents finish, I\'ll assemble everything into final deliverables.',
+        'Priority order: FRQ check > Student plans > Pipeline update',
+        'Almost ready to compile results. Sherlock\'s finishing up.',
+        'This is going to be SO clean when it\'s done. Trust. 🦊',
+      ],
+      code: [
+        { file: 'mc1_fixes_for_akshit.md', lines: [
+          '# MC1 Fixes for Akshit', '',
+          '## C1: DELETE 78 HUMG20 Items', 'All 4-choice legacy items must go.',
+          'Item IDs: [78 specific IDs listed]', '',
+          '## C2: DELETE 3 Ghost Entries', 'Sample items with no content'
+        ]},
+        { file: 'mc1_comprehensive_review.md', lines: [
+          '# MC1 Comprehensive Review', '',
+          '## The Kids We\'re Helping', 'Gus (AP 1), Branson (AP 2), Sydney (AP 3)',
+          '', '## Does This Course Fix Their Problem?',
+          'YES - but needs C1-C6 fixes first.', ''
+        ]},
+        { file: 'agent_office.html', lines: [
+          '<!-- This file! Meta! -->', '<div class="desk" id="desk-fox">',
+          '  <div class="avatar">🦊</div>', '  <div class="agent-name">Fox</div>',
+          '  <!-- I\'m writing about myself -->', '  <!-- while coordinating agents -->',
+          '  <!-- How very meta. -->', '  🦊'
+        ]}
+      ]
+    }
+  };
+
+  // Rotate chat messages
+  const chatCounters = { sherlock: 0, hermione: 0, professor: 0, fox: 0 };
+
+  function addChat(agent) {
+    const data = agentData[agent];
+    const chatDiv = document.getElementById(agent + '-chat');
+    const idx = chatCounters[agent] % data.chat.length;
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    bubble.textContent = data.chat[idx];
+    chatDiv.appendChild(bubble);
+    while (chatDiv.children.length > 4) chatDiv.removeChild(chatDiv.firstChild);
+    chatDiv.scrollTop = chatDiv.scrollHeight;
+    chatCounters[agent]++;
+  }
+
+  // Rotate code displays
+  const codeCounters = { sherlock: 0, hermione: 0, professor: 0, fox: 0 };
+
+  function updateCode(agent) {
+    const data = agentData[agent];
+    const codeDiv = document.getElementById(agent + '-code');
+    const idx = codeCounters[agent] % data.code.length;
+    const codeData = data.code[idx];
+
+    let html = `<div class="filename">${codeData.file}</div>`;
+    codeData.lines.forEach((line, i) => {
+      const highlighted = line
+        .replace(/\b(def|if|return|class|import|from|for|in|not|and|or|True|False|None)\b/g, '<span class="kw">$1</span>')
+        .replace(/(["'])(.*?)\1/g, '<span class="str">$1$2$1</span>')
+        .replace(/\b(\d+)\b/g, '<span class="num">$1</span>')
+        .replace(/(#.*)/g, '<span class="cmt">$1</span>')
+        .replace(/\/\/.*/g, '<span class="cmt">$&</span>');
+      html += `<div class="code-line"><span class="line-num">${i+1}</span><span class="code-text">${highlighted}${i === codeData.lines.length-1 ? '<span class="cursor-blink"></span>' : ''}</span></div>`;
+    });
+
+    codeDiv.innerHTML = html;
+    codeCounters[agent]++;
+  }
+
+  // Terminal updates
+  const terminalMsgs = [
+    { cls: 'term-prompt', text: '$ ', cmd: 'python3 extract_frqs.py' },
+    { cls: 'term-success', text: '[FRQ] ', output: 'Found 2 FRQs in MC1' },
+    { cls: 'term-warn', text: '[WARN] ', output: 'FRQ 2 has only 5 parts (expected 7)' },
+    { cls: 'term-prompt', text: '$ ', cmd: 'reading student specs...' },
+    { cls: 'term-success', text: '[PLAN] ', output: 'Gus: AP 1 -> Target 3' },
+    { cls: 'term-success', text: '[PLAN] ', output: 'Branson: AP 2 -> Target 3+ (SSD)' },
+    { cls: 'term-success', text: '[PLAN] ', output: 'Sydney: AP 3 -> Target 4' },
+    { cls: 'term-prompt', text: '$ ', cmd: 'auditing qc_pipeline/*.py' },
+    { cls: 'term-warn', text: '[GAP] ', output: 'No FRQ validation layer!' },
+    { cls: 'term-warn', text: '[GAP] ', output: 'No article depth scoring!' },
+    { cls: 'term-success', text: '[NEW] ', output: 'Proposing L5: FRQ Validation' },
+    { cls: 'term-success', text: '[NEW] ', output: 'Proposing L6: Content Depth' },
+    { cls: 'term-success', text: '[OK] ', output: 'All agents reporting. Assembling.' },
+  ];
+
+  let termIdx = 0;
+  function addTerminalLine() {
+    const terminal = document.getElementById('terminal');
+    const msg = terminalMsgs[termIdx % terminalMsgs.length];
+    const line = document.createElement('div');
+    line.className = 'term-line';
+    if (msg.cmd) {
+      line.innerHTML = `<span class="${msg.cls}">${msg.text}</span><span class="term-cmd">${msg.cmd}</span>`;
+    } else {
+      line.innerHTML = `<span class="${msg.cls}">${msg.text}</span><span class="term-output">${msg.output}</span>`;
+    }
+    terminal.appendChild(line);
+    if (terminal.children.length > 15) terminal.removeChild(terminal.firstChild);
+    terminal.scrollTop = terminal.scrollHeight;
+    termIdx++;
+  }
+
+  // Stagger agent updates for natural feel
+  const agents = ['sherlock', 'hermione', 'professor', 'fox'];
+  let agentCycle = 0;
+
+  setInterval(() => {
+    const agent = agents[agentCycle % agents.length];
+    addChat(agent);
+    agentCycle++;
+  }, 3000);
+
+  setInterval(() => {
+    const agent = agents[Math.floor(Math.random() * agents.length)];
+    updateCode(agent);
+  }, 5000);
+
+  setInterval(addTerminalLine, 4000);
+
+  // Fetch live status from server
+  async function fetchStatus() {
+    try {
+      const res = await fetch('/api/status');
+      const data = await res.json();
+    } catch(e) {}
+  }
+
+  setInterval(fetchStatus, 10000);
+
+  // ========== FLOATING DRAGGABLE TIC-TAC-TOE ==========
+
+  const gameWindow = document.getElementById('game-window');
+  const gameFab = document.getElementById('game-fab');
+  const titlebar = document.getElementById('game-titlebar');
+
+  // DRAG LOGIC
+  let isDragging = false;
+  let dragOffsetX = 0;
+  let dragOffsetY = 0;
+
+  titlebar.addEventListener('mousedown', (e) => {
+    if (e.target.closest('.win-btn')) return; // don't drag on buttons
+    isDragging = true;
+    const rect = gameWindow.getBoundingClientRect();
+    dragOffsetX = e.clientX - rect.left;
+    dragOffsetY = e.clientY - rect.top;
+    e.preventDefault();
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    let x = e.clientX - dragOffsetX;
+    let y = e.clientY - dragOffsetY;
+    // Clamp to viewport
+    x = Math.max(0, Math.min(window.innerWidth - gameWindow.offsetWidth, x));
+    y = Math.max(0, Math.min(window.innerHeight - gameWindow.offsetHeight, y));
+    gameWindow.style.left = x + 'px';
+    gameWindow.style.top = y + 'px';
+    gameWindow.style.right = 'auto';
+    gameWindow.style.bottom = 'auto';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  function openGame() {
+    gameWindow.classList.add('open');
+    gameFab.classList.add('hidden');
+  }
+
+  function closeGame() {
+    gameWindow.classList.remove('open');
+    gameFab.classList.remove('hidden');
+  }
+
+  function minimizeGame() {
+    gameWindow.classList.remove('open');
+    gameFab.classList.remove('hidden');
+  }
+
+  // ========== GAME LOGIC ==========
+  let board = Array(9).fill('');
+  let gameOver = false;
+  let scores = { you: 0, fox: 0, draw: 0 };
+
+  const foxTaunts = {
+    win: [
+      "Outsmarted! I'm coordinating 3 agents AND beating you! 🦊",
+      "Fox: 1, Human: 0. Want another round?",
+      "I do QC AND tic-tac-toe. Multi-talented fox.",
+      "Better luck next time! I've got algorithms on my side.",
+    ],
+    lose: [
+      "Wait WHAT?! You beat me while I was coordinating?!",
+      "OK fine, you win. But my agents are still working!",
+      "Beginner's luck! ...right? RIGHT?!",
+      "I demand a recount. Fox attorneys are on their way.",
+    ],
+    draw: [
+      "A draw! We're equally matched... for now.",
+      "Tie game. Just like my agent deployment schedule - perfectly balanced.",
+      "Neither of us wins, but Sherlock just found another bug!",
+      "Draw! OK but seriously, have you SEEN what Hermione's building?",
+    ],
+    start: [
+      "Think you can beat me while I coordinate agents? Bring it!",
+      "I'll play with my left paw. My right is managing 3 agents.",
+      "Let's go! But I warn you, I've analyzed 546 questions today.",
+      "Ready when you are! Meanwhile, check out Sherlock's desk.",
+    ]
+  };
+
+  function getFoxTaunt(type) {
+    const list = foxTaunts[type];
+    return '🦊 ' + list[Math.floor(Math.random() * list.length)];
+  }
+
+  function renderBoard() {
+    const boardEl = document.getElementById('game-board');
+    boardEl.innerHTML = '';
+    board.forEach((cell, i) => {
+      const div = document.createElement('div');
+      div.className = 'cell' + (cell ? ' taken' : '');
+      div.id = 'cell-' + i;
+      if (cell === 'X') div.innerHTML = '<span class="x">X</span>';
+      else if (cell === 'O') div.innerHTML = '<span class="o">O</span>';
+      div.onclick = () => playerMove(i);
+      boardEl.appendChild(div);
+    });
+  }
+
+  function playerMove(i) {
+    if (board[i] || gameOver) return;
+    board[i] = 'X';
+    renderBoard();
+    if (checkWin('X')) {
+      endGame('You win!');
+      scores.you++;
+      updateScores();
+      document.getElementById('fox-says').textContent = getFoxTaunt('lose');
+      return;
+    }
+    if (board.every(c => c)) {
+      endGame("It's a draw!");
+      scores.draw++;
+      updateScores();
+      document.getElementById('fox-says').textContent = getFoxTaunt('draw');
+      return;
+    }
+    document.getElementById('game-status').textContent = 'Fox thinking...';
+    setTimeout(foxMove, 500);
+  }
+
+  function foxMove() {
+    let move = findWinningMove('O') ?? findWinningMove('X') ?? tryCenter() ?? tryCorner() ?? tryEdge();
+    if (move !== null && move !== undefined) {
+      board[move] = 'O';
+      renderBoard();
+      if (checkWin('O')) {
+        endGame('Fox wins! 🦊');
+        scores.fox++;
+        updateScores();
+        document.getElementById('fox-says').textContent = getFoxTaunt('win');
+        return;
+      }
+      if (board.every(c => c)) {
+        endGame("It's a draw!");
+        scores.draw++;
+        updateScores();
+        document.getElementById('fox-says').textContent = getFoxTaunt('draw');
+        return;
+      }
+      document.getElementById('game-status').textContent = 'Your turn!';
+    }
+  }
+
+  function findWinningMove(player) {
+    const lines = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+    for (const [a,b,c] of lines) {
+      const vals = [board[a],board[b],board[c]];
+      if (vals.filter(v=>v===player).length === 2 && vals.includes('')) {
+        return [a,b,c][vals.indexOf('')];
+      }
+    }
+    return null;
+  }
+
+  function tryCenter() { return board[4] === '' ? 4 : null; }
+  function tryCorner() { const corners = [0,2,6,8].filter(i => !board[i]); return corners.length ? corners[Math.floor(Math.random()*corners.length)] : null; }
+  function tryEdge() { const edges = [1,3,5,7].filter(i => !board[i]); return edges.length ? edges[Math.floor(Math.random()*edges.length)] : null; }
+
+  function checkWin(player) {
+    const lines = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+    for (const [a,b,c] of lines) {
+      if (board[a]===player && board[b]===player && board[c]===player) {
+        document.getElementById('cell-'+a).classList.add('win-line');
+        document.getElementById('cell-'+b).classList.add('win-line');
+        document.getElementById('cell-'+c).classList.add('win-line');
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function endGame(msg) {
+    gameOver = true;
+    document.getElementById('game-status').textContent = msg;
+  }
+
+  function updateScores() {
+    document.getElementById('score-you').textContent = scores.you;
+    document.getElementById('score-fox').textContent = scores.fox;
+    document.getElementById('score-draw').textContent = scores.draw;
+  }
+
+  function resetGame() {
+    board = Array(9).fill('');
+    gameOver = false;
+    document.getElementById('game-status').textContent = 'Your turn!';
+    document.getElementById('fox-says').textContent = getFoxTaunt('start');
+    renderBoard();
+  }
+
+  renderBoard();
+</script>
+
+</body>
+</html>

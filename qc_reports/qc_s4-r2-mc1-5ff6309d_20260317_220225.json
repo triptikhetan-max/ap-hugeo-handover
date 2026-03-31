@@ -1,0 +1,14 @@
+{
+  "course_id": "s4-r2-mc1-5ff6309d",
+  "course_title": "AP HuGeo: DTM Application",
+  "run_at": "2026-03-17T22:02:25.265519",
+  "summary": {
+    "total_findings": 0,
+    "errors": 0,
+    "warnings": 0,
+    "info": 0,
+    "by_layer": {},
+    "by_check": {}
+  },
+  "findings": []
+}

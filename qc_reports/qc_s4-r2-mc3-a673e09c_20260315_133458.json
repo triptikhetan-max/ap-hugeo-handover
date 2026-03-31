@@ -1,0 +1,2724 @@
+{
+  "course_id": "s4-r2-mc3-a673e09c",
+  "course_title": "AP HuGeo: Centripetal-Centrifugal vs Push-Pull",
+  "run_at": "2026-03-15T13:34:58.140701",
+  "summary": {
+    "total_findings": 169,
+    "errors": 49,
+    "warnings": 41,
+    "info": 79,
+    "by_layer": {
+      "L1": 102,
+      "L2": 48,
+      "L4": 9,
+      "L3": 10
+    },
+    "by_check": {
+      "wrong_choice_count": 44,
+      "missing_feedback": 38,
+      "missing_stimulus": 2,
+      "duplicate_stem": 18,
+      "uniform_choice_length": 35,
+      "non_ap_source": 10,
+      "answer_position_bias": 3,
+      "topic_concentration": 1,
+      "topic_distribution": 1,
+      "skill_distribution": 1,
+      "low_stimulus_coverage": 1,
+      "low_ap_classroom_ratio": 1,
+      "source_distribution": 1,
+      "difficulty_distribution": 1,
+      "frq_count": 1,
+      "course_summary": 1,
+      "debatable_answer": 7,
+      "misleading_distractor": 3
+    }
+  },
+  "findings": [
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245119",
+        "stem_preview": "Select the statement which best identifies the primary effect of centripetal for...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245138",
+        "stem_preview": "How do practices that discriminate based on ethnicity function as centrifugal fo...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245103",
+        "stem_preview": "Which statement demonstrates how ethnonationalism creates centrifugal forces in ...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245107",
+        "stem_preview": "What happens when governments fail to provide fair legal systems?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245146",
+        "stem_preview": "Why do concerns about job losses create centripetal forces within Scotland's ind...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245093",
+        "stem_preview": "Which response best justifies why political elections can create centrifugal for...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245130",
+        "stem_preview": "Which statement demonstrates how infrastructure development functions as a centr...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245133",
+        "stem_preview": "Why do quality transportation systems function as centripetal forces?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245098",
+        "stem_preview": "Of the following, which definition best describes ethnonationalism?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245091",
+        "stem_preview": "Of the following, which definition best describes centrifugal forces?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245092",
+        "stem_preview": "Why is it uncommon to find purely centrifugal events?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245097",
+        "stem_preview": "How does Quebec's French-speaking population demonstrate centrifugal forces?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245099",
+        "stem_preview": "Select the statement which best identifies how globalization affects ethnonation...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245100",
+        "stem_preview": "Which countries experienced Kurdish independence movements due to fragmentation?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245101",
+        "stem_preview": "What empowered ethnonational groups to demand more autonomy?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245102",
+        "stem_preview": "How did declining state sovereignty contribute to ethnic nationalist movements?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245105",
+        "stem_preview": "Choose the option that best describes how weak infrastructure creates centrifuga...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245106",
+        "stem_preview": "Select the best explanation for how lack of political equality leads to state di...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245108",
+        "stem_preview": "How does poor transportation infrastructure weaken state unity?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245109",
+        "stem_preview": "Which statement demonstrates how weak infrastructure creates centrifugal forces ...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245110",
+        "stem_preview": "Which response best justifies how lack of political equality leads to state divi...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245111",
+        "stem_preview": "Which cultural practice helps prevent stateless nations in Islamic countries?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245112",
+        "stem_preview": "Why do homogeneous countries experience fewer ethnic nationalist movements?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245113",
+        "stem_preview": "Which response best justifies why restrictive immigration policies strengthen ce...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245115",
+        "stem_preview": "How do shared cultural practices reduce the likelihood of failed states?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245116",
+        "stem_preview": "Select the best explanation for how Northern Ireland's dual citizenship option r...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245117",
+        "stem_preview": "Which statement demonstrates how Scotland's independence desire represents centr...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245120",
+        "stem_preview": "Which statement demonstrates how centripetal forces can lead to ethnonationalism...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245122",
+        "stem_preview": "What type of force unites a country's population according to the definitions pr...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245123",
+        "stem_preview": "Select the best explanation for why uneven development creates state fragmentati...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245124",
+        "stem_preview": "Which process requires governments to blend different groups within state border...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245125",
+        "stem_preview": "Which statement demonstrates how regionalism creates centrifugal forces opposing...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245126",
+        "stem_preview": "What economic factor widens gaps between rich and poor within states?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245128",
+        "stem_preview": "Choose the option that best describes how improved infrastructure promotes cultu...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245134",
+        "stem_preview": "What type of infrastructure development serves as an economic centripetal force?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245135",
+        "stem_preview": "Choose the option that best describes how acceptance of racial differences funct...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245136",
+        "stem_preview": "Which environmental factor can serve as a centripetal force when equally distrib...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245137",
+        "stem_preview": "What type of cultural celebration can promote national unity as a centripetal fo...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245140",
+        "stem_preview": "Which outcome results when centripetal forces strengthen cultural cohesion at th...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245141",
+        "stem_preview": "How do centripetal forces contribute to more equitable infrastructure developmen...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245142",
+        "stem_preview": "Why can centripetal forces sometimes lead to ethnonationalism at the state scale...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245143",
+        "stem_preview": "Select the best explanation for how London's concentration of transnational comp...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245147",
+        "stem_preview": "Of the following, which definition best describes how religious separation creat...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245148",
+        "stem_preview": "Which religious factor created cultural cohesion during the formation of Pakista...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2020b71c-dee7-4eef-8fb7-470850c582b4",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-7430c950-3f6d-4517-b28a-da87205fba1b",
+        "stem_preview": "Which of the following best explains a possible consequence of centrifugal force...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8b0388a3-9a75-4d7d-8e69-c4f3b74615b3",
+        "stem_preview": "The map shows the world’s newest country, South Sudan, formerly part of Sudan, a...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b8aee4e8-c66b-4fe5-8eaa-e64820c5d1e2",
+        "stem_preview": "Which of the following can be an example of a centrifugal political force?",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3d77fff5-852d-46d4-b561-297ad0cf89b4",
+        "stem_preview": "A good example of a centripetal force in political geography is",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a8f2e974-2b23-44cf-9673-7740fa7c0624",
+        "stem_preview": "Local and regional autonomous governments and a separatist militia group have be...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2a0b80cb-cb76-41fb-a2e0-904fc71520e6",
+        "stem_preview": "______________ forces work to pull countries apart, while ______________ forces ...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-9c64b85f-47ea-42f3-85d9-d2d5b6d20b25",
+        "stem_preview": "For many years, French Canadians from Quebec sought ______________, or the right...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-497c2d21-18d0-4cd0-8d20-18076baa36d8",
+        "stem_preview": "All of the following are examples of a centrifugal force EXCEPT",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-583bacc5-6278-4413-a10c-d36110d109bd",
+        "stem_preview": "A student who lives in Minneapolis chooses to spend her spring break in Florida ...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d54d8e92-bd8d-4ab1-8a14-e9f281f95269",
+        "stem_preview": "Which of the following best compares intervening obstacles and intervening oppor...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d468c67a-06f3-4cc5-b5c9-6261cfd93009",
+        "stem_preview": "Which of the following describes a pull factor affecting migration to some of th...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-62bf77ed-d0a7-4bba-8c08-74d47addd484",
+        "stem_preview": "In recent decades, all of the following have played a major role in the rapid gr...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-1d9af649-22fc-4c28-beff-4f7174732b0d",
+        "stem_preview": "In the 1930s, thousands of “Okies” fled the Dust Bowl of the southern Great Plai...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-b6f14d4a-29bf-4037-9972-e6442668c9c4",
+        "stem_preview": "Many recent college graduates and young professionals move to large, vibrant cit...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-5a9e339d-89c5-4a48-9716-bdaa29fe6ee5",
+        "stem_preview": "Push factors that result in migration away from rural agriculture include all of...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e55448fd-b290-4e1b-a5b9-36c3079aa07c",
+        "stem_preview": "The nineteenth-century emigration of a large number of Swedes from a particular ...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2194a5fe-bf4b-4a55-be99-54e67405f3dd",
+        "stem_preview": "Which of the following countries is the primary destination for guest workers fr...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fe5d11a4-e9f6-4e3f-9642-ae32fb19dbb2",
+        "stem_preview": "Transnational migrants often send money back to their home countries to support ...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'map above' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-b4d76ac8-b654-4c40-9fa1-a11783a3750e",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "matched_pattern": "map above"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b4d76ac8-b654-4c40-9fa1-a11783a3750e",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4f1341b1-d9da-4cc5-8132-4b4961e711ca",
+        "stem_preview": "All of the following twentieth-century migration streams were propelled by perse...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-05dcb762-448a-4434-8175-7bc652f1c547",
+        "stem_preview": "In the early twenty-first century, the largest number of refugees is located on ...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-b3abdf0f-a9b4-40f9-995c-204e98fcfc25",
+        "stem_preview": "Millions of ______________ came to the United States during the early years of t...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-ef4caf18-4ef5-4ad9-8223-79189b555cfc",
+        "stem_preview": "Which of the following is the result of chain migration?",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-93dc5de0-304c-45f4-b90c-4e56516c477b",
+        "stem_preview": "Refugees are produced through",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-4e541fda-d241-4ece-a75a-c9c49b9419ec",
+        "stem_preview": "All of the following may be reasons behind forced migration EXCEPT",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-f797e180-948f-4732-8997-ed95815ff844",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-ef9a69af-bab0-4e5b-aa39-c3ac54b5871d",
+        "stem_preview": "There has been an increase in asylum seekers from Syria to the European Union in...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-d8037c98-12b6-4bf9-bd78-4a6be8d4a4e2",
+        "stem_preview": "Which of the following correctly compares the impact of centripetal forces at th...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-adb07b99-390c-4e48-a9d5-a9143274d396",
+        "stem_preview": "A student who lives in Minneapolis chooses to spend her spring break in Florida ...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "2.10",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-be2479db-b5b9-4c28-9955-d8a4f4bd6943",
+        "stem_preview": "The map shows the world’s newest country, South Sudan, formerly part of Sudan, a...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "4.10",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "qti-item-ea4a59fe-1853-43d0-bd3d-205366e1bf01",
+        "stem_preview": "Which of the following is the best describes an example of transhumance?",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b1e61fee-1cbd-4e6d-90f2-0d92a7196a9e",
+        "stem_preview": "Local and regional autonomous governments and a separatist militia group have be...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fb1ac619-7996-452f-8d16-025fac67fafc",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-7a54e531-038c-45d0-abea-5c52a17c8815",
+        "stem_preview": "Which of the following best compares intervening obstacles and intervening oppor...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.10: Causes of Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'map above' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-e25e109e-805c-41cf-9442-d762ef812d74",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "matched_pattern": "map above"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e25e109e-805c-41cf-9442-d762ef812d74",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-c313b917-8a7c-4279-82c2-11fc7ced643a",
+        "stem_preview": "All of the following twentieth-century migration streams were propelled by perse...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-087cb834-9716-4125-af25-75993dff76b7",
+        "stem_preview": "In the early twenty-first century, the largest number of refugees is located on ...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "HUMG20-qti104533-v1-q1124364",
+          "pcb-item-3d77fff5-852d-46d4-b561-297ad0cf89b4"
+        ],
+        "stem_preview": "a good example of a centripetal force in political geography is"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 4 questions",
+      "context": {
+        "question_ids": [
+          "HUMG20-qti104533-v1-q1124365",
+          "pcb-item-2b2cffa0-f18e-40dc-b958-2adbd2f498e8",
+          "qti-item-d8037c98-12b6-4bf9-bd78-4a6be8d4a4e2",
+          "pcb-item-dbaa095d-2bc0-45ef-84cc-a08b49ebb06b"
+        ],
+        "stem_preview": "which of the following correctly compares the impact of centripetal forces at the local scale with t"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "HUMG20-qti104533-v1-q1124367",
+          "pcb-item-8bacb05f-9aaf-410d-995f-13c801d04e3a"
+        ],
+        "stem_preview": "which of the following compares the impact of increased global communications technology to the impa"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 3 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-2020b71c-dee7-4eef-8fb7-470850c582b4",
+          "qti-item-f797e180-948f-4732-8997-ed95815ff844",
+          "pcb-item-fb1ac619-7996-452f-8d16-025fac67fafc"
+        ],
+        "stem_preview": "at some point in their recent history, all of the following countries became divided into two politi"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-8b0388a3-9a75-4d7d-8e69-c4f3b74615b3",
+          "qti-item-be2479db-b5b9-4c28-9955-d8a4f4bd6943"
+        ],
+        "stem_preview": "the map shows the world’s newest country, south sudan, formerly part of sudan, and the islamic regio"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-32c00ea3-e246-4a77-9666-107ba1fcf93e",
+          "pcb-item-2f317509-551f-447e-83e6-4313f456ec54"
+        ],
+        "stem_preview": "nunavut in canada is a semiautonomous region that allows an indigenous group within canada to mainta"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-a8f2e974-2b23-44cf-9673-7740fa7c0624",
+          "pcb-item-b1e61fee-1cbd-4e6d-90f2-0d92a7196a9e"
+        ],
+        "stem_preview": "local and regional autonomous governments and a separatist militia group have been established withi"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-583bacc5-6278-4413-a10c-d36110d109bd",
+          "qti-item-adb07b99-390c-4e48-a9d5-a9143274d396"
+        ],
+        "stem_preview": "a student who lives in minneapolis chooses to spend her spring break in florida rather than in jamai"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-9d19ce6a-8967-4c29-ac91-e28bc979ad46",
+          "pcb-item-d3409d2d-ca60-46ee-ae65-5fd0fbbe046e"
+        ],
+        "stem_preview": "immigration of asylum applicants from africa to the european union, norway, and switzerland increase"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-d54d8e92-bd8d-4ab1-8a14-e9f281f95269",
+          "pcb-item-7a54e531-038c-45d0-abea-5c52a17c8815"
+        ],
+        "stem_preview": "which of the following best compares intervening obstacles and intervening opportunities encountered"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-92a97b6b-aaa0-4784-b7bb-512d8dfa3e9b",
+          "pcb-item-d9caaeeb-c08a-4cf3-bb73-4ecf16ba0255"
+        ],
+        "stem_preview": "in 2018, a large number of migrants from afghanistan and iraq applied for asylum in the european uni"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-bc140eb4-b675-4bfa-bffa-eca97b255924",
+          "pcb-item-af6778c5-a980-4ad9-b4e6-27b165292b34"
+        ],
+        "stem_preview": "the international syrian refugee crisis that started in 2011 is best explained by which of the follo"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-a33d0034-ac97-4704-9dda-68cde700bdf0",
+          "qti-item-ef9a69af-bab0-4e5b-aa39-c3ac54b5871d"
+        ],
+        "stem_preview": "there has been an increase in asylum seekers from syria to the european union in recent years. which"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-d9944d3f-7eb9-4b5c-a325-e6bf7a933904",
+          "qti-item-ea4a59fe-1853-43d0-bd3d-205366e1bf01"
+        ],
+        "stem_preview": "which of the following is the best describes an example of transhumance?"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-b4d76ac8-b654-4c40-9fa1-a11783a3750e",
+          "pcb-item-e25e109e-805c-41cf-9442-d762ef812d74"
+        ],
+        "stem_preview": "the flow lines on the map above most likely represent the movement of"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-4f1341b1-d9da-4cc5-8132-4b4961e711ca",
+          "pcb-item-c313b917-8a7c-4279-82c2-11fc7ced643a"
+        ],
+        "stem_preview": "all of the following twentieth-century migration streams were propelled by persecution or open confl"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-05dcb762-448a-4434-8175-7bc652f1c547",
+          "pcb-item-087cb834-9716-4125-af25-75993dff76b7"
+        ],
+        "stem_preview": "in the early twenty-first century, the largest number of refugees is located on which of the followi"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-f766a867-245d-44f9-962a-2a4dbfdeaadf",
+          "pcb-item-7e83c421-fc2a-4d7e-95da-140d5c78535b"
+        ],
+        "stem_preview": "a large number of turkish people migrated to germany in the 1960s, when west germany’s manufacturing"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1124363",
+        "stem_preview": "Which of the following terms best applies to what a country experiences when its...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          16,
+          18,
+          18,
+          11,
+          10
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245119",
+        "stem_preview": "Select the statement which best identifies the primary effect of centripetal for...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          81,
+          78,
+          81,
+          83
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245093",
+        "stem_preview": "Which response best justifies why political elections can create centrifugal for...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          67,
+          68,
+          75,
+          71
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245133",
+        "stem_preview": "Why do quality transportation systems function as centripetal forces?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          80,
+          76,
+          79,
+          76
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245098",
+        "stem_preview": "Of the following, which definition best describes ethnonationalism?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          71,
+          72,
+          64,
+          67
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245092",
+        "stem_preview": "Why is it uncommon to find purely centrifugal events?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          74,
+          76,
+          70,
+          74
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245101",
+        "stem_preview": "What empowered ethnonational groups to demand more autonomy?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "choice_lengths": [
+          49,
+          46,
+          51,
+          49
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245102",
+        "stem_preview": "How did declining state sovereignty contribute to ethnic nationalist movements?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.9",
+        "choice_lengths": [
+          72,
+          78,
+          79,
+          74
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245108",
+        "stem_preview": "How does poor transportation infrastructure weaken state unity?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          85,
+          78,
+          78,
+          84
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245111",
+        "stem_preview": "Which cultural practice helps prevent stateless nations in Islamic countries?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          7,
+          4,
+          6,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245113",
+        "stem_preview": "Which response best justifies why restrictive immigration policies strengthen ce...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          77,
+          82,
+          76,
+          81
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245115",
+        "stem_preview": "How do shared cultural practices reduce the likelihood of failed states?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          80,
+          85,
+          87,
+          82
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245122",
+        "stem_preview": "What type of force unites a country's population according to the definitions pr...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          18,
+          18,
+          16,
+          15
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245124",
+        "stem_preview": "Which process requires governments to blend different groups within state border...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          15,
+          14,
+          11,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245126",
+        "stem_preview": "What economic factor widens gaps between rich and poor within states?",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          13,
+          11,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245142",
+        "stem_preview": "Why can centripetal forces sometimes lead to ethnonationalism at the state scale...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          76,
+          75,
+          73,
+          78
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245147",
+        "stem_preview": "Of the following, which definition best describes how religious separation creat...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          70,
+          77,
+          74,
+          77
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245148",
+        "stem_preview": "Which religious factor created cultural cohesion during the formation of Pakista...",
+        "test_id": "HUMG20-qti104533-v1",
+        "topic": "4.10",
+        "choice_lengths": [
+          5,
+          8,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-2020b71c-dee7-4eef-8fb7-470850c582b4",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          5,
+          7,
+          7,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-2a0b80cb-cb76-41fb-a2e0-904fc71520e6",
+        "stem_preview": "______________ forces work to pull countries apart, while ______________ forces ...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          29,
+          29,
+          26,
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-2a0b80cb-cb76-41fb-a2e0-904fc71520e6",
+        "stem_preview": "______________ forces work to pull countries apart, while ______________ forces ...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-9c64b85f-47ea-42f3-85d9-d2d5b6d20b25",
+        "stem_preview": "For many years, French Canadians from Quebec sought ______________, or the right...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          11,
+          18,
+          15,
+          15,
+          12
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-9c64b85f-47ea-42f3-85d9-d2d5b6d20b25",
+        "stem_preview": "For many years, French Canadians from Quebec sought ______________, or the right...",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-497c2d21-18d0-4cd0-8d20-18076baa36d8",
+        "stem_preview": "All of the following are examples of a centrifugal force EXCEPT",
+        "test_id": "pcb-test-b8ce48f4281746849857dda0288c7dd1",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-1d9af649-22fc-4c28-beff-4f7174732b0d",
+        "stem_preview": "In the 1930s, thousands of “Okies” fled the Dust Bowl of the southern Great Plai...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "choice_lengths": [
+          19,
+          14,
+          20,
+          19,
+          17
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-1d9af649-22fc-4c28-beff-4f7174732b0d",
+        "stem_preview": "In the 1930s, thousands of “Okies” fled the Dust Bowl of the southern Great Plai...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-b6f14d4a-29bf-4037-9972-e6442668c9c4",
+        "stem_preview": "Many recent college graduates and young professionals move to large, vibrant cit...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-5a9e339d-89c5-4a48-9716-bdaa29fe6ee5",
+        "stem_preview": "Push factors that result in migration away from rural agriculture include all of...",
+        "test_id": "pcb-test-f6095ac30d2b4f8485fb8eefb98654af",
+        "topic": "2.10: Causes of Migration",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-e55448fd-b290-4e1b-a5b9-36c3079aa07c",
+        "stem_preview": "The nineteenth-century emigration of a large number of Swedes from a particular ...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          11,
+          15,
+          13,
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-6b6f271b-a2f5-404b-bd60-5059cb70f384",
+        "stem_preview": "A refugee enters the European Union in Italy and is temporarily housed in German...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          62,
+          60,
+          55,
+          58,
+          60
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-4cac0ca1-ba1f-4115-9e64-9e6bfc3df01d",
+        "stem_preview": "Since 2000 the global pattern of international migration has resulted in most mi...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          26,
+          24,
+          24,
+          29,
+          28
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-b4d76ac8-b654-4c40-9fa1-a11783a3750e",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          8,
+          8,
+          13,
+          13,
+          9
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-4f1341b1-d9da-4cc5-8132-4b4961e711ca",
+        "stem_preview": "All of the following twentieth-century migration streams were propelled by perse...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          21,
+          27,
+          21,
+          23,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-05dcb762-448a-4434-8175-7bc652f1c547",
+        "stem_preview": "In the early twenty-first century, the largest number of refugees is located on ...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          6,
+          9,
+          6,
+          13,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-b3abdf0f-a9b4-40f9-995c-204e98fcfc25",
+        "stem_preview": "Millions of ______________ came to the United States during the early years of t...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          12,
+          9,
+          10,
+          8,
+          9
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-b3abdf0f-a9b4-40f9-995c-204e98fcfc25",
+        "stem_preview": "Millions of ______________ came to the United States during the early years of t...",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-ef4caf18-4ef5-4ad9-8223-79189b555cfc",
+        "stem_preview": "Which of the following is the result of chain migration?",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-93dc5de0-304c-45f4-b90c-4e56516c477b",
+        "stem_preview": "Refugees are produced through",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          19,
+          17,
+          19,
+          19,
+          16
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-93dc5de0-304c-45f4-b90c-4e56516c477b",
+        "stem_preview": "Refugees are produced through",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-4e541fda-d241-4ece-a75a-c9c49b9419ec",
+        "stem_preview": "All of the following may be reasons behind forced migration EXCEPT",
+        "test_id": "pcb-test-d96219df79dd4269ab446da2a012289c",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "qti-item-f797e180-948f-4732-8997-ed95815ff844",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          5,
+          7,
+          7,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-fb1ac619-7996-452f-8d16-025fac67fafc",
+        "stem_preview": "At some point in their recent history, all of the following countries became div...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "4.10: Consequences of Centrifugal and Centripetal Forces",
+        "choice_lengths": [
+          5,
+          7,
+          7,
+          7,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-e25e109e-805c-41cf-9442-d762ef812d74",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          8,
+          8,
+          13,
+          13,
+          9
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-c313b917-8a7c-4279-82c2-11fc7ced643a",
+        "stem_preview": "All of the following twentieth-century migration streams were propelled by perse...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          21,
+          27,
+          21,
+          23,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-087cb834-9716-4125-af25-75993dff76b7",
+        "stem_preview": "In the early twenty-first century, the largest number of refugees is located on ...",
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "topic": "2.11: Forced and Voluntary Migration",
+        "choice_lengths": [
+          6,
+          9,
+          6,
+          13,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'A' is correct 44/50 times (88%) in quiz — possible bias",
+      "context": {
+        "test_id": "HUMG20-qti104533-v1",
+        "biased_position": "A",
+        "count": 44,
+        "total": 50,
+        "ratio": 0.88,
+        "distribution": {
+          "B": 2,
+          "D": 3,
+          "E": 1,
+          "A": 44
+        }
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'C' is correct 3/6 times (50%) in quiz — possible bias",
+      "context": {
+        "test_id": "s4-r2-mc3-a673e09c-check-test",
+        "biased_position": "C",
+        "count": 3,
+        "total": 6,
+        "ratio": 0.5,
+        "distribution": {
+          "E": 2,
+          "C": 3,
+          "B": 1
+        }
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'E' is correct 6/12 times (50%) in quiz — possible bias",
+      "context": {
+        "test_id": "pcb-test-c485dc13b9ea481eb972fd70ef395eb7",
+        "biased_position": "E",
+        "count": 6,
+        "total": 12,
+        "ratio": 0.5,
+        "distribution": {
+          "B": 1,
+          "E": 6,
+          "C": 3,
+          "A": 2
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "topic_concentration",
+      "message": "Topic '4.10' has 47/112 questions (42%) — over-concentrated",
+      "context": {
+        "topic": "4.10",
+        "count": 47,
+        "total": 112,
+        "ratio": 0.42
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "topic_distribution",
+      "message": "Topic distribution across 112 MCQs",
+      "context": {
+        "distribution": {
+          "4.10": 47,
+          "2.11: Forced and Voluntary Migration": 23,
+          "4.10: Consequences of Centrifugal and Centripetal Forces": 19,
+          "2.10: Causes of Migration": 18,
+          "4.9": 4,
+          "2.10": 1
+        },
+        "unique_topics": 6
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "skill_distribution",
+      "message": "Skill distribution across 112 MCQs",
+      "context": {
+        "distribution": {
+          "S2": 26,
+          "S1": 24,
+          "Skill 2.B: Explain spatial relationships in a specified context or region of the world, using geographic concepts, processes, models, or theories.": 12,
+          "Skill 1.D: Describe a relevant geographic concept, process, model, or theory in a specified context.": 11,
+          "Skill 5.C: Compare geographic characteristics and processes at various scales.": 9,
+          "Skill 2.A: Describe spatial patterns, networks, and relationships.": 6,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.D: Describe a relevant geographic concept, process, model, or theory in a specified context.": 3,
+          "Skill 2.C: Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.": 2,
+          "Skill 1.A: Describe geographic concepts, processes, models, and theories.": 2,
+          "Skill 1.C: Compare geographic concepts, processes, models, and theories.": 2,
+          "Skill 4.B: Describe the spatial patterns presented in visual sources.": 2,
+          "S5": 1,
+          "S4": 1,
+          "Skill Category 5: Analyze geographic theories, approaches, concepts, processes, and models across geographic scales to explain spatial relationships. | Skill 5.C: Compare geographic characteristics and processes at various scales.": 1
+        },
+        "unique_skills": 14
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "low_stimulus_coverage",
+      "message": "Only 5/112 MCQs (4%) have stimuli — AP target is 40%+",
+      "context": {
+        "with_stimulus": 5,
+        "total": 112,
+        "ratio": 0.04,
+        "target": 0.4
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "low_ap_classroom_ratio",
+      "message": "Only 50/112 MCQs (45%) from AP Classroom — target is 70%+",
+      "context": {
+        "ap_classroom_count": 50,
+        "total": 112,
+        "ratio": 0.45
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "source_distribution",
+      "message": "Source distribution across 112 MCQs",
+      "context": {
+        "distribution": {
+          "ced_llm": 52,
+          "AP Classroom": 50,
+          "Barron's AP Human Geography Premium": 7,
+          "Princeton Review AP Human Geography Premium Prep": 3
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "difficulty_distribution",
+      "message": "Difficulty distribution across 112 MCQs",
+      "context": {
+        "distribution": {
+          "medium": 52,
+          "hard": 34,
+          "easy": 26
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "frq_count",
+      "message": "Course has 2 FRQ(s) and 112 MCQ(s)",
+      "context": {
+        "frq_count": 2,
+        "mcq_count": 112
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "course_summary",
+      "message": "Course 'AP HuGeo: Centripetal-Centrifugal vs Push-Pull': 114 total Qs, 9 stimuli, 3 videos, 7 quizzes",
+      "context": {
+        "course_id": "s4-r2-mc3-a673e09c",
+        "course_title": "AP HuGeo: Centripetal-Centrifugal vs Push-Pull",
+        "total_questions": 114,
+        "total_stimuli": 9,
+        "total_videos": 3,
+        "total_quizzes": 7,
+        "articles": 3,
+        "topic_groups": 0
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245146",
+        "stem_preview": "Why do concerns about job losses create centripetal forces within Scotland's ind",
+        "issue": "The question is confusing - economic fears about job losses would typically create centrifugal forces (division), not centripetal forces (unity) as the question stem suggests."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245111",
+        "stem_preview": "Which cultural practice helps prevent stateless nations in Islamic countries?",
+        "issue": "All options are Islamic practices that could prevent stateless nations; the question conflates cultural practices with preventing stateless nations in an unclear way."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "HUMG20-qti104533-v1-q1245111",
+        "stem_preview": "Which cultural practice helps prevent stateless nations in Islamic countries?",
+        "issue": "All options are Islamic practices that could prevent stateless nations; the question conflates cultural practices with preventing stateless nations in an unclear way."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-1d9af649-22fc-4c28-beff-4f7174732b0d",
+        "stem_preview": "In the 1930s, thousands of “Okies” fled the Dust Bowl of the southern Great Plai",
+        "issue": "The Dust Bowl migration could be classified as both eco-migration (environmental push) and economic migration (seeking agricultural opportunities), making multiple answers potentially correct."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-1d9af649-22fc-4c28-beff-4f7174732b0d",
+        "stem_preview": "In the 1930s, thousands of “Okies” fled the Dust Bowl of the southern Great Plai",
+        "issue": "The Dust Bowl migration could be classified as both eco-migration (environmental push) and economic migration (seeking agricultural opportunities), making multiple answers potentially correct."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-08c9b55e-3a50-401c-888b-daa26989d4cc",
+        "stem_preview": "Which of the following describes forced migration?",
+        "issue": "Options A and B (Hurricane Katrina and Japan tsunami displacement) are also examples of forced migration, making the question ambiguous."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "error",
+      "check": "misleading_distractor",
+      "message": "A distractor could also be correct",
+      "context": {
+        "question_id": "pcb-item-08c9b55e-3a50-401c-888b-daa26989d4cc",
+        "stem_preview": "Which of the following describes forced migration?",
+        "issue": "Options A and B (Hurricane Katrina and Japan tsunami displacement) are also examples of forced migration, making the question ambiguous."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-b4d76ac8-b654-4c40-9fa1-a11783a3750e",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "issue": "Cannot evaluate without seeing the referenced map, making the question incomplete for assessment."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-e25e109e-805c-41cf-9442-d762ef812d74",
+        "stem_preview": "The flow lines on the map above most likely represent the movement of",
+        "issue": "Without seeing the map referenced, it's impossible to definitively determine whether the flow lines represent guest workers, refugees, or another type of movement."
+      }
+    },
+    {
+      "layer": "L3",
+      "severity": "warning",
+      "check": "debatable_answer",
+      "message": "Correct answer is debatable",
+      "context": {
+        "question_id": "pcb-item-087cb834-9716-4125-af25-75993dff76b7",
+        "stem_preview": "In the early twenty-first century, the largest number of refugees is located on ",
+        "issue": "The answer depends on the specific time period in the early 21st century - Asia has also had very large refugee populations during various periods."
+      }
+    }
+  ],
+  "api_cost": {
+    "total_calls": 5,
+    "total_input_tokens": 20666,
+    "total_output_tokens": 9027,
+    "estimated_cost_usd": 0.1974,
+    "cache_stats": {
+      "hits": 0,
+      "misses": 5,
+      "cached_files": 23
+    }
+  },
+  "layer3_summary": {
+    "not_answerable": 0,
+    "partially_answerable": 0,
+    "wrong_answer": 0,
+    "debatable_answer": 7,
+    "misleading_distractor": 3,
+    "weak_distractors": 0,
+    "needs_manual_review": 0
+  }
+}

@@ -1,0 +1,5709 @@
+{
+  "course_id": "s4-r2-mc1-5ff6309d",
+  "course_title": "AP HuGeo: DTM Application",
+  "run_at": "2026-03-16T04:06:25.489185",
+  "summary": {
+    "total_findings": 350,
+    "errors": 78,
+    "warnings": 77,
+    "info": 195,
+    "by_layer": {
+      "L1": 225,
+      "L2": 103,
+      "L4": 9,
+      "L5": 7,
+      "L6": 6
+    },
+    "by_check": {
+      "missing_stimulus": 7,
+      "missing_feedback": 116,
+      "wrong_choice_count": 71,
+      "duplicate_stem": 28,
+      "ghost_entry": 3,
+      "non_ap_source": 29,
+      "uniform_choice_length": 67,
+      "all_of_above": 1,
+      "short_stem": 1,
+      "none_of_above": 1,
+      "choice_stem_overlap": 1,
+      "answer_position_bias": 3,
+      "topic_distribution": 1,
+      "skill_distribution": 1,
+      "low_stimulus_coverage": 1,
+      "low_ap_classroom_ratio": 1,
+      "source_distribution": 1,
+      "ghost_entries_summary": 1,
+      "difficulty_distribution": 1,
+      "frq_count": 1,
+      "course_summary": 1,
+      "frq_count_low": 1,
+      "frq_stimulus_image_only": 1,
+      "frq_parts_missing": 1,
+      "frq_type_coverage": 1,
+      "frq_title_typo": 1,
+      "frq_no_rubric": 2,
+      "topic_no_article": 3,
+      "topic_no_video": 3
+    }
+  },
+  "findings": [
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'population pyramid' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-d0ccabc7-8a32-41ab-8666-e38642aadf04",
+        "stem_preview": "A rectangle-shaped population pyramid indicates a country that is",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.03",
+        "matched_pattern": "population pyramid"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fcec9b10-8a1b-4e77-9bfa-99ace33166f0",
+        "stem_preview": "Which of the following types of population information is shown on the map?",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'The map' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-11e0015d-6104-4196-bdd5-f0775c6c50d6",
+        "stem_preview": "Source: NASA, Columbia University, Natural Earth GIS The map shows the number of...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "matched_pattern": "The map"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-11e0015d-6104-4196-bdd5-f0775c6c50d6",
+        "stem_preview": "Source: NASA, Columbia University, Natural Earth GIS The map shows the number of...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-05416646-f2ad-4eb5-8a12-74e1908e2c9a",
+        "stem_preview": "Which of the following best identifies the data for western China, shown on the ...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-e91e6eca-3733-480d-9e33-43069b9e6784",
+        "stem_preview": "BRAZIL Which of the following describes information a geographer could identify ...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-219e52a1-1cad-45fd-a487-df5a49b4fe51",
+        "stem_preview": "Physiological population density differs from crude population density in that p...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fc7b1475-5369-4c8a-864b-357674e189a7",
+        "stem_preview": "Physiological population density is viewed as a superior measure of population d...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-506ce37c-1f5e-4f21-8ea9-ef15e14bd034",
+        "stem_preview": "Sri Lanka and Australia have about the same population. What data would help you...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-60ffec71-d5fc-4a9b-93b8-2abafc37db9b",
+        "stem_preview": "Which of the following best identifies the data for the Eastern Great Rift Valle...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-194e0353-e94a-475d-966c-74e5671a8021",
+        "stem_preview": "POPULATION DENSITY PATTERNS Source: Esri Which of the following identifies how p...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-cfaf70a1-3cb3-4d8e-9ab2-b0e8b3e6f9e9",
+        "stem_preview": "Which of the following regions had the smallest percentage of people living in u...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-ea384068-ea55-4274-9c6a-c9fb2fddbd9d",
+        "stem_preview": "Most of the world’s people live in",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e618c9f1-4de1-4684-af23-1ac234d8fbcb",
+        "stem_preview": "Throughout human history, world population has",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-26999226-0ad6-4396-91d4-5e2e6635b979",
+        "stem_preview": "Which of the following countries would you expect to have the densest population...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-f9ae7622-217e-4640-aad3-1b8c7bd35f91",
+        "stem_preview": "All of the following are true about the geographic center and the population-wei...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-0727919b-e8d6-4275-ae7e-f0c81b808236",
+        "stem_preview": "Based on the population pyramid, which of the following will pose the greatest d...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-117351f8-382e-4c41-af38-13b02d6f6ad5",
+        "stem_preview": "Which population pyramid shown best represents a college town?",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a7fb073f-5ce6-4643-be0d-50f09b406bed",
+        "stem_preview": "Which of the following best explains a possible limitation of the trends assumed...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-88943ce1-4fe8-4606-a078-c76c666d3699",
+        "stem_preview": "Many countries in sub-Saharan Africa have total fertility rates that exceed 5.0....",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'population pyramid' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-89a2f8e9-d813-42b5-b2ac-ced52b268406",
+        "stem_preview": "A population pyramid that is wide at the top and narrow at the bottom most likel...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "matched_pattern": "population pyramid"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-89a2f8e9-d813-42b5-b2ac-ced52b268406",
+        "stem_preview": "A population pyramid that is wide at the top and narrow at the bottom most likel...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-29832750-769b-403c-a253-7bd7ec0a2f75",
+        "stem_preview": "Which population pyramid shown best represents a town with a military base?",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-cf6e5944-90b4-4221-af59-001f7ee50831",
+        "stem_preview": "Which of the following population patterns is common in more developed countries...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5da633de-6d16-4407-aeb6-fa782568a1dc",
+        "stem_preview": "What is the likely impact of the numerical change by 2050 of the total populatio...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-3c221334-18a5-4eb4-82af-3e89e5f225c0",
+        "stem_preview": "Which of the following best describes a country with a rate of natural increase ...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-8c72eda4-a220-4034-83cb-7de23e5a3897",
+        "stem_preview": "In many less developed countries, only a small percentage of school-aged youth a...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-f128c590-881c-4db5-9013-9df8c3006fe5",
+        "stem_preview": "The sex ratio represented in the age-sex graph above for Country X is most likel...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6ae28971-d5c8-42c4-8eaf-29d84489ecb2",
+        "stem_preview": "One would expect to find a population with a relatively young age structure in",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6103f244-d966-4efa-a50d-d2d7e60ec4b9",
+        "stem_preview": "Which of the following types of countries are most likely challenged with the pr...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-16037a1c-adae-44a5-9f41-532bf67749e0",
+        "stem_preview": "Within the United States, overall life expectancy",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-b7f69ae2-e8da-4673-8a89-e2d9e8adfcb4",
+        "stem_preview": "The baby boom",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'population pyramid' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-1e0400f1-9b99-4177-a026-af41f0f21e75",
+        "stem_preview": "When baby boomers have reached retirement age, what will the population pyramid ...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "matched_pattern": "population pyramid"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-1e0400f1-9b99-4177-a026-af41f0f21e75",
+        "stem_preview": "When baby boomers have reached retirement age, what will the population pyramid ...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4f14b660-e8ba-418e-bc06-39fb80fe86b7",
+        "stem_preview": "The measure of the average number of children who are born to women of childbear...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-60c53c34-6365-49c4-8d43-fc6bb30e8771",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Country Birth Rate per 1,000 p...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-91f042ac-03a2-4be4-ae74-716959640a58",
+        "stem_preview": "Which of the following characteristics is currently shared by Switzerland, Canad...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-67e31498-eb0d-473d-af65-39ae58911aa6",
+        "stem_preview": "Which of the following countries is experiencing population decline based on the...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-38fae7df-277f-4342-bc33-492460f51c92",
+        "stem_preview": "Even though total fertility rates have been declining in some less-developed cou...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-8694c921-9948-40fc-863d-aab5f2e40974",
+        "stem_preview": "The low birth and death rates for a country in stage 4 of the demographic transi...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-105c9331-27b6-4ab6-93c0-618ed128eb88",
+        "stem_preview": "Since the 1970s changes in the social roles, lifestyles, and employment patterns...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-831fc102-6089-4ac1-8cd3-9ea802e5c419",
+        "stem_preview": "BANGLADESH, TOTAL FERTILITY RATE AND RATE OF NATURAL INCREASE Year Total Fertili...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-9f4dd9f5-d81c-43e9-9ad1-51373193db2d",
+        "stem_preview": "Assuming a world population of 5,700,000,000 and an annual growth rate of 1.6 pe...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2cb4b57b-02af-48fb-bf54-25bdbc969a77",
+        "stem_preview": "Based on the information shown in the table, in Canada received the most immigra...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-58db332e-48c3-4b20-90ff-e353beb83ebd",
+        "stem_preview": "Source: World Health Organization Which of the following statements best explain...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-66b553c1-56d4-441a-94eb-b09412cb3e0f",
+        "stem_preview": "In the first decade of the twenty-first century, which of the following countrie...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d3a4b302-8905-445f-9650-227780d95bdd",
+        "stem_preview": "METROPOLITAN AREA POPULATION 1950 1990 2015 2035 City A million 12.8 million 16....",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-4b867f7b-2fde-4f01-b29f-ce64ec41fe3c",
+        "stem_preview": "Which of the following characteristics applies to more-developed countries?",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-244828d7-9a8d-4bce-8369-d31546b432e6",
+        "stem_preview": "Which of the following best explains the significant difference in North Africa’...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-de391a1a-7c2a-440d-a994-2824b28aeb5e",
+        "stem_preview": "In which of the following pairs do both countries exhibit zero or negative popul...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'the graph' but has no stimulus linked",
+      "context": {
+        "question_id": "pcb-item-01818f1f-d0fb-42d8-aa75-5328ff2f5042",
+        "stem_preview": "Source: United Nations and Population Reference Bureau Based on the graph, predi...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "matched_pattern": "the graph"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-01818f1f-d0fb-42d8-aa75-5328ff2f5042",
+        "stem_preview": "Source: United Nations and Population Reference Bureau Based on the graph, predi...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-33ce443f-8333-4389-bb33-57fcbe99e0bf",
+        "stem_preview": "The term that describes the concept that population will continue to grow even a...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-1418efc5-509a-4fe9-9adc-4bed8a8c33e7",
+        "stem_preview": "Which of the following best explains an effect of the rate of natural increase (...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e2acb16f-e6d0-4d94-8981-6903bf54cf6f",
+        "stem_preview": "It can be inferred from global patterns of population growth that the country mo...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b893c849-09e7-4650-b116-e295e3691cbc",
+        "stem_preview": "______________ occurs when a population is adding a fixed percentage of people t...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fe1dfdee-c6a7-4675-9bd6-fc85e68229a1",
+        "stem_preview": "Life expectancy has increased",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-cfa3f33d-8c85-429a-9e6e-d7822d01fe61",
+        "stem_preview": "The number of live births per thousand people per year is called the",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-91ca649a-943f-406f-8b43-5770b44c02aa",
+        "stem_preview": "Which of the following countries is most likely to be showing the lowest natural...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-18ce7ded-f046-43ff-957f-f212efcc103a",
+        "stem_preview": "Zero population growth occurs when",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-e3517ee4-0ec4-4bab-a58e-0b2b481a6c0d",
+        "stem_preview": "All of the following are signs of negative RNI (rate of natural increase) EXCEPT",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-85ebb072-4f19-4f0b-9976-d8ad39d17c7e",
+        "stem_preview": "Country Female Life Expectancy Male Life Expectancy Percent Over Age 65 Germany ...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-153fc17f-fcf2-45f3-9d53-05b3eb4371bd",
+        "stem_preview": "Which of the following is a correct statement about the demographic transition m...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-ab1f519f-fe4d-458e-89fb-2648d091c45e",
+        "stem_preview": "Which of the following countries is best described as being at Stage 3 of the de...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-a4774845-ac35-4e41-b97f-acf9f1ff0369",
+        "stem_preview": "Birth Rates and Death Rates for Selected Regions Region Birth Rate in 2017 (per ...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b3471831-8249-4ec4-90db-b37cde8e723d",
+        "stem_preview": "In the nineteenth and early twentieth century, the demographic transition in Eur...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5cbc382f-a88c-428c-9085-bed1da230d5c",
+        "stem_preview": "Which of the following describes a characteristic of a country moving from stage...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-f8aa2321-c8a6-4a55-a0f7-195cfb057811",
+        "stem_preview": "Based on the diagram of the demographic transition model, which of the following...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d84d89aa-8347-40b4-a4bf-fddc4af010c1",
+        "stem_preview": "Which of the following describes the most likely cause of death for a citizen of...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-cb430356-4992-4bbb-8e58-6de551837587",
+        "stem_preview": "Which of the following statements best describes how the epidemiologic transitio...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5634f043-641a-4f26-93fc-63d070b0cd76",
+        "stem_preview": "Which of the following best describes a strength of the epidemiological transiti...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-30c67d22-8422-4d6b-9bba-070af5937e8f",
+        "stem_preview": "Which of the following is most characteristic of societies currently in the last...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-982aedb6-ec65-4a4e-b839-1f79626eca2f",
+        "stem_preview": "Birth Rates and Death Rates for Selected Regions Region Birth Rate in 2017 (per ...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-2ce5a571-4f28-42c9-ac46-5bca59fe84d5",
+        "stem_preview": "In the model shown, the lines for birth rate, death rate, and total population a...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-85cdfae4-4b28-4d1e-b286-455c47b13c5a",
+        "stem_preview": "A country in the first stage of the demographic transition demonstrates which of...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-b9bb84cf-72c7-4c40-8f97-7d946527be34",
+        "stem_preview": "A country at the end of the demographic transition usually has which of the foll...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-fea863b9-30e1-4b29-a0cc-5cbba560347f",
+        "stem_preview": "The demographic transition is a general model that seeks to explain",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-7b526c93-4851-4dd8-afbc-4f67ff46e704",
+        "stem_preview": "Thomas Malthus predicted that",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-006b87fe-112b-4340-910f-f6de6fa0adb2",
+        "stem_preview": "Which of the following countries is at stage two of the demographic transition m...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-666e9578-d939-4292-bbbc-8641ca1235d5",
+        "stem_preview": "Carrying capacity is a function of",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-18197870-6059-497d-b659-154fcaa40d7e",
+        "stem_preview": "During which stage of the demographic transition model does the diffusion of fer...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-673b7ba1-4443-4728-96c7-e74407e575b9",
+        "stem_preview": "Societies in stage 2 of the demographic transition model are often",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-6446332a-f603-465e-9382-d3b38014b72d",
+        "stem_preview": "The main reason that the catastrophe predicted by Thomas Malthus hasn’t occurred...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-4e066b02-5487-4d99-ae0d-fd30030c8345",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Birth Rate Death Rate France 1...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5d1c3da5-df2e-4916-9324-e0e2f310086e",
+        "stem_preview": "Which statement best describes population growth patterns in the world today?",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-4dbfe5d7-47d5-47ce-b17f-9cee397fd68a",
+        "stem_preview": "Source: United States Census Bureau Which of the following patterns is indicated...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-9d84019d-c6ae-4d51-8c5b-7bcac5fcff0a",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Birth Rate (per 1,000 populati...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-13fbafd0-4980-4a67-90a3-0f67fa81cab5",
+        "stem_preview": "Which of the following profiles characterizes the population group that is the m...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-a18d40d5-fc82-437c-9be0-029c10baa575",
+        "stem_preview": "TOTAL FERTILITY RATES Country 1960 1970 1980 1990 2000 2010 Canada 3.81 2.26 1.7...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-53e8a0f4-561e-4cd3-9f51-7824680ccac2",
+        "stem_preview": "POPULATION DATA BY COUNTRY LEVEL OF DEVELOPMENT, 2018 Birth Rateper 1,000 Popula...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-a9948938-210e-4e59-a45c-2dffd4762968",
+        "stem_preview": "Total fertility rate is NOT closely correlated with which of the following?",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-10e8ce26-6442-4b1f-a27d-17d924088e66",
+        "stem_preview": "India and China are the world’s two most populous countries. While China has ins...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-fffc67d6-c0f1-4e68-8fb6-a9addc3b2959",
+        "stem_preview": "An optimal TFR for a society is 2.1. The TFR of many Western European countries ...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-3960c83d-9249-4502-8ce8-862f513759a7",
+        "stem_preview": "An aging population will likely lead to which of the following consequences?",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-4f62868b-76db-4de8-94cb-0486f44a6f44",
+        "stem_preview": "Which of the following describes a concern for a country with an aging populatio...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-f944a2b6-7ff5-4b17-a004-dda14446f66c",
+        "stem_preview": "Country A is a more developed country with a low birth rate, a low total fertili...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-35db8a17-3f30-4986-8aae-fb02545e14ba",
+        "stem_preview": "Which of the following processes best explains a decrease in mortality rates wor...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-683906b8-9f3e-4bae-863f-ef15542cb3fb",
+        "stem_preview": "Japan has a low birth rate and a high life expectancy. Which of the following ex...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-89542382-6a34-4a95-95d3-db269ae23dd5",
+        "stem_preview": "Which of the following would be most likely to increase life expectancy in a les...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-6ed0ef4b-8b6b-485f-954b-5523547fa704",
+        "stem_preview": "Which factor is most responsible for the increase in Japan’s dependency ratio?",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-e88e9f72-6e59-43e3-88f8-efab64cbd1e7",
+        "stem_preview": "The dependency ratio is most useful for indicating the",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-f8faa71a-3e7f-4950-8233-d8dbe4668bb8",
+        "stem_preview": "Source: United States Census Bureau Which of the following explains how data fro...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-9375ba26-a808-4ae3-9d0f-9df94a984f23",
+        "stem_preview": "The Dependency Ratio describes",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244269",
+        "stem_preview": "Select the statement which best identifies the main cause of death in Stage 1.",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244207",
+        "stem_preview": "Why does Stage 5 sometimes show negative population growth rates?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244228",
+        "stem_preview": "Which stage of the epidemiological transition shows highest death rates from inf...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244266",
+        "stem_preview": "How does the epidemiological transition model extend the demographic transition ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244202",
+        "stem_preview": "How do Stage 4 birth rates maintain population stability?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244222",
+        "stem_preview": "How does the epidemiological transition model relate to the demographic transiti...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244232",
+        "stem_preview": "Select the statement which best identifies the characteristic of Stage 4 in the ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244252",
+        "stem_preview": "How do death rates change as populations age in the declining stage?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244281",
+        "stem_preview": "Which diseases become more common as people live longer in Stage 3?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244186",
+        "stem_preview": "Of the following, which definition best describes the demographic transition mod...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244216",
+        "stem_preview": "Which population pyramid shape characterizes Stage 2 countries in demographic tr...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'population pyramid' but has no stimulus linked",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244216",
+        "stem_preview": "Which population pyramid shape characterizes Stage 2 countries in demographic tr...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "matched_pattern": "population pyramid"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244212",
+        "stem_preview": "Which countries exemplify the young population structure with rising life expect...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244242",
+        "stem_preview": "Of the following, which definition best describes when death rates begin decreas...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244271",
+        "stem_preview": "How do parasitic diseases affect mortality in Stage 1?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244226",
+        "stem_preview": "What causes most deaths in Stage 1 of the epidemiological transition model?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244256",
+        "stem_preview": "Which demographic transition stage shows death rates declining from high fluctua...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244201",
+        "stem_preview": "Choose the option that best describes Stage 1 birth rate characteristics.",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244231",
+        "stem_preview": "Of the following, which definition best describes Stage 3 of the epidemiological...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244261",
+        "stem_preview": "Which statement demonstrates how declining death rates contribute to demographic...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.4",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244189",
+        "stem_preview": "Why does Stage 5 show natural population decrease?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244219",
+        "stem_preview": "Why does the demographic transition model better explain developed countries' ex...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244236",
+        "stem_preview": "How do environmental factors like pollution affect demographic transition model ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244249",
+        "stem_preview": "Why do death rates sometimes increase in stage five populations?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244265",
+        "stem_preview": "What does the epidemiological transition model predict about disease patterns as...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244278",
+        "stem_preview": "Why do diseases like Alzheimer's increase in Stage 4?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244197",
+        "stem_preview": "What does the demographic transition model show about birth rate changes?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244227",
+        "stem_preview": "Which statement demonstrates how the epidemiological transition model explains p...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244215",
+        "stem_preview": "Which population groups remain in Stage 1 of the demographic transition model?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244245",
+        "stem_preview": "How do death rates change as populations move from early expanding to late expan...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244274",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244211",
+        "stem_preview": "Which statement demonstrates how population structure changes as countries progr...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244241",
+        "stem_preview": "Why do birth rates eventually decline in the demographic transition model?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244270",
+        "stem_preview": "Which factor makes famine more devastating in Stage 1 populations?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244193",
+        "stem_preview": "How does industrialization influence demographic change according to the demogra...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244253",
+        "stem_preview": "Why do death rates remain high in the high stationary stage despite stable birth...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244282",
+        "stem_preview": "Why does life expectancy decrease in Stage 5 of epidemiological transition?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244208",
+        "stem_preview": "Which statement demonstrates how natural increase rates change from stage one to...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244238",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244200",
+        "stem_preview": "What happens to death rates when countries move into Stage 2 of the DTM?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244230",
+        "stem_preview": "How does the Receding Pandemics stage affect population change patterns?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244199",
+        "stem_preview": "Determine which option best explains how total population changes through the st...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244229",
+        "stem_preview": "What causes population decline in the Disease and Famine stage?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244259",
+        "stem_preview": "Of the following, which definition best describes demographic momentum in Stage ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244191",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244221",
+        "stem_preview": "Which factors does the DTM assume help propel countries through each stage?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244280",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244190",
+        "stem_preview": "Which statement demonstrates how birth rates change from Stage 1 to Stage 4 in t...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244220",
+        "stem_preview": "Choose the option that best describes what the DTM assumes about urbanization's ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244250",
+        "stem_preview": "Which factor explains rapidly declining death rates in the early expanding stage...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244279",
+        "stem_preview": "Which statement demonstrates how medical advances affect death rates in Stage 4?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244187",
+        "stem_preview": "Select the statement which best identifies Stage 2 of the demographic transition...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244217",
+        "stem_preview": "Which statement demonstrates how the demographic transition model explains Japan...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244247",
+        "stem_preview": "How do death rates change as societies move from high stationary to low stationa...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244276",
+        "stem_preview": "What effect does the Receding Pandemics stage have on life expectancy?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244194",
+        "stem_preview": "Choose the option that best describes what the demographic transition model repr...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244224",
+        "stem_preview": "Which model extends the demographic transition model to explain changing death r...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244254",
+        "stem_preview": "Select the statement which best identifies how life expectancy changes affect de...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244204",
+        "stem_preview": "What characterizes birth rates in the Low Stationary stage?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244205",
+        "stem_preview": "Select the best explanation for why death rates rapidly decline in Stage 2 of th...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244209",
+        "stem_preview": "Which stage experiences negative natural increase rates according to the demogra...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244213",
+        "stem_preview": "Choose the option that best describes Niger's population pyramid shape in Stage ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "missing_stimulus",
+      "message": "Stem references 'population pyramid' but has no stimulus linked",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244213",
+        "stem_preview": "Choose the option that best describes Niger's population pyramid shape in Stage ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "matched_pattern": "population pyramid"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244225",
+        "stem_preview": "Of the following, which definition best describes the epidemiological transition...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244234",
+        "stem_preview": "Of the following, which definition best describes how pandemics affect demograph...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244235",
+        "stem_preview": "Select the statement which best identifies how lifestyle choices impact demograp...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244239",
+        "stem_preview": "Which stage of the epidemiological transition model features the re-emergence of...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244244",
+        "stem_preview": "Of the following, which definition best describes the relationship between urban...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244248",
+        "stem_preview": "Select the statement which best identifies the death rate pattern in stage one.",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244262",
+        "stem_preview": "Of the following, which definition best describes how epidemiological transition...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244263",
+        "stem_preview": "Select the statement which best identifies what causes death rate changes in Sta...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244264",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "error",
+      "check": "wrong_choice_count",
+      "message": "MCQ has 4 choices instead of 5",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244272",
+        "stem_preview": "Why does Stage 1 result in low life expectancy?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "actual_choices": 4,
+        "expected": 5
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-8eeea5be-defa-48e2-a021-faf12fb19e32",
+        "stem_preview": "BRAZIL Which of the following describes information a geographer could identify ...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d40ee267-1cdc-430e-a981-61a5c3961374",
+        "stem_preview": "Which of the following best identifies the data for the Eastern Great Rift Valle...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5a5212d1-403e-48c2-9f51-3a4b57c9488e",
+        "stem_preview": "Sri Lanka and Australia have about the same population. What data would help you...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.1: Population Distribution",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-f3c18d75-2a75-40f2-8c72-32ed62614bdb",
+        "stem_preview": "Based on the population pyramid, which of the following will pose the greatest d...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d8297b6d-8711-4d71-a7d3-06d86e8d05a7",
+        "stem_preview": "The sex ratio represented in the age-sex graph above for Country X is most likel...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-5ee291c1-71ac-4df0-85bf-53a3dcb01fff",
+        "stem_preview": "What is the likely impact of the numerical change by 2050 of the total populatio...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.3: Population Composition",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-5c01babd-7210-46b3-837e-e2302c0d901e",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Country Birth Rate per 1,000 p...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-904304f8-4ba9-48de-9e1a-f38015829a55",
+        "stem_preview": "BANGLADESH, TOTAL FERTILITY RATE AND RATE OF NATURAL INCREASE Year Total Fertili...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-8eeb5cf9-a276-47c4-a967-b517b106da3c",
+        "stem_preview": "Which of the following best explains the significant difference in North Africa’...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.4: Population Dynamics",
+        "choices_missing_feedback": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-a00ef0a3-7ec9-4f12-97b1-0d759cba3417",
+        "stem_preview": "Which of the following countries is best described as being at Stage 3 of the de...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-36880557-78c2-42e9-a085-c61af8b91197",
+        "stem_preview": "Which of the following describes a characteristic of a country moving from stage...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D, E",
+      "context": {
+        "question_id": "pcb-item-d12018aa-9fa7-42fa-82db-919ed241fcdd",
+        "stem_preview": "In the model shown, the lines for birth rate, death rate, and total population a...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.5: The Demographic Transition Model",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, E",
+      "context": {
+        "question_id": "pcb-item-f452e0ce-745a-4653-bd25-ebc83f039a88",
+        "stem_preview": "TOTAL FERTILITY RATES Country 1960 1970 1980 1990 2000 2010 Canada 3.81 2.26 1.7...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-238b1763-845c-47a0-b3df-797324a244de",
+        "stem_preview": "POPULATION DATA BY COUNTRY LEVEL OF DEVELOPMENT, 2018 Birth Rateper 1,000 Popula...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-893f8af0-2c80-4453-8b39-cd3cf52a8d03",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Birth Rate Death Rate France 1...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.8: Women and Demographic Change",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, C, D",
+      "context": {
+        "question_id": "pcb-item-e5d22249-c827-4af0-aa24-a8e4c5c97b25",
+        "stem_preview": "Source: United States Census Bureau Which of the following explains how data fro...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, B, D, E",
+      "context": {
+        "question_id": "pcb-item-e15769f7-df76-4724-a0ea-54a751aa742b",
+        "stem_preview": "Country A is a more developed country with a low birth rate, a low total fertili...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "info",
+      "check": "missing_feedback",
+      "message": "Missing feedback for choices: A, C, D, E",
+      "context": {
+        "question_id": "pcb-item-338ee090-d5ad-47e5-a86e-9764218755ad",
+        "stem_preview": "Japan has a low birth rate and a high life expectancy. Which of the following ex...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.9: Aging Populations",
+        "choices_missing_feedback": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-10bfb66f-7201-45a7-a039-58b0b21f3004",
+          "pcb-item-006b87fe-112b-4340-910f-f6de6fa0adb2"
+        ],
+        "stem_preview": "which of the following countries is at stage two of the demographic transition model?"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-65ac1f7a-64a7-4bc5-a080-7c81523ca70a",
+          "pcb-item-673b7ba1-4443-4728-96c7-e74407e575b9"
+        ],
+        "stem_preview": "societies in stage 2 of the demographic transition model are often"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-5b5a53ac-8880-46c7-92a7-3963a5785429",
+          "pcb-item-e3517ee4-0ec4-4bab-a58e-0b2b481a6c0d"
+        ],
+        "stem_preview": "all of the following are signs of negative rni (rate of natural increase) except"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-c76626b1-cf4b-4fd8-b401-998d34de9524",
+          "pcb-item-fffc67d6-c0f1-4e68-8fb6-a9addc3b2959"
+        ],
+        "stem_preview": "an optimal tfr for a society is 2.1. the tfr of many western european countries ranges from 1.4 to 1"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-e91e6eca-3733-480d-9e33-43069b9e6784",
+          "pcb-item-8eeea5be-defa-48e2-a021-faf12fb19e32"
+        ],
+        "stem_preview": "brazil which of the following describes information a geographer could identify from the map of urba"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-506ce37c-1f5e-4f21-8ea9-ef15e14bd034",
+          "pcb-item-5a5212d1-403e-48c2-9f51-3a4b57c9488e"
+        ],
+        "stem_preview": "sri lanka and australia have about the same population. what data would help you determine which cou"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-60ffec71-d5fc-4a9b-93b8-2abafc37db9b",
+          "pcb-item-d40ee267-1cdc-430e-a981-61a5c3961374"
+        ],
+        "stem_preview": "which of the following best identifies the data for the eastern great rift valley, shown on the map?"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-0727919b-e8d6-4275-ae7e-f0c81b808236",
+          "pcb-item-f3c18d75-2a75-40f2-8c72-32ed62614bdb"
+        ],
+        "stem_preview": "based on the population pyramid, which of the following will pose the greatest demographic challenge"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-5da633de-6d16-4407-aeb6-fa782568a1dc",
+          "pcb-item-5ee291c1-71ac-4df0-85bf-53a3dcb01fff"
+        ],
+        "stem_preview": "what is the likely impact of the numerical change by 2050 of the total population on the eventual sh"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-f128c590-881c-4db5-9013-9df8c3006fe5",
+          "pcb-item-d8297b6d-8711-4d71-a7d3-06d86e8d05a7"
+        ],
+        "stem_preview": "the sex ratio represented in the age-sex graph above for country x is most likely the result of"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-60c53c34-6365-49c4-8d43-fc6bb30e8771",
+          "pcb-item-5c01babd-7210-46b3-837e-e2302c0d901e"
+        ],
+        "stem_preview": "birth rates and death rates in selected countries country birth rate per 1,000 population death rate"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-831fc102-6089-4ac1-8cd3-9ea802e5c419",
+          "pcb-item-904304f8-4ba9-48de-9e1a-f38015829a55"
+        ],
+        "stem_preview": "bangladesh, total fertility rate and rate of natural increase year total fertility rate rate of natu"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-244828d7-9a8d-4bce-8369-d31546b432e6",
+          "pcb-item-8eeb5cf9-a276-47c4-a967-b517b106da3c"
+        ],
+        "stem_preview": "which of the following best explains the significant difference in north africa’s demographic data f"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-153fc17f-fcf2-45f3-9d53-05b3eb4371bd",
+          "HUMG20-qti104450-v1-q1123868"
+        ],
+        "stem_preview": "which of the following is a correct statement about the demographic transition model?"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 3 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-ab1f519f-fe4d-458e-89fb-2648d091c45e",
+          "HUMG20-qti104450-v1-q1123871",
+          "pcb-item-a00ef0a3-7ec9-4f12-97b1-0d759cba3417"
+        ],
+        "stem_preview": "which of the following countries is best described as being at stage 3 of the demographic transition"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-b3471831-8249-4ec4-90db-b37cde8e723d",
+          "HUMG20-qti104450-v1-q1123867"
+        ],
+        "stem_preview": "in the nineteenth and early twentieth century, the demographic transition in europe was best charact"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-5cbc382f-a88c-428c-9085-bed1da230d5c",
+          "pcb-item-36880557-78c2-42e9-a085-c61af8b91197"
+        ],
+        "stem_preview": "which of the following describes a characteristic of a country moving from stage 2 to stage 3 of the"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-d84d89aa-8347-40b4-a4bf-fddc4af010c1",
+          "HUMG20-qti104450-v1-q1123873"
+        ],
+        "stem_preview": "which of the following describes the most likely cause of death for a citizen of a country in stages"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-cb430356-4992-4bbb-8e58-6de551837587",
+          "HUMG20-qti104450-v1-q1123872"
+        ],
+        "stem_preview": "which of the following statements best describes how the epidemiologic transition affects the demogr"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-30c67d22-8422-4d6b-9bba-070af5937e8f",
+          "HUMG20-qti104450-v1-q1123870"
+        ],
+        "stem_preview": "which of the following is most characteristic of societies currently in the last stage of demographi"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-2ce5a571-4f28-42c9-ac46-5bca59fe84d5",
+          "pcb-item-d12018aa-9fa7-42fa-82db-919ed241fcdd"
+        ],
+        "stem_preview": "in the model shown, the lines for birth rate, death rate, and total population are indicators of a c"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-85cdfae4-4b28-4d1e-b286-455c47b13c5a",
+          "HUMG20-qti104450-v1-q1123869"
+        ],
+        "stem_preview": "a country in the first stage of the demographic transition demonstrates which of the following?"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-4e066b02-5487-4d99-ae0d-fd30030c8345",
+          "pcb-item-893f8af0-2c80-4453-8b39-cd3cf52a8d03"
+        ],
+        "stem_preview": "birth rates and death rates in selected countries birth rate death rate france 12 9 russia 13 13 bra"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-a18d40d5-fc82-437c-9be0-029c10baa575",
+          "pcb-item-f452e0ce-745a-4653-bd25-ebc83f039a88"
+        ],
+        "stem_preview": "total fertility rates country 1960 1970 1980 1990 2000 2010 canada 3.81 2.26 1.74 1.83 1.49 1.63 uni"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-53e8a0f4-561e-4cd3-9f51-7824680ccac2",
+          "pcb-item-238b1763-845c-47a0-b3df-797324a244de"
+        ],
+        "stem_preview": "population data by country level of development, 2018 birth rateper 1,000 population death rateper 1"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-f944a2b6-7ff5-4b17-a004-dda14446f66c",
+          "pcb-item-e15769f7-df76-4724-a0ea-54a751aa742b"
+        ],
+        "stem_preview": "country a is a more developed country with a low birth rate, a low total fertility rate, a high life"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-683906b8-9f3e-4bae-863f-ef15542cb3fb",
+          "pcb-item-338ee090-d5ad-47e5-a86e-9764218755ad"
+        ],
+        "stem_preview": "japan has a low birth rate and a high life expectancy. which of the following explains why japan wil"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "duplicate_stem",
+      "message": "Duplicate stem found across 2 questions",
+      "context": {
+        "question_ids": [
+          "pcb-item-f8faa71a-3e7f-4950-8233-d8dbe4668bb8",
+          "pcb-item-e5d22249-c827-4af0-aa24-a8e4c5c97b25"
+        ],
+        "stem_preview": "source: united states census bureau which of the following explains how data from the population pyr"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "ghost_entry",
+      "message": "Quiz titled 'Sample item' appears to be a placeholder/ghost entry",
+      "context": {
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "title": "Sample item"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "ghost_entry",
+      "message": "Quiz titled 'Sample item' appears to be a placeholder/ghost entry",
+      "context": {
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "title": "Sample item"
+      }
+    },
+    {
+      "layer": "L1",
+      "severity": "warning",
+      "check": "ghost_entry",
+      "message": "Quiz titled 'Sample item' appears to be a placeholder/ghost entry",
+      "context": {
+        "test_id": "pcb-test-8635b64557644c8daf6af866bc327572",
+        "title": "Sample item"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton - Chapter 4' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-4e0e95b4-44f9-4a9d-a5e8-db3b46177a1c",
+        "stem_preview": "According to the population pyramids for France and India, the primary differenc...",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.03",
+        "source": "Princeton - Chapter 4"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-10bfb66f-7201-45a7-a039-58b0b21f3004",
+        "stem_preview": "Which of the following countries is at stage two of the demographic transition m...",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.05",
+        "choice_lengths": [
+          7,
+          10,
+          6,
+          7,
+          7
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's - Chapter 2' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-10bfb66f-7201-45a7-a039-58b0b21f3004",
+        "stem_preview": "Which of the following countries is at stage two of the demographic transition m...",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.05",
+        "source": "Barron's - Chapter 2"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-65ac1f7a-64a7-4bc5-a080-7c81523ca70a",
+        "stem_preview": "Societies in stage 2 of the demographic transition model are often",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.05",
+        "choice_lengths": [
+          50,
+          50,
+          48,
+          50,
+          48
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton - Chapter 4' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-65ac1f7a-64a7-4bc5-a080-7c81523ca70a",
+        "stem_preview": "Societies in stage 2 of the demographic transition model are often",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.05",
+        "source": "Princeton - Chapter 4"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's - Chapter 2' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-d0ccabc7-8a32-41ab-8666-e38642aadf04",
+        "stem_preview": "A rectangle-shaped population pyramid indicates a country that is",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.03",
+        "source": "Barron's - Chapter 2"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton - Chapter 4' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-5b5a53ac-8880-46c7-92a7-3963a5785429",
+        "stem_preview": "All of the following are signs of negative RNI (rate of natural increase) EXCEPT",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.04",
+        "source": "Princeton - Chapter 4"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton - Chapter 4' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-c76626b1-cf4b-4fd8-b401-998d34de9524",
+        "stem_preview": "An optimal TFR for a society is 2.1. The TFR of many Western European countries ...",
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "topic": "T02.09",
+        "source": "Princeton - Chapter 4"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-fcec9b10-8a1b-4e77-9bfa-99ace33166f0",
+        "stem_preview": "Which of the following types of population information is shown on the map?",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          23,
+          18,
+          20,
+          18,
+          21
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-11e0015d-6104-4196-bdd5-f0775c6c50d6",
+        "stem_preview": "Source: NASA, Columbia University, Natural Earth GIS The map shows the number of...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          18,
+          21,
+          20,
+          13,
+          16
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-05416646-f2ad-4eb5-8a12-74e1908e2c9a",
+        "stem_preview": "Which of the following best identifies the data for western China, shown on the ...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          22,
+          23,
+          20,
+          23,
+          22
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-60ffec71-d5fc-4a9b-93b8-2abafc37db9b",
+        "stem_preview": "Which of the following best identifies the data for the Eastern Great Rift Valle...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          23,
+          22,
+          21,
+          25,
+          24
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-cfaf70a1-3cb3-4d8e-9ab2-b0e8b3e6f9e9",
+        "stem_preview": "Which of the following regions had the smallest percentage of people living in u...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          9,
+          10,
+          13,
+          6,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-ea384068-ea55-4274-9c6a-c9fb2fddbd9d",
+        "stem_preview": "Most of the world’s people live in",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-e618c9f1-4de1-4684-af23-1ac234d8fbcb",
+        "stem_preview": "Throughout human history, world population has",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-26999226-0ad6-4396-91d4-5e2e6635b979",
+        "stem_preview": "Which of the following countries would you expect to have the densest population...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          5,
+          4,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-26999226-0ad6-4396-91d4-5e2e6635b979",
+        "stem_preview": "Which of the following countries would you expect to have the densest population...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-f9ae7622-217e-4640-aad3-1b8c7bd35f91",
+        "stem_preview": "All of the following are true about the geographic center and the population-wei...",
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "topic": "2.1: Population Distribution",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-6103f244-d966-4efa-a50d-d2d7e60ec4b9",
+        "stem_preview": "Which of the following types of countries are most likely challenged with the pr...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choice_lengths": [
+          24,
+          24,
+          21,
+          20,
+          16
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "all_of_above",
+      "message": "Choice uses 'All of the above' — poor AP practice",
+      "context": {
+        "question_id": "pcb-item-16037a1c-adae-44a5-9f41-532bf67749e0",
+        "stem_preview": "Within the United States, overall life expectancy",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choice_id": "D"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-16037a1c-adae-44a5-9f41-532bf67749e0",
+        "stem_preview": "Within the United States, overall life expectancy",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "short_stem",
+      "message": "Stem is only 13 chars — likely incomplete",
+      "context": {
+        "question_id": "pcb-item-b7f69ae2-e8da-4673-8a89-e2d9e8adfcb4",
+        "stem_preview": "The baby boom",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "stem_length": 13
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-b7f69ae2-e8da-4673-8a89-e2d9e8adfcb4",
+        "stem_preview": "The baby boom",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "none_of_above",
+      "message": "Choice uses 'None of the above' — poor AP practice",
+      "context": {
+        "question_id": "pcb-item-1e0400f1-9b99-4177-a026-af41f0f21e75",
+        "stem_preview": "When baby boomers have reached retirement age, what will the population pyramid ...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "choice_id": "E"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-1e0400f1-9b99-4177-a026-af41f0f21e75",
+        "stem_preview": "When baby boomers have reached retirement age, what will the population pyramid ...",
+        "test_id": "pcb-test-b91ca0faa52b4ddb83b1bfaf95602a02",
+        "topic": "2.3: Population Composition",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-4f14b660-e8ba-418e-bc06-39fb80fe86b7",
+        "stem_preview": "The measure of the average number of children who are born to women of childbear...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          17,
+          16,
+          20,
+          19,
+          22
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-67e31498-eb0d-473d-af65-39ae58911aa6",
+        "stem_preview": "Which of the following countries is experiencing population decline based on the...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          6,
+          4,
+          10,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-9f4dd9f5-d81c-43e9-9ad1-51373193db2d",
+        "stem_preview": "Assuming a world population of 5,700,000,000 and an annual growth rate of 1.6 pe...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          7,
+          9,
+          10,
+          11,
+          13
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-d3a4b302-8905-445f-9650-227780d95bdd",
+        "stem_preview": "METROPOLITAN AREA POPULATION 1950 1990 2015 2035 City A million 12.8 million 16....",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          194,
+          194,
+          188,
+          188,
+          186
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-de391a1a-7c2a-440d-a994-2824b28aeb5e",
+        "stem_preview": "In which of the following pairs do both countries exhibit zero or negative popul...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          18,
+          17,
+          17,
+          15,
+          15
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-33ce443f-8333-4389-bb33-57fcbe99e0bf",
+        "stem_preview": "The term that describes the concept that population will continue to grow even a...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          20,
+          22,
+          24,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-e2acb16f-e6d0-4d94-8981-6903bf54cf6f",
+        "stem_preview": "It can be inferred from global patterns of population growth that the country mo...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          9,
+          10,
+          11,
+          10,
+          9
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-b893c849-09e7-4650-b116-e295e3691cbc",
+        "stem_preview": "______________ occurs when a population is adding a fixed percentage of people t...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-fe1dfdee-c6a7-4675-9bd6-fc85e68229a1",
+        "stem_preview": "Life expectancy has increased",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-cfa3f33d-8c85-429a-9e6e-d7822d01fe61",
+        "stem_preview": "The number of live births per thousand people per year is called the",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          21,
+          22,
+          17,
+          24,
+          19
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-cfa3f33d-8c85-429a-9e6e-d7822d01fe61",
+        "stem_preview": "The number of live births per thousand people per year is called the",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-91ca649a-943f-406f-8b43-5770b44c02aa",
+        "stem_preview": "Which of the following countries is most likely to be showing the lowest natural...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          11,
+          13,
+          13,
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-91ca649a-943f-406f-8b43-5770b44c02aa",
+        "stem_preview": "Which of the following countries is most likely to be showing the lowest natural...",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-18ce7ded-f046-43ff-957f-f212efcc103a",
+        "stem_preview": "Zero population growth occurs when",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "choice_lengths": [
+          45,
+          49,
+          41,
+          49,
+          45
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-18ce7ded-f046-43ff-957f-f212efcc103a",
+        "stem_preview": "Zero population growth occurs when",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-e3517ee4-0ec4-4bab-a58e-0b2b481a6c0d",
+        "stem_preview": "All of the following are signs of negative RNI (rate of natural increase) EXCEPT",
+        "test_id": "pcb-test-5caf0a8273604ad4b8acea88b4ffdb06",
+        "topic": "2.4: Population Dynamics",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-a4774845-ac35-4e41-b97f-acf9f1ff0369",
+        "stem_preview": "Birth Rates and Death Rates for Selected Regions Region Birth Rate in 2017 (per ...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          68,
+          68,
+          69,
+          69,
+          72
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-cb430356-4992-4bbb-8e58-6de551837587",
+        "stem_preview": "Which of the following statements best describes how the epidemiologic transitio...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          125,
+          122,
+          122,
+          128,
+          130
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-30c67d22-8422-4d6b-9bba-070af5937e8f",
+        "stem_preview": "Which of the following is most characteristic of societies currently in the last...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          14,
+          12,
+          16,
+          16,
+          14
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-982aedb6-ec65-4a4e-b839-1f79626eca2f",
+        "stem_preview": "Birth Rates and Death Rates for Selected Regions Region Birth Rate in 2017 (per ...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          10,
+          14,
+          13,
+          9,
+          15
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-b9bb84cf-72c7-4c40-8f97-7d946527be34",
+        "stem_preview": "A country at the end of the demographic transition usually has which of the foll...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          30,
+          28,
+          23,
+          25,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-7b526c93-4851-4dd8-afbc-4f67ff46e704",
+        "stem_preview": "Thomas Malthus predicted that",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-006b87fe-112b-4340-910f-f6de6fa0adb2",
+        "stem_preview": "Which of the following countries is at stage two of the demographic transition m...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          10,
+          7,
+          7,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-006b87fe-112b-4340-910f-f6de6fa0adb2",
+        "stem_preview": "Which of the following countries is at stage two of the demographic transition m...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-666e9578-d939-4292-bbbc-8641ca1235d5",
+        "stem_preview": "Carrying capacity is a function of",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-18197870-6059-497d-b659-154fcaa40d7e",
+        "stem_preview": "During which stage of the demographic transition model does the diffusion of fer...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-673b7ba1-4443-4728-96c7-e74407e575b9",
+        "stem_preview": "Societies in stage 2 of the demographic transition model are often",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "choice_lengths": [
+          50,
+          50,
+          50,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-673b7ba1-4443-4728-96c7-e74407e575b9",
+        "stem_preview": "Societies in stage 2 of the demographic transition model are often",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-6446332a-f603-465e-9382-d3b38014b72d",
+        "stem_preview": "The main reason that the catastrophe predicted by Thomas Malthus hasn’t occurred...",
+        "test_id": "pcb-test-687825799f6c4fe99e1248151dc4b274",
+        "topic": "2.5: The Demographic Transition Model",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-9d84019d-c6ae-4d51-8c5b-7bcac5fcff0a",
+        "stem_preview": "BIRTH RATES AND DEATH RATES IN SELECTED COUNTRIES Birth Rate (per 1,000 populati...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choice_lengths": [
+          43,
+          43,
+          44,
+          46,
+          46
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-13fbafd0-4980-4a67-90a3-0f67fa81cab5",
+        "stem_preview": "Which of the following profiles characterizes the population group that is the m...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "choice_lengths": [
+          30,
+          29,
+          24,
+          23,
+          29
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-a9948938-210e-4e59-a45c-2dffd4762968",
+        "stem_preview": "Total fertility rate is NOT closely correlated with which of the following?",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Barron's AP Human Geography Premium' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-10e8ce26-6442-4b1f-a27d-17d924088e66",
+        "stem_preview": "India and China are the world’s two most populous countries. While China has ins...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "source": "Barron's AP Human Geography Premium"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-fffc67d6-c0f1-4e68-8fb6-a9addc3b2959",
+        "stem_preview": "An optimal TFR for a society is 2.1. The TFR of many Western European countries ...",
+        "test_id": "pcb-test-931f09412e934756a2f678f8bb0ec0a2",
+        "topic": "2.8: Women and Demographic Change",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-3960c83d-9249-4502-8ce8-862f513759a7",
+        "stem_preview": "An aging population will likely lead to which of the following consequences?",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choice_lengths": [
+          17,
+          21,
+          16,
+          21,
+          23
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-35db8a17-3f30-4986-8aae-fb02545e14ba",
+        "stem_preview": "Which of the following processes best explains a decrease in mortality rates wor...",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "choice_lengths": [
+          34,
+          31,
+          30,
+          39,
+          38
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "non_ap_source",
+      "message": "Question sourced from 'Princeton Review AP Human Geography Premium Prep' — not AP Classroom",
+      "context": {
+        "question_id": "pcb-item-9375ba26-a808-4ae3-9d0f-9df94a984f23",
+        "stem_preview": "The Dependency Ratio describes",
+        "test_id": "pcb-test-0390d0cc11ee42f18e88b277e1ffbf12",
+        "topic": "2.9: Aging Populations",
+        "source": "Princeton Review AP Human Geography Premium Prep"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1123870",
+        "stem_preview": "Which of the following is most characteristic of societies currently in the last...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          14,
+          12,
+          16,
+          16,
+          14
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1123872",
+        "stem_preview": "Which of the following statements best describes how the epidemiologic transitio...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          125,
+          122,
+          122,
+          128,
+          130
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244207",
+        "stem_preview": "Why does Stage 5 sometimes show negative population growth rates?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          65,
+          68,
+          71,
+          63
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244202",
+        "stem_preview": "How do Stage 4 birth rates maintain population stability?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          64,
+          66,
+          65,
+          64
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244222",
+        "stem_preview": "How does the epidemiological transition model relate to the demographic transiti...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          89,
+          88,
+          91,
+          87
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244252",
+        "stem_preview": "How do death rates change as populations age in the declining stage?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "choice_lengths": [
+          63,
+          63,
+          64,
+          64
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244281",
+        "stem_preview": "Which diseases become more common as people live longer in Stage 3?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          33,
+          32,
+          33,
+          32
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244186",
+        "stem_preview": "Of the following, which definition best describes the demographic transition mod...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          62,
+          66,
+          65,
+          68
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244216",
+        "stem_preview": "Which population pyramid shape characterizes Stage 2 countries in demographic tr...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "choice_lengths": [
+          28,
+          31,
+          29,
+          28
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244212",
+        "stem_preview": "Which countries exemplify the young population structure with rising life expect...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "choice_lengths": [
+          25,
+          28,
+          26,
+          21
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244271",
+        "stem_preview": "How do parasitic diseases affect mortality in Stage 1?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          64,
+          73,
+          68,
+          69
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244261",
+        "stem_preview": "Which statement demonstrates how declining death rates contribute to demographic...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.4",
+        "choice_lengths": [
+          80,
+          73,
+          79,
+          80
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244249",
+        "stem_preview": "Why do death rates sometimes increase in stage five populations?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          15,
+          19,
+          25,
+          21
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244265",
+        "stem_preview": "What does the epidemiological transition model predict about disease patterns as...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          71,
+          66,
+          72,
+          75
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244197",
+        "stem_preview": "What does the demographic transition model show about birth rate changes?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          57,
+          62,
+          56,
+          54
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244215",
+        "stem_preview": "Which population groups remain in Stage 1 of the demographic transition model?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          44,
+          44,
+          39,
+          43
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244274",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          65,
+          68,
+          69,
+          69
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244241",
+        "stem_preview": "Why do birth rates eventually decline in the demographic transition model?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          81,
+          82,
+          82,
+          88
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244270",
+        "stem_preview": "Which factor makes famine more devastating in Stage 1 populations?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          15,
+          18,
+          17,
+          14
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244193",
+        "stem_preview": "How does industrialization influence demographic change according to the demogra...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          100,
+          102,
+          97,
+          97
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244208",
+        "stem_preview": "Which statement demonstrates how natural increase rates change from stage one to...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          57,
+          60,
+          60,
+          64
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244238",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          80,
+          85,
+          76,
+          80
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244200",
+        "stem_preview": "What happens to death rates when countries move into Stage 2 of the DTM?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          63,
+          64,
+          64,
+          63
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244259",
+        "stem_preview": "Of the following, which definition best describes demographic momentum in Stage ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          84,
+          90,
+          88,
+          93
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244279",
+        "stem_preview": "Which statement demonstrates how medical advances affect death rates in Stage 4?",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          64,
+          66,
+          70,
+          68
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244187",
+        "stem_preview": "Select the statement which best identifies Stage 2 of the demographic transition...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          67,
+          60,
+          62,
+          68
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244217",
+        "stem_preview": "Which statement demonstrates how the demographic transition model explains Japan...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "choice_lengths": [
+          80,
+          80,
+          78,
+          76
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244247",
+        "stem_preview": "How do death rates change as societies move from high stationary to low stationa...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          63,
+          64,
+          65,
+          63
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244224",
+        "stem_preview": "Which model extends the demographic transition model to explain changing death r...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          32,
+          28,
+          27,
+          26
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "choice_stem_overlap",
+      "message": "Choice 'B' text is contained in stem — possible overlap",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244224",
+        "stem_preview": "Which model extends the demographic transition model to explain changing death r...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_id": "B"
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244254",
+        "stem_preview": "Select the statement which best identifies how life expectancy changes affect de...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          74,
+          73,
+          66,
+          66
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244213",
+        "stem_preview": "Choose the option that best describes Niger's population pyramid shape in Stage ...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.3",
+        "choice_lengths": [
+          58,
+          61,
+          60,
+          64
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244234",
+        "stem_preview": "Of the following, which definition best describes how pandemics affect demograph...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          88,
+          92,
+          92,
+          93
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244239",
+        "stem_preview": "Which stage of the epidemiological transition model features the re-emergence of...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          10,
+          11,
+          10,
+          9
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244244",
+        "stem_preview": "Of the following, which definition best describes the relationship between urban...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          85,
+          78,
+          82,
+          77
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244263",
+        "stem_preview": "Select the statement which best identifies what causes death rate changes in Sta...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.9",
+        "choice_lengths": [
+          61,
+          59,
+          61,
+          59
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "HUMG20-qti104450-v1-q1244264",
+        "stem_preview": "Choose the best option from the following options to respond to the question. Di...",
+        "test_id": "HUMG20-qti104450-v1",
+        "topic": "2.5",
+        "choice_lengths": [
+          67,
+          66,
+          67,
+          71
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "info",
+      "check": "uniform_choice_length",
+      "message": "All choices are nearly the same length — may be auto-generated",
+      "context": {
+        "question_id": "pcb-item-d40ee267-1cdc-430e-a981-61a5c3961374",
+        "stem_preview": "Which of the following best identifies the data for the Eastern Great Rift Valle...",
+        "test_id": "pcb-test-3333ee99c44a4d61afd057e34fedb29b",
+        "topic": "2.1: Population Distribution",
+        "choice_lengths": [
+          23,
+          22,
+          21,
+          25,
+          24
+        ]
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'D' is correct 4/6 times (67%) in quiz — possible bias",
+      "context": {
+        "test_id": "pcb-test-c40e6ed62a334945aed54e52309168d9",
+        "biased_position": "D",
+        "count": 4,
+        "total": 6,
+        "ratio": 0.67,
+        "distribution": {
+          "D": 4,
+          "A": 1,
+          "E": 1
+        }
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'A' is correct 7/14 times (50%) in quiz — possible bias",
+      "context": {
+        "test_id": "pcb-test-940e671ba34d43a08ec616d8ccb529d0",
+        "biased_position": "A",
+        "count": 7,
+        "total": 14,
+        "ratio": 0.5,
+        "distribution": {
+          "D": 2,
+          "A": 7,
+          "E": 2,
+          "C": 2,
+          "B": 1
+        }
+      }
+    },
+    {
+      "layer": "L2",
+      "severity": "warning",
+      "check": "answer_position_bias",
+      "message": "Answer 'A' is correct 71/78 times (91%) in quiz — possible bias",
+      "context": {
+        "test_id": "HUMG20-qti104450-v1",
+        "biased_position": "A",
+        "count": 71,
+        "total": 78,
+        "ratio": 0.91,
+        "distribution": {
+          "E": 2,
+          "D": 2,
+          "C": 1,
+          "B": 2,
+          "A": 71
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "topic_distribution",
+      "message": "Topic distribution across 200 MCQs",
+      "context": {
+        "distribution": {
+          "2.5": 70,
+          "2.4: Population Dynamics": 29,
+          "2.5: The Demographic Transition Model": 25,
+          "2.3: Population Composition": 19,
+          "2.1: Population Distribution": 17,
+          "2.8: Women and Demographic Change": 13,
+          "2.9: Aging Populations": 13,
+          "2.9": 4,
+          "2.3": 3,
+          "T02.03": 2,
+          "T02.05": 2,
+          "T02.04": 1,
+          "T02.09": 1,
+          "2.4": 1
+        },
+        "unique_topics": 14
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "skill_distribution",
+      "message": "Skill distribution across 200 MCQs",
+      "context": {
+        "distribution": {
+          "S1": 78,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.B: Describe spatial patterns presented in maps and in quantitative and geospatial data.": 15,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.C: Explain patterns and trends in maps and in quantitative and geospatial data to draw conclusions.": 13,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.A: Identify the different types of data presented in maps and in quantitative and geospatial data.": 12,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.A: Describe geographic concepts, processes, models, and theories.": 11,
+          "Skill Category 2: Analyze geographic patterns, relationships, and outcomes in applied contexts. | Skill 2.C: Explain a likely outcome in a geographic scenario using geographic concepts, processes, models, or theories.": 11,
+          "Skill Category 2: Analyze geographic patterns, relationships, and outcomes in applied contexts. | Skill 2.A: Describe spatial patterns, networks, and relationships.": 9,
+          "Princeton Review - Chapter 4 Drill": 8,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.D: Describe a relevant geographic concept, process, model, or theory in a specified context.": 6,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.D: Compare patterns and trends in maps and in quantitative and geospatial data to draw conclusions.": 5,
+          "Barron's - Human Population: A Global Perspective": 4,
+          "Barron's - Population Parameters and Processes": 4,
+          "Barron's - Population Structure and Composition": 4,
+          "S3": 3,
+          "S2": 3,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.B: Explain geographic concepts, processes, models, and theories.": 3,
+          "Barron's - Population and Sustainability": 3,
+          "Skill Category 2: Analyze geographic patterns, relationships, and outcomes in applied contexts. | Skill 2.B: Explain spatial relationships in a specified context or region of the world, using geographic concepts, processes, models, or theories.": 2,
+          "Skill Category 5: Analyze geographic theories, approaches, concepts, processes, and models across geographic scales to explain spatial relationships. | Skill 5.B: Explain spatial relationships across various geographic scales using geographic concepts, processes, models, or theories.": 2,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.C: Compare geographic concepts, processes, models, and theories.": 1,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.F: Explain possible limitations of the data provided.": 1,
+          "Skill Category 3: Analyze and interpret quantitative geographic data represented in maps, tables, charts, graphs, satellite images, and infographics. | Skill 3.E: Explain what maps or data imply or illustrate about geographic principles, processes, and outcomes.": 1,
+          "Skill Category 1: Analyze geographic theories, approaches, concepts, processes, or models in theoretical and applied contexts. | Skill 1.E: Explain the strengths, weaknesses, and limitations of different geographic models and theories in a specified context.": 1
+        },
+        "unique_skills": 23
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "low_stimulus_coverage",
+      "message": "Only 48/200 MCQs (24%) have stimuli — AP target is 40%+",
+      "context": {
+        "with_stimulus": 48,
+        "total": 200,
+        "ratio": 0.24,
+        "target": 0.4
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "low_ap_classroom_ratio",
+      "message": "Only 93/200 MCQs (46%) from AP Classroom — target is 70%+",
+      "context": {
+        "ap_classroom_count": 93,
+        "total": 200,
+        "ratio": 0.47
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "source_distribution",
+      "message": "Source distribution across 200 MCQs",
+      "context": {
+        "distribution": {
+          "AP Classroom": 93,
+          "ced_llm": 78,
+          "Barron's AP Human Geography Premium": 15,
+          "Princeton Review AP Human Geography Premium Prep": 8,
+          "Princeton - Chapter 4": 4,
+          "Barron's - Chapter 2": 2
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "warning",
+      "check": "ghost_entries_summary",
+      "message": "3 ghost/placeholder quiz entries found",
+      "context": {
+        "ghost_quizzes": [
+          "Sample item",
+          "Sample item",
+          "Sample item"
+        ]
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "difficulty_distribution",
+      "message": "Difficulty distribution across 200 MCQs",
+      "context": {
+        "distribution": {
+          "medium": 101,
+          "easy": 52,
+          "hard": 47
+        }
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "frq_count",
+      "message": "Course has 2 FRQ(s) and 200 MCQ(s)",
+      "context": {
+        "frq_count": 2,
+        "mcq_count": 200
+      }
+    },
+    {
+      "layer": "L4",
+      "severity": "info",
+      "check": "course_summary",
+      "message": "Course 'AP HuGeo: DTM Application': 202 total Qs, 56 stimuli, 6 videos, 12 quizzes",
+      "context": {
+        "course_id": "s4-r2-mc1-5ff6309d",
+        "course_title": "AP HuGeo: DTM Application",
+        "total_questions": 202,
+        "total_stimuli": 56,
+        "total_videos": 6,
+        "total_quizzes": 12,
+        "articles": 28,
+        "topic_groups": 0
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_count_low",
+      "message": "Course has 2 FRQs (AP exam has 3; recommend at least 3 for practice)",
+      "context": {
+        "course_id": "s4-r2-mc1-5ff6309d",
+        "frq_count": 2,
+        "frq_ids": [
+          "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+          "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1"
+        ]
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_stimulus_image_only",
+      "message": "FRQ stimulus is image-only — verify image loads in Timeback",
+      "context": {
+        "question_id": "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+        "stimulus_id": "pcb-stimulus-e8cc90b7-8c8d-4d85-8033-2a2118b9ad29",
+        "stimulus_title": "A population pyramid shows changes in population over time. A population pyramid"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_parts_missing",
+      "message": "FRQ has 4 parts (AP standard: 7 parts A-G, 1pt each)",
+      "context": {
+        "question_id": "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1",
+        "frq_type": "Type 2 (One Stimulus)",
+        "parts_found": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "expected_parts": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ],
+        "stem_preview": "A. Describe what information the demographic transition model provides about a country. B. Identify "
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_type_coverage",
+      "message": "Missing FRQ types: Type 1 (No Stimulus, 7 pts), Type 3 (Two Stimuli, 7 pts). AP exam tests all 3 types.",
+      "context": {
+        "types_present": [
+          2
+        ],
+        "types_missing": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "warning",
+      "check": "frq_title_typo",
+      "message": "Quiz title has typo: \"excercise\" should be \"exercise\" in \"Practice Excercise\"",
+      "context": {
+        "test_id": "s4-r2-mc1-5ff6309d-frq-test",
+        "current_title": "Practice Excercise",
+        "typo": "excercise",
+        "correction": "exercise"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_no_rubric",
+      "message": "No rubric/scoring criteria found — FRQs need manual scoring by coach",
+      "context": {
+        "question_id": "pcb-item-5f4d2be1-6832-4424-91a2-db037b026c41",
+        "stem_preview": "A population pyramid shows changes in population over time. A population pyramid breaks down the pop"
+      }
+    },
+    {
+      "layer": "L5",
+      "severity": "info",
+      "check": "frq_no_rubric",
+      "message": "No rubric/scoring criteria found — FRQs need manual scoring by coach",
+      "context": {
+        "question_id": "qti-item-5fc26f15-51f6-4efb-800d-1fe1a0b70be1",
+        "stem_preview": "A. Describe what information the demographic transition model provides about a country. B. Identify "
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "warning",
+      "check": "topic_no_article",
+      "message": "Topic section 'CHECK' has quiz but no article",
+      "context": {
+        "section": "CHECK",
+        "has_video": false,
+        "has_test": true
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "info",
+      "check": "topic_no_video",
+      "message": "Topic section 'CHECK' has quiz but no video",
+      "context": {
+        "section": "CHECK",
+        "has_article": false
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "warning",
+      "check": "topic_no_article",
+      "message": "Topic section 'Mini MCQ Practice Quiz' has quiz but no article",
+      "context": {
+        "section": "Mini MCQ Practice Quiz",
+        "has_video": false,
+        "has_test": true
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "info",
+      "check": "topic_no_video",
+      "message": "Topic section 'Mini MCQ Practice Quiz' has quiz but no video",
+      "context": {
+        "section": "Mini MCQ Practice Quiz",
+        "has_article": false
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "warning",
+      "check": "topic_no_article",
+      "message": "Topic section 'FRQ APPLY' has quiz but no article",
+      "context": {
+        "section": "FRQ APPLY",
+        "has_video": false,
+        "has_test": true
+      }
+    },
+    {
+      "layer": "L6",
+      "severity": "info",
+      "check": "topic_no_video",
+      "message": "Topic section 'FRQ APPLY' has quiz but no video",
+      "context": {
+        "section": "FRQ APPLY",
+        "has_article": false
+      }
+    }
+  ]
+}
