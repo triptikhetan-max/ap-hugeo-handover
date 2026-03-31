@@ -154,7 +154,7 @@ a:hover{text-decoration:underline}
     <div class="nav-tab active" data-tab="overview">Overview</div>
     <div class="nav-tab" data-tab="courses">Courses</div>
     <div class="nav-tab" data-tab="students">Students</div>
-    <div class="nav-tab" data-tab="qc">QC Findings</div>
+    <div class="nav-tab" data-tab="qc">QC & Docs</div>
     <div class="nav-tab" data-tab="decisions">Decisions</div>
     <div class="nav-tab" data-tab="status">Status</div>
     <div class="nav-tab" data-tab="files">Files</div>
@@ -167,7 +167,7 @@ a:hover{text-decoration:underline}
 <div class="tab-content active" id="tab-overview">
   <div style="text-align:center;margin-bottom:32px">
     <h1 style="font-size:32px;font-weight:800;margin-bottom:8px">AP Human Geography: Complete Project Handover</h1>
-    <p style="font-size:15px;color:var(--text2)">Tripti Khetan &rarr; Exam: May 5, 2026</p>
+    <p style="font-size:15px;color:var(--text2)">Handed over mid-project by Tripti Khetan &rarr; Exam: May 5, 2026</p>
     <div style="margin-top:20px">
       <div class="countdown" id="countdown-days">--</div>
       <div class="countdown-label">days until exam</div>
@@ -177,8 +177,8 @@ a:hover{text-decoration:underline}
   <!-- WHAT IS THIS PROJECT -->
   <div class="card" style="margin-bottom:16px;border-left:4px solid var(--accent)">
     <h2 style="font-size:20px;font-weight:700;margin-bottom:10px;color:var(--accent)">What This Project Is</h2>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8">Targeted intervention for AP Human Geography students at Alpha Schools. We ran S3 practice exams on 10 students in February 2026, diagnosed exactly where each student was failing, and built mini-courses to fix those specific gaps before the May 5 exam. The goal: every assigned student scores 4 or 5.</p>
-    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-top:8px">All content decisions, student analysis, build specs, fix docs, and student plans were done by Tripti. Engineering builds on the Timeback/PowerPath LMS platform. <strong style="color:var(--text)">Tripti's part is done.</strong> What remains is engineering execution and student monitoring.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">Targeted intervention for AP Human Geography students at Alpha Schools. S3 practice exams were run on 10 students in February 2026. Each student was diagnosed, and mini-courses were built to fix specific gaps before the May 5 exam. The goal: every assigned student scores 4 or 5.</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8;margin-top:8px"><strong style="color:var(--yellow)">This is a mid-project handover.</strong> MC1 and MC2 are delivered and assigned to students. MC3 needs changes. B1 (mixed-topic practice tests) is specced but not built. All content decisions, analysis, build specs, fix docs, and student plans were done by Tripti. The new person taking over has everything they need in this dashboard and the repo. Student data is from February &mdash; pull fresh numbers from Timeback before making new decisions.</p>
   </div>
 
   <!-- WHAT WE FOUND: THE PROBLEM -->
@@ -427,7 +427,10 @@ a:hover{text-decoration:underline}
 <!-- ==================== STUDENTS ==================== -->
 <div class="tab-content" id="tab-students">
   <h2 class="section-title">Students</h2>
-  <p class="section-sub">10 students analyzed. 4 priority interventions highlighted in red.</p>
+  <p class="section-sub">10 students analyzed from S3 practice exam (February 2026). 4 priority interventions highlighted in red.</p>
+  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--yellow);padding:12px 16px">
+    <p style="font-size:13px;color:var(--yellow)"><strong>Note:</strong> This data is from the S3 practice exam (February 2026). Student progress may have changed since then. The new person taking over should pull fresh data from Timeback before making assignment decisions.</p>
+  </div>
 
   <div class="search-wrap">
     <span class="search-icon">&#128269;</span>
@@ -439,46 +442,28 @@ a:hover{text-decoration:underline}
 
 <!-- ==================== QC FINDINGS ==================== -->
 <div class="tab-content" id="tab-qc">
-  <h2 class="section-title" style="color:var(--red)">QC Findings &mdash; MC1 DTM Application</h2>
-  <p class="section-sub">Critical bugs that must be fixed before deploying MC1 to students.</p>
+  <h2 class="section-title">QC &amp; Documentation</h2>
+  <p class="section-sub">QC was completed. Fix docs and analysis reports were written and delivered. Here's what exists.</p>
 
-  <div id="qc-bugs"></div>
+  <div class="card" style="margin-bottom:16px;border-left:3px solid var(--green)">
+    <h3 style="color:var(--green);margin-bottom:12px">QC Completed &mdash; Fix Doc Delivered March 19</h3>
+    <p style="font-size:14px;color:var(--text2);line-height:1.8">MC1 was QC'd. Issues were found, documented with exact item IDs, and delivered as part of the March 19 handoff. The fix doc (<code>3_Fix_Lists_for_Akshit/mc1_fixes_for_akshit.md</code>) contains every bug with the specific item ID and what to do. Base course structural issues (4-choice items, stimulus coverage gaps, skill distribution imbalance) were documented in the analysis reports.</p>
+  </div>
 
-  <div class="card" style="margin-top:24px">
-    <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;color:var(--yellow)">Question Bank Systemic Issues</h3>
-    <div class="grid-2" style="gap:12px">
-      <div class="card-sm">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-          <span style="font-weight:600">4-Choice Items</span>
-          <span class="badge badge-red">27.3%</span>
-        </div>
-        <div class="prog-bar"><div class="prog-fill" style="width:27.3%;background:var(--red)"></div></div>
-        <p style="font-size:12px;color:var(--text3);margin-top:6px">149 of 546 items. AP exam uses 5 choices only.</p>
-      </div>
-      <div class="card-sm">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-          <span style="font-weight:600">Answer A Bias</span>
-          <span class="badge badge-red">42.5%</span>
-        </div>
-        <div class="prog-bar"><div class="prog-fill" style="width:42.5%;background:var(--red)"></div></div>
-        <p style="font-size:12px;color:var(--text3);margin-top:6px">Expected 20%. Over 2x bias toward answer A.</p>
-      </div>
-      <div class="card-sm">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-          <span style="font-weight:600">Stimulus Coverage</span>
-          <span class="badge badge-yellow">24.4%</span>
-        </div>
-        <div class="prog-bar"><div class="prog-fill" style="width:24.4%;background:var(--yellow)"></div></div>
-        <p style="font-size:12px;color:var(--text3);margin-top:6px">Target 30-40%. Many stand-alone items.</p>
-      </div>
-      <div class="card-sm">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-          <span style="font-weight:600">Skill 4 (Source Analysis)</span>
-          <span class="badge badge-red">6.2%</span>
-        </div>
-        <div class="prog-bar"><div class="prog-fill" style="width:6.2%;background:var(--red)"></div></div>
-        <p style="font-size:12px;color:var(--text3);margin-top:6px">Target 13-20%. Critically underrepresented.</p>
-      </div>
+  <div class="card" style="margin-bottom:16px">
+    <h3 style="margin-bottom:12px">Documents Written</h3>
+    <div style="font-size:14px;color:var(--text2);line-height:2">
+      &#10003; <code>mc1_fixes_for_akshit.md</code> &mdash; Bug fixes with exact item IDs<br>
+      &#10003; <code>mc1_comprehensive_review.md</code> &mdash; Full course review<br>
+      &#10003; <code>mc1_frq_structure_review.md</code> &mdash; FRQ format analysis<br>
+      &#10003; <code>mcq_deep_analysis.md</code> &mdash; Question quality, skill distribution, difficulty<br>
+      &#10003; <code>gap_analysis_s4_vs_real_exam.md</code> &mdash; Course vs exam alignment<br>
+      &#10003; <code>ap_hugeo_ground_reality.md</code> &mdash; Independent exam architecture research<br>
+      &#10003; <code>prep_books_content_review.md</code> &mdash; Barron's + Princeton comparison<br>
+      &#10003; <code>prep_books_deep_dive.md</code> &mdash; 906 questions extracted and analyzed<br>
+      &#10003; <code>student_plans_mc1.md</code> &mdash; Per-student intervention plans<br>
+      &#10003; <code>ilma_build_specs_s4.md</code> &mdash; S4 build specifications (7 builds)<br>
+      &#10003; <code>mc1_qc_dashboard.html</code> &mdash; Interactive QC dashboard
     </div>
   </div>
 </div>
@@ -504,7 +489,7 @@ a:hover{text-decoration:underline}
 <!-- ==================== FILES ==================== -->
 <div class="tab-content" id="tab-files">
   <h2 class="section-title">File Inventory</h2>
-  <p class="section-sub">Complete listing of deliverables and analysis documents.</p>
+  <p class="section-sub">All results, insights, and deliverables in the repo. No agents, automation scripts, or internal tooling &mdash; just the work product.</p>
   <div id="files-container"></div>
 </div>
 
@@ -517,8 +502,8 @@ const COURSES = [
   {
     name: "MC1: DTM Application",
     id: "s4-r2-mc1-5ff6309d",
-    status: "QC'd \u2014 BUGS NEED FIXING",
-    statusColor: "yellow",
+    status: "DELIVERED Mar 19",
+    statusColor: "green",
     mcq: 104, frq: 3, xp: 330, hours: 5.5,
     stimulus: "39%",
     students: "Gus, Branson, Sydney + 4 others (7 total)",
