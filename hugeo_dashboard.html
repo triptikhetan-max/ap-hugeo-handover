@@ -938,11 +938,11 @@ document.querySelectorAll('.nav-tab').forEach(tab => {
 // ==================== INIT ====================
 renderCourses();
 renderStudents();
-try { renderBugs(); } catch(e) {}
-renderDecisions();
-try { renderStatus(); } catch(e) {}
-renderFiles();
 updateCountdown();
+try { renderBugs(); } catch(e) {}
+try { renderDecisions(); } catch(e) {}
+try { renderStatus(); } catch(e) {}
+try { renderFiles(); } catch(e) {}
 setInterval(updateCountdown, 60000);
 </script>
 </body>
