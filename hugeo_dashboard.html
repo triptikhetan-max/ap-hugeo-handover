@@ -167,6 +167,7 @@ a:hover{text-decoration:underline}
     <h1 style="font-size:32px;font-weight:800;margin-bottom:6px">AP Human Geography</h1>
     <p style="font-size:15px;color:var(--text2)">Handover by Tripti Khetan &middot; <strong style="color:var(--yellow)">Exam: May 5, 2026</strong></p>
     <div style="margin-top:16px"><div class="countdown" id="countdown-days">--</div><div class="countdown-label">days until exam</div></div>
+  <script>(function(){var e=new Date('2026-05-05T00:00:00'),d=Math.ceil((e-new Date())/(864e5));document.getElementById('countdown-days').textContent=d>0?d:(d===0?'TODAY':'PASSED');})()</script>
   </div>
 
   <!-- ROW 1: Delivered + Left -->
@@ -936,9 +937,9 @@ document.querySelectorAll('.nav-tab').forEach(tab => {
 });
 
 // ==================== INIT ====================
-renderCourses();
-renderStudents();
-updateCountdown();
+try { renderCourses(); } catch(e) {}
+try { renderStudents(); } catch(e) {}
+try { updateCountdown(); } catch(e) {}
 try { renderBugs(); } catch(e) {}
 try { renderDecisions(); } catch(e) {}
 try { renderStatus(); } catch(e) {}
